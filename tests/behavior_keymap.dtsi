@@ -8,8 +8,8 @@
         uc: uc {
             compatible = "zmk,behavior-unicode";
             #binding-cells = <0>;
-            codepoint = "00e4";
-            shifted-codepoint = "00e6";
+            codepoint = "00E4";
+            shifted-codepoint = "00E6";
         };
     };
 

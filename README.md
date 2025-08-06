@@ -53,7 +53,7 @@ its value is used when `Shift` is active (if omitted, `codepoint` is used
 regardless of the modifiers state).
 
 `codepoint` and `shifted-codepoint` should be entered as  4 (or 5) digit
-strings without `U+`.
+_uppercase_ strings without a leading `U+`.
 
 For instance, the following sets up a behavior that produces `ä` if pressed and
 produces `Ä` if pressed while `Shift` is active.
@@ -65,8 +65,8 @@ produces `Ä` if pressed while `Shift` is active.
         uc_ae {
             compatible = "zmk,behavior-unicode";
             #binding-cells = <0>;
-            codepoint = "00e4";
-            shifted-codepoint = "00e6";
+            codepoint = "00E4";
+            shifted-codepoint = "00E6";
         };
     };
 };

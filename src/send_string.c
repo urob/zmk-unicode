@@ -39,17 +39,17 @@ void send_string(const struct zmk_behavior_binding_event *event, const char *cod
             binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = N8};
         } else if (strcmp(&current, "9") == 0) {
             binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = N9};
-        } else if (strcmp(&current, "a") == 0) {
+        } else if (strcmp(&current, "A") == 0) {
             binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = A};
-        } else if (strcmp(&current, "b") == 0) {
+        } else if (strcmp(&current, "B") == 0) {
             binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = B};
-        } else if (strcmp(&current, "c") == 0) {
+        } else if (strcmp(&current, "C") == 0) {
             binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = C};
-        } else if (strcmp(&current, "d") == 0) {
+        } else if (strcmp(&current, "D") == 0) {
             binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = D};
-        } else if (strcmp(&current, "e") == 0) {
+        } else if (strcmp(&current, "E") == 0) {
             binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = E};
-        } else if (strcmp(&current, "f") == 0) {
+        } else if (strcmp(&current, "F") == 0) {
             binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = F};
         } else {
             LOG_WRN("Failed to map codepoint %s to a behavior binding", &current);
