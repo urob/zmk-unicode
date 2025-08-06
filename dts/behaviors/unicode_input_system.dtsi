@@ -1,0 +1,21 @@
+/*
+ * Copyright (c) 2025 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <dt-bindings/zmk-unicode/uc.h>
+
+/ {
+    behaviors {
+        // This initializes the input system. Do not add
+        // omit-if-no-ref. To customize the default mode,
+        // add &uc_input { default-mode = <...> } to the dt.
+        uc_input: uc_input {
+            compatible = "zmk,behavior-unicode-input-system";
+            #binding-cells = <1>;
+            display-name = "Unicode input system";
+            default-mode = <UC_MODE_WIN_COMPOSE>;
+        };
+    };
+};

@@ -1,0 +1,25 @@
+#include <behaviors/unicode.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/kscan_mock.h>
+
+/ {
+    behaviors {
+        uc: uc {
+            compatible = "zmk,behavior-unicode";
+            #binding-cells = <0>;
+            codepoint = "00e4";
+            shifted-codepoint = "00e6";
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+        default_layer {
+            bindings = <
+                &uc &kp LSHFT
+                &uc_input UC_LIN &none
+            >;
+        };
+    };
+};

@@ -1,0 +1,21 @@
+/*
+ * Copyright (c) 2025 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+
+#include <dt-bindings/zmk/behaviors.h>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    behaviors {
+        // omit-if-no-ref is intentionally left out so this can be
+        // referenced programmatically without adding it to the dt.
+        mask_mods: mask_mods {
+            compatible = "zmk,behavior-mask-mods";
+            #binding-cells = <1>;
+            display-name = "Mask Mods";
+        };
+    };
+};

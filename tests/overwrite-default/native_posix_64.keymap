@@ -1,0 +1,12 @@
+#include "../behavior_keymap.dtsi"
+
+&uc_input {
+    default-mode = <UC_MODE_LINUX_ALT>;
+};
+
+&kscan {
+    events = <
+        ZMK_MOCK_PRESS(0,0,100)
+        ZMK_MOCK_RELEASE(0,0,10)
+    >;
+};

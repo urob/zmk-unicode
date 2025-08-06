@@ -1,0 +1,19 @@
+# Copyright (c) 2025 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+description: Unicode behavior
+
+compatible: "zmk,behavior-unicode"
+
+include: zero_param.yaml
+
+properties:
+  codepoint:
+    type: string
+    required: true
+    description: Unicode code point to send.
+
+  shifted-codepoint:
+    type: string
+    required: false
+    description: Unicode code point to send if shifted.

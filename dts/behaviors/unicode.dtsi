@@ -1,0 +1,18 @@
+/*
+ * Copyright (c) 2025 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors/mask_mods.dtsi>
+#include <behaviors/unicode_input_system.dtsi>
+
+#define ZMK_UNICODE(name, string, string2, ...) \
+name: name { \
+    compatible = "zmk,behavior-unicode"; \
+    #binding-cells = <0>; \
+    codepoint = string; \
+    shifted-codepoint = string2; \
+    __VA_ARGS__ \
+};
+

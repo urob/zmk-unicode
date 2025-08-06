@@ -1,0 +1,8 @@
+# Copyright (c) 2025 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+description: Mask mods behavior
+
+compatible: "zmk,behavior-mask-mods"
+
+include: one_param.yaml
