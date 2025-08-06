@@ -107,14 +107,7 @@ select the right input system for your operating system **and prepare the OS**.
 Currently the following input systems are available. **Some of these systems have
 additional configuration options.** Continue reading to learn more.
 
-1. `UC_MODE_MACOS` (or `UC_MAC`)
-2. `UC_MODE_LINUX` (or `UC_LIN`)
-3. `UC_MODE_LINUX_ALT` (or `UC_LINALT`)
-4. `UC_MODE_WIN_COMPOSE` (or `UC_WINC`)
-5. `UC_MODE_WIN_ALT` (or `UC_WINALT`)
-6. `UC_MODE_EMACS` (or `UC_EMAC`)
-
-<details><summary>**`UC_MODE_MACOS`** (macOS)<summary>
+<details><summary>1. macOS (<code>UC_MODE_MACOS</code> or <code>UC_MAC</code>)</summary>
 
 macOS has built-in support for Unicode input, supporting all possible code
 points above `U+FFFF`.
@@ -141,7 +134,7 @@ keymap:
 
 </details>
 
-<details><summary>**`UC_MODE_LINUX`** (IBus)<summary>
+<details><summary>2. Linux IBus (<code>UC_MODE_LINUX</code> or <code>UC_LIN</code>)</summary>
 
 For Linux distros with IBus, Unicode input is enabled by default, supports all
 possible code points, and works almost anywhere. Without IBus, it works under
@@ -166,7 +159,7 @@ keymap:
 
 </details>
 
-<details><summary>**`UC_MODE_LINUX_ALT`**<summary>
+<details><summary>3. Linux Alt (<code>UC_MODE_LINUX_ALT</code> or <code>UC_LINALT</code>)</summary>
 
 This is a variant of `UC_MODE_LINUX`, which keeps holding `LCTRL + LSHFT` for
 the entire input.
@@ -190,7 +183,7 @@ keymap:
 
 </details>
 
-<details><summary>**`UC_MODE_WIN_COMPOSE`** (WinCompose)<summary>
+<details><summary>4. WinCompose (<code>UC_MODE_WIN_COMPOSE</code> or <code>UC_WINC</code>)</summary>
 
 This input system requires a third-party tool called
 [WinCompose](https://github.com/samhocevar/wincompose). 
@@ -220,7 +213,7 @@ keymap:
 
 </details>
 
-<details><summary>**`UC_MODE_WIN_ALT`** (HexNumpad)<summary>
+<details><summary>5. Windows HexNumpad (<code>UC_MODE_WIN_ALT</code> or <code>UC_WINALT</code>)</summary>
 
 This is Windows' built-in hex numpad Unicode input mode. It only supports code
 points up to `U+FFFF`, and is not recommended due to reliability and
@@ -240,7 +233,7 @@ The system will:
 
 </details>
 
-<details><summary>**`UC_MODE_EMACS`** (Emacs)<summary>
+<details><summary>6. Emacs (<code>UC_MODE_EMACS</code> or <code>UC_EMAC</code>)</summary>
 
 Emacs supports code point input with the `insert-char` command.
 
