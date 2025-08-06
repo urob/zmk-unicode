@@ -145,7 +145,7 @@ static zmk_mod_flags_t get_mod_flags(zmk_key_t key) {
         return mods | MOD_RGUI;
     default:
         LOG_DBG("Failed to extract mod bit from 0x%08X", key);
-        return -ENOTSUP;
+        return mods;
     }
 }
 
