@@ -32,6 +32,49 @@ const struct uc_input_system_config behavior_unicode_input_system_config = {
 
 struct uc_input_system_data behavior_unicode_input_system_data = {};
 
+static zmk_mod_flags_t get_explicit_mods_flag(zmk_key_t key) {
+    uint16_t keycode = ZMK_HID_USAGE_ID(key);
+    uint8_t page = ZMK_HID_USAGE_PAGE(key);
+
+    if (!is_mod(page, keycode)) {
+        return 0x00;
+    }
+
+    switch (keycode) {
+    case HID_USAGE_KEY_KEYBOARD_LEFTCONTROL:
+        return MOD_LCTL;
+    case HID_USAGE_KEY_KEYBOARD_LEFTSHIFT:
+        return MOD_LSFT;
+    case HID_USAGE_KEY_KEYBOARD_LEFTALT:
+        return MOD_LALT;
+    case HID_USAGE_KEY_KEYBOARD_LEFT_GUI:
+        return MOD_LGUI;
+    case HID_USAGE_KEY_KEYBOARD_RIGHTCONTROL:
+        return MOD_RCTL;
+    case HID_USAGE_KEY_KEYBOARD_RIGHTSHIFT:
+        return MOD_RSFT;
+    case HID_USAGE_KEY_KEYBOARD_RIGHTALT:
+        return MOD_RALT;
+    case HID_USAGE_KEY_KEYBOARD_RIGHT_GUI:
+        return MOD_RGUI;
+    default:
+        LOG_DBG("Failed to extract mod bit from 0x%08X", key);
+        return 0x00;
+    }
+}
+
+static zmk_mod_flags_t get_mod_flags(zmk_key_t key) {
+    zmk_mod_flags_t implicit_mods = SELECT_MODS(key);
+    zmk_mod_flags_t explicit_mods = get_explicit_mods_flag(key);
+    return implicit_mods | explicit_mods;
+}
+
+void queue_mask_mods(const struct zmk_behavior_binding_event *event,
+                     struct zmk_behavior_binding *binding, zmk_mod_flags_t mods) {
+    *binding = (struct zmk_behavior_binding){.behavior_dev = "mask_mods", .param1 = mods};
+    zmk_behavior_queue_add(event, *binding, true, 0);
+}
+
 void queue_key_press(const struct zmk_behavior_binding_event *event,
                      struct zmk_behavior_binding *binding, int keycode) {
     *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = keycode};
@@ -44,11 +87,26 @@ void queue_key_release(const struct zmk_behavior_binding_event *event,
     zmk_behavior_queue_add(event, *binding, false, CONFIG_ZMK_UNICODE_WAIT_MS);
 }
 
-void queue_key_tap(const struct zmk_behavior_binding_event *event,
-                   struct zmk_behavior_binding *binding, int keycode) {
+void queue_key_tap_unguarded(const struct zmk_behavior_binding_event *event,
+                             struct zmk_behavior_binding *binding, int keycode) {
     *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = keycode};
     zmk_behavior_queue_add(event, *binding, true, CONFIG_ZMK_UNICODE_TAP_MS);
     zmk_behavior_queue_add(event, *binding, false, CONFIG_ZMK_UNICODE_WAIT_MS);
+}
+
+void queue_key_tap(const struct zmk_behavior_binding_event *event,
+                   struct zmk_behavior_binding *binding, int keycode) {
+    zmk_mod_flags_t mods = get_explicit_mods_flag(keycode);
+
+    // Temporarily unmask keycode if it is an explicit mod.
+    if (mods != 0x00) {
+        struct uc_input_system_data *data = &behavior_unicode_input_system_data;
+        queue_mask_mods(event, binding, data->mod_mask & ~mods);
+        queue_key_tap_unguarded(event, binding, keycode);
+        queue_mask_mods(event, binding, data->mod_mask);
+    } else {
+        queue_key_tap_unguarded(event, binding, keycode);
+    }
 }
 
 void unicode_input_start(const struct zmk_behavior_binding_event *event) {
@@ -117,68 +175,33 @@ void unicode_input_stop(const struct zmk_behavior_binding_event *event) {
     }
 }
 
-static zmk_mod_flags_t get_mod_flags(zmk_key_t key) {
-    zmk_mod_flags_t mods = SELECT_MODS(key);
-    uint16_t keycode = ZMK_HID_USAGE_ID(key);
-    uint8_t page = ZMK_HID_USAGE_PAGE(key);
-
-    if (!is_mod(page, keycode)) {
-        return mods;
-    }
-
-    switch (keycode) {
-    case HID_USAGE_KEY_KEYBOARD_LEFTCONTROL:
-        return mods | MOD_LCTL;
-    case HID_USAGE_KEY_KEYBOARD_LEFTSHIFT:
-        return mods | MOD_LSFT;
-    case HID_USAGE_KEY_KEYBOARD_LEFTALT:
-        return mods | MOD_LALT;
-    case HID_USAGE_KEY_KEYBOARD_LEFT_GUI:
-        return mods | MOD_LGUI;
-    case HID_USAGE_KEY_KEYBOARD_RIGHTCONTROL:
-        return mods | MOD_RCTL;
-    case HID_USAGE_KEY_KEYBOARD_RIGHTSHIFT:
-        return mods | MOD_RSFT;
-    case HID_USAGE_KEY_KEYBOARD_RIGHTALT:
-        return mods | MOD_RALT;
-    case HID_USAGE_KEY_KEYBOARD_RIGHT_GUI:
-        return mods | MOD_RGUI;
-    default:
-        LOG_DBG("Failed to extract mod bit from 0x%08X", key);
-        return mods;
-    }
-}
-
 void send_unicode_sequence(const struct zmk_behavior_binding_event *event, const char *codepoint) {
     const struct uc_input_system_config *cfg = &behavior_unicode_input_system_config;
     struct uc_input_system_data *data = &behavior_unicode_input_system_data;
+    struct zmk_behavior_binding binding;
 
     // Mask all mods except mods that need to be _held_ during input.
-    zmk_mod_flags_t mod_mask = ALL_MODS;
+    data->mod_mask = ALL_MODS;
     switch (data->mode) {
     case UC_MODE_MACOS:
-        mod_mask &= ~get_mod_flags(cfg->macos_key);
+        data->mod_mask &= ~get_mod_flags(cfg->macos_key);
         break;
     case UC_MODE_LINUX_ALT:
-        mod_mask &= ~get_mod_flags(cfg->linux_alt_key);
-        break;
-    case UC_MODE_WIN_COMPOSE:
-        mod_mask &= ~get_mod_flags(cfg->win_compose_key);
+        data->mod_mask &= ~get_mod_flags(cfg->linux_alt_key);
         break;
     case UC_MODE_WIN_ALT:
-        mod_mask &= ~get_mod_flags(LALT);
+        data->mod_mask &= ~get_mod_flags(LALT);
         break;
     }
-    LOG_DBG("input_mode %d codepoint %s masked_mods 0x%02X", data->mode, codepoint, mod_mask);
-    zmk_hid_masked_modifiers_set(mod_mask);
+    LOG_DBG("input_mode %d codepoint %s masked_mods 0x%02X", data->mode, codepoint, data->mod_mask);
+    queue_mask_mods(event, &binding, data->mod_mask);
 
     unicode_input_start(event);
     send_string(event, codepoint);
     unicode_input_stop(event);
 
-    // Unmask mods after queue is done.
-    struct zmk_behavior_binding mask_mods = {.behavior_dev = "mask_mods", .param1 = mod_mask};
-    zmk_behavior_queue_add(event, mask_mods, false, CONFIG_ZMK_UNICODE_WAIT_MS);
+    // Unmask mods at end of queue.
+    queue_mask_mods(event, &binding, 0x00);
 }
 
 void set_unicode_input_system(struct uc_input_system_data *data, int mode) {
