@@ -12,8 +12,8 @@
 #include <zmk/behavior.h>
 #include <zmk/behavior_queue.h>
 #include <zmk/hid.h>
+#include <zmk/keys.h>
 
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk-unicode/uc.h>
 #include <zmk-unicode/input_system.h>
 #include <zmk-unicode/send_string.h>

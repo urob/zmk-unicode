@@ -12,7 +12,7 @@
 
 #include <zmk/behavior.h>
 #include <zmk/hid.h>
-#include <dt-bindings/zmk/modifiers.h>
+#include <zmk/keys.h>
 #include <zmk-unicode/input_system.h>
 
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
