@@ -4,21 +4,12 @@
 #include <dt-bindings/zmk/kscan_mock.h>
 
 / {
-    behaviors {
-        uc_ae: uc_ae {
-            compatible = "zmk,behavior-unicode";
-            #binding-cells = <0>;
-            codepoint = "00E4";
-            shifted-codepoint = "00C4";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-                &uc_ae &kp LSHFT
-                &uc_input UC_LIN &none
+                &uc 0x00E4 0x00E4 &kp LSHFT
+                &uc UC_SET_LINUX &none
             >;
         };
     };

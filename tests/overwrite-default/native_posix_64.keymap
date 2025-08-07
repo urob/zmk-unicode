@@ -1,6 +1,6 @@
 #include "../behavior_keymap.dtsi"
 
-&uc_input {
+&uc {
     default-mode = <UC_MODE_LINUX_ALT>;
 };
 

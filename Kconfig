@@ -17,12 +17,6 @@ config ZMK_BEHAVIOR_UNICODE
     bool
     default $(dt_compat_enabled,$(DT_COMPAT_ZMK_BEHAVIOR_UNICODE))
 
-DT_COMPAT_ZMK_BEHAVIOR_UNICODE_INPUT_SYSTEM := zmk,behavior-unicode-input-system
-
-config ZMK_BEHAVIOR_UNICODE_INPUT_SYSTEM
-    bool
-    default $(dt_compat_enabled,$(DT_COMPAT_ZMK_BEHAVIOR_UNICODE_INPUT_SYSTEM))
-
 DT_COMPAT_ZMK_BEHAVIOR_MASK_MODS := zmk,behavior-mask-mods
 
 config ZMK_BEHAVIOR_MASK_MODS
