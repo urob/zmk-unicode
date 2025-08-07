@@ -48,27 +48,25 @@ top of the keymap:
 ### 2. Defining unicode behaviors
 
 A `unicode` behavior instance is defined by a `codepoint` property and,
-optionally, a `shifted-codepoint` property. If `shifted-codepoint` is specified,
-its value is used when `Shift` is active (if omitted, `codepoint` is used
-regardless of the modifiers state).
+optionally, a `shifted-codepoint` property. If the latter is specified,
+it is used in lieu of the former when `Shift` is active.
 
-`codepoint` and `shifted-codepoint` should be entered as  4 (or 5) digit
+Both `codepoint` and `shifted-codepoint` should be entered as  4 (or 5) digit
 _uppercase_ strings without a leading `U+`.
 
-For instance, the following sets up a behavior that produces `ä` if pressed and
-produces `Ä` if pressed while `Shift` is active.
+For instance, the following sets up a behavior that produces `ä` if pressed by itself and produces
+`Ä` if pressed while `Shift` is active.
 
 ```dts
 / {
-    behaviors {
-    uc_ae:
-        uc_ae {
-            compatible = "zmk,behavior-unicode";
-            #binding-cells = <0>;
-            codepoint = "00E4";
-            shifted-codepoint = "00E6";
-        };
+  behaviors {
+    uc_ae: uc_ae {
+      compatible = "zmk,behavior-unicode";
+      #binding-cells = <0>;
+      codepoint = "00E4";
+      shifted-codepoint = "00C4";
     };
+  };
 };
 ```
 
