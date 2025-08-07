@@ -162,11 +162,14 @@ void send_unicode_sequence(const struct zmk_behavior_binding_event *event, const
     case UC_MODE_LINUX_ALT:
         mod_mask &= ~get_mod_flags(cfg->linux_alt_key);
         break;
+    case UC_MODE_WIN_COMPOSE:
+        mod_mask &= ~get_mod_flags(cfg->win_compose_key);
+        break;
     case UC_MODE_WIN_ALT:
         mod_mask &= ~get_mod_flags(LALT);
         break;
     }
-    LOG_DBG("input_mode %d codepoint %s mod_mask 0x%02X", data->mode, codepoint, mod_mask);
+    LOG_DBG("input_mode %d codepoint %s masked_mods 0x%02X", data->mode, codepoint, mod_mask);
     zmk_hid_masked_modifiers_set(mod_mask);
 
     unicode_input_start(event);
