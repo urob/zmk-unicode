@@ -5,14 +5,18 @@
  */
 
 #include <behaviors/mask_mods.dtsi>
-#include <behaviors/unicode_input_system.dtsi>
+#include <dt-bindings/zmk-unicode/uc.h>
 
-#define ZMK_UNICODE(name, string, string2, ...) \
-name: name { \
-    compatible = "zmk,behavior-unicode"; \
-    #binding-cells = <0>; \
-    codepoint = string; \
-    shifted-codepoint = string2; \
-    __VA_ARGS__ \
+/ {
+    behaviors {
+#if ZMK_BEHAVIOR_OMIT(UC)
+        /omit-if-no-ref/
+#endif
+        uc: unicode {
+            compatible = "zmk,behavior-unicode";
+            #binding-cells = <2>;
+            display-name = "Unicode input";
+            default-mode = <UC_MODE_WIN_COMPOSE>;
+        };
+    };
 };
-

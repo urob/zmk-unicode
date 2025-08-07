@@ -5,15 +5,31 @@ description: Unicode behavior
 
 compatible: "zmk,behavior-unicode"
 
-include: zero_param.yaml
+include: two_param.yaml
 
 properties:
-  codepoint:
-    type: string
+  default-mode:
+    type: int
     required: true
-    description: Unicode code point to send.
+    description: "Default input mode."
 
-  shifted-codepoint:
-    type: string
-    required: false
-    description: Unicode code point to send if shifted.
+  minimum-length:
+    type: int
+    description: "Sequences are padded with leading zeros until minimum-length."
+    default: 0
+
+  macos-key:
+    type: int
+    description: "Key to initialize macOS (default: LALT)."
+
+  linux-key:
+    type: int
+    description: "Key to initialize Linux (default: LC(LS(U)))."
+
+  linux-key-alt:
+    type: int
+    description: "Key to initialize Linux-alt (default: LC(LSHFT))."
+
+  win-compose-key:
+    type: int
+    description: "Key to initialize WinCompose (default: RALT)."

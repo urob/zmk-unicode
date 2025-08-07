@@ -2,12 +2,8 @@
 
 This module adds a `unicode` behavior to ZMK. Some highlights:
 
-- Configurable input system with several preconfigured drivers
-- The input system can be switched at any time
-- Optional shifted codepoints for unicode behavior instances
-
-**Important note:** The module is in active development and there might be breaking changes in the
-API!
+- Add any code point to the keymap using `&uc` without prior definition
+- Configurable input systems that can be switched while keyboard is in use
 
 ## Usage
 
@@ -48,43 +44,42 @@ top of the keymap:
 #include <behaviors/unicode.dtsi>
 ```
 
-### 2. Defining unicode behaviors
+### 2. Adding Unicode code points to the keymap
 
-A `unicode` behavior instance is defined by a `codepoint` property and,
-optionally, a `shifted-codepoint` property. If the latter is specified,
-it is used in lieu of the former when `Shift` is active.
+Unicode code points can be added to the keymap using `&uc CP1 CP2`, where `CP1` and `CP2` are
+hexadecimal code points. The former is produced if the key is pressed by itself, the latter is
+produced if the key is pressed while `Shift` is active. Adding `&uc CP 0` will produce `CP` in
+either case.
 
-Both `codepoint` and `shifted-codepoint` should be entered as  4 (or 5) digit
-_uppercase_ strings without a leading `U+`.
+For instance `&uc 0xe4 0xc4` produces `ä` (`U+00E4`) when pressed by itself and
+produces `Ä` (`U+00C4`) when `Shift` is active. 
 
-For instance, the following sets up a behavior that produces `ä` if pressed by itself and produces
-`Ä` if pressed while `Shift` is active.
-
-```dts
-/ {
-  behaviors {
-    uc_ae: uc_ae {
-      compatible = "zmk,behavior-unicode";
-      #binding-cells = <0>;
-      codepoint = "00E4";
-      shifted-codepoint = "00C4";
-    };
-  };
+Code points must be in the range of `0x00` to `0x10ffff` and can omit any leading zeros. That is,
+`&uc 0xe4 0` and `&uc 0x00e4` are exactly equivalent. Either binding will by default omit any
+leading zeros when sending the code point to the OS. For all input systems that I have personally
+tested, this is more reliable then padding to a fixed length with leading zeros. In case this causes problems, one can force padding to a minimum length using the `minimum-length` property. E.g.,
+```c
+&uc {
+  minimum-length = <4>;  // Replace with desired minimum length.
 };
 ```
+
+Please let me know if certain input systems require setting this larger than zero.
 
 ### 3. Selecting an input system on the keyboard
 
 There are six configurable input systems (see below for descriptions and further customization
-options). The _initial_ input system (selected when the keyboard starts up) is defined by adding the
+options).
+
+The _initial_ input system (selected when the keyboard starts up) is defined by adding the
 following outside the root node to the keymap. For instance:
 ```c
-&uc_input {
-  default-mode = <UC_MODE_LINUX>;  // Set the default mode here.
+&uc {
+  default-mode = <UC_MODE_LINUX>;  // Replace with desired default mode.
 };
 ```
 
-To _switch_ the input system while the keyboard is in use, add `&uc_input
+To _switch_ the input system while the keyboard is in use, add `&uc
 MODE` bindings to your keymap. For instance, the following two bindings
 can be used to toggle the input mode between Windows and Linux
 ```c
@@ -93,7 +88,7 @@ can be used to toggle the input mode between Windows and Linux
     compatible = "zmk,keymap";
     default_layer {
       bindings = <
-        &uc_input UC_WINC &uc_input UC_LIN
+        &uc UC_SET_WIN_COMPOSE &uc UC_SET_LINUX
       >;
     };
   };
@@ -105,11 +100,24 @@ can be used to toggle the input mode between Windows and Linux
 For Unicode input to work, one must (i) select the right input system on the keyboard, and (ii)
 (in most cases) must prepare the OS.
 
-Currently, there are six available input systems are available (most with additional configuration
-options). Continue reading to decide which one is right and how to prepare your OS. Input
-systems can be referred to either by their full name or by their alias shortcut.
+There are six configurable input systems. Use the `Identifier` label when configuring the
+`default-mode` option, and use the `Selection-Macro` label as argument to `&uc` for switching
+the input system while the keyboard is in use.
 
-<details><summary>1. macOS (<code>UC_MODE_MACOS</code> or <code>UC_MAC</code>)</summary>
+|  | Identifier | Selection-Macro |
+|---|---|---|
+| macOS | `UC_MODE_MACOS` | `UC_SET_MACOS` |
+| Linux | `UC_MODE_LINUX` | `UC_SET_LINUX` |
+| Linux (alt) | `UC_MODE_LINUX_ALT` | `UC_SET_LINUX_ALT` |
+| Windows (WinCompose) | `UC_MODE_WIN_COMPOSE` | `UC_SET_WIN_COMPOSE` |
+| Windows (HexNumpad) | `UC_MODE_WIN_ALT` | `UC_SET_WIN_ALT` |
+| Emacs  | `UC_MODE_EMACS` | `UC_SET_EMACS` |
+
+
+Continue reading to learn about the differences between these systems, additional configuration
+options, and how to prepare your OS.
+
+<details><summary>1. macOS (<code>UC_MODE_MACOS</code>)</summary>
 
 macOS has built-in support for Unicode input, supporting all possible code points.
 
@@ -128,14 +136,14 @@ To overwrite `macos-key`, add the following outside of the root node of your
 keymap:
 
 ```c
-&uc_input {
+&uc {
   macos-key = <LALT>;  // replace with desired key
 };
 ```
 
 </details>
 
-<details><summary>2. Linux IBus (<code>UC_MODE_LINUX</code> or <code>UC_LIN</code>)</summary>
+<details><summary>2. Linux IBus (<code>UC_MODE_LINUX</code>)</summary>
 
 For Linux distros with IBus, Unicode input is enabled by default, supports all
 possible code points, and works almost anywhere. Without IBus, it works under
@@ -153,14 +161,14 @@ To overwrite `linux-key`, add the following outside of the root node of your
 keymap:
 
 ```c
-&uc_input {
+&uc {
   linux-key = <LC(LS(U))>;  // replace with desired key
 };
 ```
 
 </details>
 
-<details><summary>3. Linux Alt (<code>UC_MODE_LINUX_ALT</code> or <code>UC_LINALT</code>)</summary>
+<details><summary>3. Linux Alt (<code>UC_MODE_LINUX_ALT</code>)</summary>
 
 This is a variant of `UC_MODE_LINUX`, which keeps holding `LCTRL + LSHFT` for
 the entire input.
@@ -177,14 +185,14 @@ To overwrite `linux-alt-key`, add the following outside of the root node of your
 keymap:
 
 ```c
-&uc_input {
+&uc {
   linux-alt-key = <LC(LSHFT)>;  // replace with desired key
 };
 ```
 
 </details>
 
-<details><summary>4. WinCompose (<code>UC_MODE_WIN_COMPOSE</code> or <code>UC_WINC</code>)</summary>
+<details><summary>4. WinCompose (<code>UC_MODE_WIN_COMPOSE</code>)</summary>
 
 This input system requires a third-party tool called
 [WinCompose](https://github.com/samhocevar/wincompose). 
@@ -207,14 +215,14 @@ To overwrite `win-compose-key`, add the following outside of the root node of yo
 keymap:
 
 ```c
-&uc_input {
+&uc {
   win-compose-key = <RALT>;  // replace with desired key
 };
 ```
 
 </details>
 
-<details><summary>5. Windows HexNumpad (<code>UC_MODE_WIN_ALT</code> or <code>UC_WINALT</code>)</summary>
+<details><summary>5. Windows HexNumpad (<code>UC_MODE_WIN_ALT</code>)</summary>
 
 This is Windows' built-in hex numpad Unicode input mode. It only supports code
 points up to `U+FFFF`, and is not recommended due to reliability and
@@ -234,7 +242,7 @@ The system will:
 
 </details>
 
-<details><summary>6. Emacs (<code>UC_MODE_EMACS</code> or <code>UC_EMAC</code>)</summary>
+<details><summary>6. Emacs (<code>UC_MODE_EMACS</code>)</summary>
 
 Emacs supports code point input with the `insert-char` command.
 
@@ -265,3 +273,37 @@ This is known to help on slow terminal connections and weak Bluetooth signals.
 you specify a valid code point string.
 - Code points are send using the default US keyboard layout. Alternative layouts
   are currently not supported.
+
+## Example keymap
+
+```c
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <behaviors/unicode.dtsi>  // Source header for this module
+
+// Optional: Overwrite default behavior properties
+&uc {
+  default-mode = <UC_MODE_LINUX>;  // Default to Linux input system
+  minimum-length = <4>;            // Pad input to at least 4 digits
+  linux-key = <LC(LS(U))>;         // Overwrite Linux compose key
+  win-compose-key = <RALT>;        // Overwrite WinCompose compose key
+};
+
+/ {
+  keymap {
+    compatible = "zmk,keymap";
+    default_layer {
+      bindings = <
+        /* Add some code points */
+        &uc 0xe4 0xc4       /* ä/Ä */
+        &uc 0xf6 0xd6       /* ü/Ü */
+        &uc 0xfc 0xdc       /* ö/Ö */
+        &uc 0x1f596 0x2764  /* 🖖/❤ */
+        /* Add bindings to switch between input modes */
+        &uc UC_SET_WIN_COMPOSE  &uc UC_SET_LINUX  &uc UC_SET_LINUX_ALT  &uc UC_SET_MACOS
+      >;
+    };
+  };
+};
+
+```
