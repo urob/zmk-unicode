@@ -77,36 +77,34 @@ void queue_mask_mods(const struct zmk_behavior_binding_event *event,
 }
 
 void queue_key_press(const struct zmk_behavior_binding_event *event,
-                     struct zmk_behavior_binding *binding, int keycode) {
-    *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = keycode};
+                     struct zmk_behavior_binding *binding, zmk_key_t key) {
+    *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = key};
     zmk_behavior_queue_add(event, *binding, true, CONFIG_ZMK_UNICODE_TAP_MS);
 }
 
 void queue_key_release(const struct zmk_behavior_binding_event *event,
-                       struct zmk_behavior_binding *binding, int keycode) {
-    *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = keycode};
-    zmk_behavior_queue_add(event, *binding, false, CONFIG_ZMK_UNICODE_WAIT_MS);
-}
-
-void queue_key_tap_unguarded(const struct zmk_behavior_binding_event *event,
-                             struct zmk_behavior_binding *binding, int keycode) {
-    *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = keycode};
-    zmk_behavior_queue_add(event, *binding, true, CONFIG_ZMK_UNICODE_TAP_MS);
+                       struct zmk_behavior_binding *binding, zmk_key_t key) {
+    *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = key};
     zmk_behavior_queue_add(event, *binding, false, CONFIG_ZMK_UNICODE_WAIT_MS);
 }
 
 void queue_key_tap(const struct zmk_behavior_binding_event *event,
-                   struct zmk_behavior_binding *binding, int keycode) {
-    zmk_mod_flags_t mods = get_explicit_mods_flag(keycode);
+                   struct zmk_behavior_binding *binding, zmk_key_t key) {
+    zmk_mod_flags_t mods = get_explicit_mods_flag(key);
+    struct uc_input_system_data *data = &behavior_unicode_input_system_data;
 
-    // Temporarily unmask keycode if it is an explicit mod.
+    // Temporarily unmask key if it is an explicit mod. No need to force
+    // implicit mods as they are always exempt from masking.
     if (mods != 0x00) {
-        struct uc_input_system_data *data = &behavior_unicode_input_system_data;
         queue_mask_mods(event, binding, data->mod_mask & ~mods);
-        queue_key_tap_unguarded(event, binding, keycode);
+    }
+
+    queue_key_press(event, binding, key);
+    queue_key_release(event, binding, key);
+
+    // Reapply mask for the remainder of the sequence.
+    if (mods != 0x00) {
         queue_mask_mods(event, binding, data->mod_mask);
-    } else {
-        queue_key_tap_unguarded(event, binding, keycode);
     }
 }
 
