@@ -6,6 +6,9 @@ This module adds a `unicode` behavior to ZMK. Some highlights:
 - The input system can be switched at any time
 - Optional shifted codepoints for unicode behavior instances
 
+**Important note:** The module is in active development and there might be breaking changes in the
+API!
+
 ## Usage
 
 To load the module, add the following entries to `remotes` and `projects` in
