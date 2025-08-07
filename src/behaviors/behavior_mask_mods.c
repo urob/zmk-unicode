@@ -25,7 +25,6 @@ static int on_keymap_binding_pressed(struct zmk_behavior_binding *binding,
 
 static int on_keymap_binding_released(struct zmk_behavior_binding *binding,
                                       struct zmk_behavior_binding_event event) {
-    zmk_hid_masked_modifiers_clear();
     return ZMK_BEHAVIOR_OPAQUE;
 }
 

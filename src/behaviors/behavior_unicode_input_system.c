@@ -73,6 +73,7 @@ void queue_mask_mods(const struct zmk_behavior_binding_event *event,
                      struct zmk_behavior_binding *binding, zmk_mod_flags_t mods) {
     *binding = (struct zmk_behavior_binding){.behavior_dev = "mask_mods", .param1 = mods};
     zmk_behavior_queue_add(event, *binding, true, 0);
+    zmk_behavior_queue_add(event, *binding, false, 0);
 }
 
 void queue_key_press(const struct zmk_behavior_binding_event *event,
