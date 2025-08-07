@@ -3,7 +3,7 @@
 This module adds a `unicode` behavior to ZMK. Some highlights:
 
 - Configurable input system with several preconfigured drivers
-- Input modes can be switched at any time
+- The input system can be switched at any time
 - Optional shifted codepoints for unicode behavior instances
 
 ## Usage
@@ -72,8 +72,8 @@ For instance, the following sets up a behavior that produces `ä` if pressed by 
 
 ### 3. Selecting an input system on the keyboard
 
-There are six configurable input systems (see below for details). The initial
-input system (selected when the keyboard starts up) is defined by adding the
+There are six configurable input systems (see below for descriptions and further customization
+options). The _initial_ input system (selected when the keyboard starts up) is defined by adding the
 following outside the root node to the keymap. For instance:
 ```c
 &uc_input {
@@ -81,7 +81,7 @@ following outside the root node to the keymap. For instance:
 };
 ```
 
-To switch the input system while the keyboard is in use, add `&uc_input
+To _switch_ the input system while the keyboard is in use, add `&uc_input
 MODE` bindings to your keymap. For instance, the following two bindings
 can be used to toggle the input mode between Windows and Linux
 ```c
@@ -97,18 +97,18 @@ can be used to toggle the input mode between Windows and Linux
 };
 ```
 
-### 4. Preparing the OS
+### 4. Preparing the OS and further configuration
 
-There are six configurable input systems. For unicode input to work one must
-select the right input system for your operating system **and prepare the OS**.
+For Unicode input to work, one must (i) select the right input system on the keyboard, and (ii)
+(in most cases) must prepare the OS.
 
-Currently the following input systems are available. **Some of these systems have
-additional configuration options.** Continue reading to learn more.
+Currently, there are six available input systems are available (most with additional configuration
+options). Continue reading to decide which one is right and how to prepare your OS. Input
+systems can be referred to either by their full name or by their alias shortcut.
 
 <details><summary>1. macOS (<code>UC_MODE_MACOS</code> or <code>UC_MAC</code>)</summary>
 
-macOS has built-in support for Unicode input, supporting all possible code
-points above `U+FFFF`.
+macOS has built-in support for Unicode input, supporting all possible code points.
 
 To enable, go to **System Preferences → Keyboard → Input Sources**, then add
 Unicode Hex Input to the list (under Other), and activate it from the input
@@ -117,7 +117,7 @@ such as Option+Left and Option+Right.
 
 The `UC_MODE_MACOS` input system has one configurable property `macos-key`,
 which defaults to `LALT`. The system will:
-  1. press and hold `macos-key` (LALT per default)
+  1. press and hold `macos-key` (`LALT` per default)
   2. input the code point sequence
   3. release `macos-key`
 
@@ -243,6 +243,18 @@ The system will:
   5. tap and release `LALT`
 
 </details>
+
+### 5. Troubleshooting Kconfig settings
+
+Two `Kconfig` settings can be used to fine-tune the timing of the input system.
+
+- `ZMK_UNICODE_TAP_MS` sets the time to wait (in milliseconds) between the press and release of each
+key in the Unicode sequence. (defaults to 5)
+- `ZMK_UNICODE_WAIT_MS` sets the time to wait (in milliseconds) between tapping keys in the Unicode
+sequence. (defaults to 0)
+
+If you experience "mangled" sequences appearing on the screen, increasing the defaults may help.
+This is known to help on slow terminal connections and weak Bluetooth signals.
 
 ## Known issues
 
