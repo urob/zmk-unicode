@@ -10,6 +10,8 @@
 
 typedef uint32_t uc_cp_t;
 
+zmk_key_t hex_to_key[] = {N0, N1, N2, N3, N4, N5, N6, N7, N8, N9, A, B, C, D, E, F};
+
 struct behavior_unicode_config_t {
     uint8_t default_mode;
     uint8_t minimum_length;

@@ -31,66 +31,6 @@ const struct behavior_unicode_config_t behavior_unicode_config = {
 
 struct behavior_unicode_data_t behavior_unicode_data = {};
 
-void send_hexdigit(const struct zmk_behavior_binding_event *event,
-                   struct zmk_behavior_binding *binding, const uint8_t hexdigit) {
-    switch (hexdigit) {
-    case 0:
-        *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = N0};
-        break;
-    case 1:
-        *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = N1};
-        break;
-    case 2:
-        *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = N2};
-        break;
-    case 3:
-        *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = N3};
-        break;
-    case 4:
-        *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = N4};
-        break;
-    case 5:
-        *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = N5};
-        break;
-    case 6:
-        *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = N6};
-        break;
-    case 7:
-        *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = N7};
-        break;
-    case 8:
-        *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = N8};
-        break;
-    case 9:
-        *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = N9};
-        break;
-    case 10:
-        *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = A};
-        break;
-    case 11:
-        *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = B};
-        break;
-    case 12:
-        *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = C};
-        break;
-    case 13:
-        *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = D};
-        break;
-    case 14:
-        *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = E};
-        break;
-    case 15:
-        *binding = (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = F};
-        break;
-    default:
-        LOG_WRN("Failed to map hexdigit 0x%X to a behavior binding", hexdigit);
-        return;
-    }
-
-    zmk_behavior_queue_add(event, *binding, true, CONFIG_ZMK_UNICODE_TAP_MS);
-    zmk_behavior_queue_add(event, *binding, false, CONFIG_ZMK_UNICODE_WAIT_MS);
-}
-
 static zmk_mod_flags_t get_explicit_mods_flag(zmk_key_t key) {
     uint16_t keycode = ZMK_HID_USAGE_ID(key);
     uint8_t page = ZMK_HID_USAGE_PAGE(key);
@@ -232,19 +172,33 @@ void unicode_input_stop(const struct zmk_behavior_binding_event *event) {
     }
 }
 
+void send_hexdigit(const struct zmk_behavior_binding_event *event,
+                   struct zmk_behavior_binding *binding, const uint8_t hexdigit) {
+    if (hexdigit < 0x0 || hexdigit > 0xf) {
+        LOG_WRN("Failed to map hexdigit 0x%X to a behavior binding", hexdigit);
+    }
+    *binding =
+        (struct zmk_behavior_binding){.behavior_dev = "key_press", .param1 = hex_to_key[hexdigit]};
+    zmk_behavior_queue_add(event, *binding, true, CONFIG_ZMK_UNICODE_TAP_MS);
+    zmk_behavior_queue_add(event, *binding, false, CONFIG_ZMK_UNICODE_WAIT_MS);
+}
+
+static uint8_t get_hexdigit(const uc_cp_t codepoint, int i) { return (codepoint >> 4 * i) & 0xf; }
+
 void unicode_input_sequence(const struct zmk_behavior_binding_event *event,
                             const uc_cp_t codepoint) {
     const struct behavior_unicode_config_t *cfg = &behavior_unicode_config;
     struct zmk_behavior_binding binding;
-    bool started = false;
 
     int max_length = 8;
+    for (int i = max_length - 1; i >= cfg->minimum_length; i--) {
+        if (get_hexdigit(codepoint, i)) {
+            break;
+        }
+        max_length--;
+    }
     for (int i = max_length - 1; i >= 0; i--) {
-        int hexdigit = (codepoint >> 4 * i) & 0xf;
-        if ((hexdigit > 0) || (i < cfg->minimum_length) || started) {
-                started = true;
-                send_hexdigit(event, &binding, hexdigit);
-            }
+        send_hexdigit(event, &binding, get_hexdigit(codepoint, i));
     }
 }
 
