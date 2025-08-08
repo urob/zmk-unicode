@@ -57,7 +57,7 @@ static zmk_mod_flags_t get_explicit_mods_flag(zmk_key_t key) {
     case HID_USAGE_KEY_KEYBOARD_RIGHT_GUI:
         return MOD_RGUI;
     default:
-        LOG_DBG("Failed to extract mod flag from 0x%08X", key);
+        LOG_WRN("Failed to extract mod flag from 0x%08X", key);
         return 0x00;
     }
 }
@@ -136,7 +136,7 @@ void unicode_input_start(const struct zmk_behavior_binding_event *event) {
         queue_key_tap(event, &binding, RET);
         break;
     default:
-        LOG_DBG("Unknown input_mode %d", data->mode);
+        LOG_WRN("Unknown input_mode %d", data->mode);
         break;
     }
 }
@@ -167,10 +167,12 @@ void unicode_input_stop(const struct zmk_behavior_binding_event *event) {
         queue_key_tap(event, &binding, RET);
         break;
     default:
-        LOG_DBG("Unknown input_mode %d", data->mode);
+        LOG_WRN("Unknown input_mode %d", data->mode);
         break;
     }
 }
+
+static uint8_t get_hexdigit(const uc_cp_t codepoint, int i) { return (codepoint >> 4 * i) & 0xf; }
 
 void send_hexdigit(const struct zmk_behavior_binding_event *event,
                    struct zmk_behavior_binding *binding, const uint8_t hexdigit) {
@@ -182,8 +184,6 @@ void send_hexdigit(const struct zmk_behavior_binding_event *event,
     zmk_behavior_queue_add(event, *binding, true, CONFIG_ZMK_UNICODE_TAP_MS);
     zmk_behavior_queue_add(event, *binding, false, CONFIG_ZMK_UNICODE_WAIT_MS);
 }
-
-static uint8_t get_hexdigit(const uc_cp_t codepoint, int i) { return (codepoint >> 4 * i) & 0xf; }
 
 void unicode_input_sequence(const struct zmk_behavior_binding_event *event,
                             const uc_cp_t codepoint) {
@@ -209,7 +209,7 @@ void unicode_process_input(const struct zmk_behavior_binding_event *event,
     struct zmk_behavior_binding binding;
 
     if (codepoint == 0) {
-        LOG_DBG("Code point is zero, aborting input");
+        LOG_WRN("Code point is zero, aborting input");
         return;
     }
     if (data->mode < UC_MODE_MACOS || data->mode > UC_MODE_EMACS) {
@@ -255,7 +255,7 @@ static int on_unicode_binding_pressed(struct zmk_behavior_binding *binding,
         return ZMK_BEHAVIOR_OPAQUE;
     }
 
-    // Send unicode sequence.
+    // Process unicode input.
     bool shifted = (zmk_hid_get_explicit_mods() & (MOD_LSFT | MOD_RSFT)) != 0;
     if (shifted && binding->param2 != UC_NONE) {
         unicode_process_input(&event, binding->param2);
