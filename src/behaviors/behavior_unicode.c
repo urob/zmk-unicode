@@ -212,6 +212,10 @@ void unicode_process_input(const struct zmk_behavior_binding_event *event,
         LOG_DBG("Code point is zero, aborting input");
         return;
     }
+    if (data->mode < UC_MODE_MACOS || data->mode > UC_MODE_EMACS) {
+        LOG_WRN("Unknown input_mode %d, aborting input", data->mode);
+        return;
+    }
 
     // Mask all mods except mods that need to be _held_ during input.
     data->mod_mask = ALL_MODS;

@@ -3,6 +3,7 @@
 #define UC_NONE 0x00
 #define UC_SELECT_INPUT_MODE 0xffffff
 
+// Keep MACOS first and EMACS last.
 //                                  INPUT_START              | INPUT_STOP
 #define UC_MODE_MACOS 0x00       // press LALT               | release LALT
 #define UC_MODE_LINUX 0x01       // tap LC(LS(U))            | tap SPACE
