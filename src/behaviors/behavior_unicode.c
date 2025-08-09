@@ -190,14 +190,14 @@ void unicode_input_sequence(const struct zmk_behavior_binding_event *event,
     const struct behavior_unicode_config_t *cfg = &behavior_unicode_config;
     struct zmk_behavior_binding binding;
 
-    int max_length = 8;
-    for (int i = max_length - 1; i >= cfg->minimum_length; i--) {
+    // Send up to 6 hexdigits, the maximum supported by UTF-16.
+    int i = 5;
+    for (; i >= cfg->minimum_length; i--) {
         if (get_hexdigit(codepoint, i)) {
             break;
         }
-        max_length--;
     }
-    for (int i = max_length - 1; i >= 0; i--) {
+    for (; i >= 0; i--) {
         send_hexdigit(event, &binding, get_hexdigit(codepoint, i));
     }
 }
