@@ -149,11 +149,12 @@ keymap:
 
 <details><summary>2. Linux IBus (<code>UC_MODE_LINUX</code>)</summary>
 
-For Linux distros with IBus, Unicode input is enabled by default, supports all
-possible code points, and works almost anywhere. Without IBus, it works under
-GTK apps, but rarely anywhere else.
+For desktop environments with IBus, Unicode input is enabled by default, supports all possible code
+points, and works almost anywhere. Without IBus, it works under GTK apps, but rarely anywhere else.
+(Though, according to [this stack exchange answer](https://unix.stackexchange.com/a/16135), it is
+possible to install `IBus` under other DEs.)
 
-If the system is not working, it is worth trying out `UC_MODE_LINUX_ALT`.
+If the system is not working in certain applications, it is worth trying out `UC_MODE_LINUX_ALT`.
 
 The `UC_MODE_LINUX` input system has one configurable property `linux-key`,
 which defaults to `LC(LS(U))`. The system will:
