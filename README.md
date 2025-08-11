@@ -256,7 +256,7 @@ The system will:
   2. tap and release `N8`
   3. tap and release `RET`
   4. input the code point sequence
-  5. tap and release `LALT`
+  5. tap and release `RET`
 
 </details>
 
