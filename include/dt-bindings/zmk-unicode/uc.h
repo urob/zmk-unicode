@@ -1,5 +1,7 @@
 #pragma once
 
+#include <zmk-unicode/keys.h>
+
 #define UC_NONE 0x00
 #define UC_SELECT_INPUT_MODE 0xffffff
 

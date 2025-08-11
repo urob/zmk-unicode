@@ -66,9 +66,9 @@ tested, this is more reliable then padding to a fixed length with leading zeros.
 
 Please let me know if certain input systems require setting this larger than zero.
 
-This module includes a collection of convenience macros to simplify the inclusion of common
-code points. All currently available headers can be seen [here](include/unicode). For instance,
-after including the `unicode/german.h` header, above example can be simplified to `&uc DE_AE`.
+This module includes a collection of convenience macros to simplify the inclusion of common code
+points. For instance, instead of using `&uc 0xe4 0xc4` to get `ä/Ä` one can equivalently use `&uc
+UC_DE_AE`. All currently available macros can be seen [here](include/zmk-unicode/keys). 
 
 ### 3. Selecting an input system on the keyboard
 
@@ -76,7 +76,7 @@ There are six configurable input systems (see below for descriptions and further
 options).
 
 The _initial_ input system (selected when the keyboard starts up) is defined by adding the
-following outside the root node to the keymap. For instance:
+following outside the root node acto the keymap. For instance:
 ```c
 &uc {
   default-mode = <UC_MODE_LINUX>;  // Replace with desired default mode.

@@ -14,6 +14,8 @@ PREAMBLE = """/*
  * This file was automatically converted from '{file}',
  * included in the zmk-helpers module.
  */
+
+#pragma once
 """
 
 
