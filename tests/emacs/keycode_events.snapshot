@@ -1,0 +1,26 @@
+mods_mask_set: Modifiers set to 0x00
+kp_pressed: usage_page 0x07 keycode 0x1B implicit_mods 0x01 explicit_mods 0x00
+mods_press: Modifiers set to 0x01
+kp_released: usage_page 0x07 keycode 0x1B implicit_mods 0x01 explicit_mods 0x00
+mods_release: Modifiers set to 0x00
+kp_pressed: usage_page 0x07 keycode 0x25 implicit_mods 0x00 explicit_mods 0x00
+mods_press: Modifiers set to 0x00
+kp_released: usage_page 0x07 keycode 0x25 implicit_mods 0x00 explicit_mods 0x00
+mods_release: Modifiers set to 0x00
+kp_pressed: usage_page 0x07 keycode 0x28 implicit_mods 0x00 explicit_mods 0x00
+mods_press: Modifiers set to 0x00
+kp_released: usage_page 0x07 keycode 0x28 implicit_mods 0x00 explicit_mods 0x00
+mods_release: Modifiers set to 0x00
+kp_pressed: usage_page 0x07 keycode 0x08 implicit_mods 0x00 explicit_mods 0x00
+mods_press: Modifiers set to 0x00
+kp_released: usage_page 0x07 keycode 0x08 implicit_mods 0x00 explicit_mods 0x00
+mods_release: Modifiers set to 0x00
+kp_pressed: usage_page 0x07 keycode 0x21 implicit_mods 0x00 explicit_mods 0x00
+mods_press: Modifiers set to 0x00
+kp_released: usage_page 0x07 keycode 0x21 implicit_mods 0x00 explicit_mods 0x00
+mods_release: Modifiers set to 0x00
+kp_pressed: usage_page 0x07 keycode 0x28 implicit_mods 0x00 explicit_mods 0x00
+mods_press: Modifiers set to 0x00
+kp_released: usage_page 0x07 keycode 0x28 implicit_mods 0x00 explicit_mods 0x00
+mods_release: Modifiers set to 0x00
+mods_mask_set: Modifiers set to 0x00

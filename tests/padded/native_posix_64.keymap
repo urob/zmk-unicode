@@ -1,7 +1,7 @@
 #include "../behavior_keymap.dtsi"
 
 &uc {
-    default-mode = <UC_MODE_LINUX>;
+    minimum-length = <4>;
 };
 
 &kscan {

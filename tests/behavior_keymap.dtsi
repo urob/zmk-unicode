@@ -8,7 +8,7 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-                &uc 0x00E4 0x00E4 &kp LSHFT
+                &uc 0xe4 0xc4 &kp LSHFT
                 &uc UC_SET_LINUX &none
             >;
         };
