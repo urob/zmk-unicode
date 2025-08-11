@@ -66,6 +66,10 @@ tested, this is more reliable then padding to a fixed length with leading zeros.
 
 Please let me know if certain input systems require setting this larger than zero.
 
+This module includes a collection of convenience macros to simplify the inclusion of common
+code points. All currently available headers can be seen [here](include/unicode). For instance,
+after including the `unicode/german.h` header, above example can be simplified to `&uc DE_AE`.
+
 ### 3. Selecting an input system on the keyboard
 
 There are six configurable input systems (see below for descriptions and further customization
