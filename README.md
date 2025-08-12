@@ -46,29 +46,34 @@ top of the keymap:
 
 ### 2. Adding Unicode code points to the keymap
 
-Unicode code points can be added to the keymap using `&uc CP1 CP2`, where `CP1` and `CP2` are
-hexadecimal code points. The former is produced if the key is pressed by itself, the latter is
-produced if the key is pressed while `Shift` is active. Adding `&uc CP 0` will produce `CP` in
-either case.
+**Manual input.** Unicode code points can be added to the keymap using `&uc CP1 CP2`, where `CP1`
+and `CP2` are hexadecimal code points. The former is produced if the key is pressed by itself, the
+latter is produced if the key is pressed while `Shift` is active. Adding `&uc CP 0` produces `CP` in
+either case (the same can be achieved with `&uc CP CP`).
 
 For instance `&uc 0xe4 0xc4` produces `ä` (`U+00E4`) when pressed by itself and
 produces `Ä` (`U+00C4`) when `Shift` is active. 
 
-Code points must be in the range of `0x00` to `0x10ffff` and can omit any leading zeros. That is,
-`&uc 0xe4 0` and `&uc 0x00e4` are exactly equivalent. Either binding will by default omit any
-leading zeros when sending the code point to the OS. For all input systems that I have personally
-tested, this is more reliable then padding to a fixed length with leading zeros. In case this causes problems, one can force padding to a minimum length using the `minimum-length` property. E.g.,
+Code points must be in the range of `0x00` to `0x10ffff`. Leading zeros can be omitted without loss;
+i.e., `&uc 0xe4 0` is equivalent to `&uc 0x00e4 0`.
+
+Regardless of whether leading zeros are omitted _on the keymap_, they are by default omitted when
+sending the code point to the OS. This tends to be more reliable for input systems that I have
+personally tested. Should this cause issues, one can force padding to a minimum length using the
+`minimum-length` property. E.g., 
+
 ```c
-&uc {
+&uc { 
   minimum-length = <4>;  // Replace with desired minimum length.
 };
 ```
 
-Please let me know if certain input systems require setting this larger than zero.
+Please let me know if certain input systems require strictly positive padding.
 
-This module includes a collection of convenience macros to simplify the inclusion of common code
-points. For instance, instead of using `&uc 0xe4 0xc4` to get `ä/Ä` one can equivalently use `&uc
-UC_DE_AE`. All currently available macros can be seen [here](include/zmk-unicode/keys). 
+**Convenience macros.** This module includes a collection of convenience macros to simplify the
+inclusion of common code points. For instance, instead of using `&uc 0xe4 0xc4` to get `ä/Ä` one can
+equivalently use `&uc UC_DE_AE`. All currently available macros can be seen
+[here](include/zmk-unicode/keys). 
 
 ### 3. Selecting an input system on the keyboard
 
@@ -300,15 +305,29 @@ you specify a valid code point string.
     default_layer {
       bindings = <
         /* Add some code points */
-        &uc 0xe4 0xc4       /* ä/Ä */
-        &uc 0xf6 0xd6       /* ü/Ü */
-        &uc 0xfc 0xdc       /* ö/Ö */
-        &uc 0x1f596 0x2764  /* 🖖/❤ */
+        &uc 0xe4 0xc4      /* ä/Ä */
+        &uc 0xf6 0xd6      /* ü/Ü */
+        &uc 0xfc 0xdc      /* ö/Ö */
+        &uc 0x1f596 0      /* 🖖 */
+        /* Add some more code points using convenience macros */
+        &uc UC_FR_AE       /* æ/Æ */
+        &uc UC_FR_A_GRAVE  /* à/À */
         /* Add bindings to switch between input modes */
-        &uc UC_SET_WIN_COMPOSE  &uc UC_SET_LINUX  &uc UC_SET_LINUX_ALT  &uc UC_SET_MACOS
+        &uc UC_SET_MACOS
+        &uc UC_SET_LINUX
+        &uc UC_SET_LINUX_ALT
+        &uc UC_SET_WIN_COMPOSE
       >;
     };
   };
 };
-
 ```
+
+## Contributing
+
+Contributions in any form are very welcome!
+
+New _convenience macros_ should be prefixed by `UC_<NS>` where `<NS>` is a unique namespace
+reflecting the use. In particular, all language headers should use the corresponding [two-letter ISO
+language code](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) as namespace. Other
+headers are encouraged to use at least three-letter namespace to avoid conflicts.
