@@ -3,6 +3,7 @@
 This module adds a `unicode` behavior to ZMK. Some highlights:
 
 - Add any code point to the keymap using `&uc` without prior definition
+- Convenience macros for even easier input of commonly used code points
 - Configurable input systems that can be switched while keyboard is in use
 
 ## Usage
@@ -31,13 +32,13 @@ manifest:
 
 ## Configuration
 
-For unicode input to work one must prepare both the _keyboard_ **and** the
+For Unicode input to work one must prepare both the _keyboard_ **and** the
 _operating system_. Please read through the entire section to understand what is
 required.
 
 ### 1. Initialization
 
-To initialize the unicode subsystem, include the `unicode.dtsi` header near the
+To initialize the Unicode module, include the `unicode.dtsi` header near the
 top of the keymap:
 
 ```c
@@ -46,74 +47,44 @@ top of the keymap:
 
 ### 2. Adding Unicode code points to the keymap
 
-**Manual input.** Unicode code points can be added to the keymap using `&uc CP1 CP2`, where `CP1`
-and `CP2` are hexadecimal code points. The former is produced if the key is pressed by itself, the
-latter is produced if the key is pressed while `Shift` is active. Adding `&uc CP 0` produces `CP` in
-either case (the same can be achieved with `&uc CP CP`).
+**Manual input.** Unicode code points are added to the keymap using `&uc CP1 CP2`, where `CP1` and
+`CP2` are hexadecimal code points. The former is produced if the key is pressed by itself, the
+latter is produced if the key is pressed while <kbd>Shift</kbd> is active. To yield a code point
+`CP` independently of <kbd>Shift</kbd>, one can use the shortcut `&uc CP 0` (or `&uc CP CP`).
 
-For instance `&uc 0xe4 0xc4` produces `ä` (`U+00E4`) when pressed by itself and
-produces `Ä` (`U+00C4`) when `Shift` is active. 
+For instance `&uc 0xE4 0xC4` yields `ä` (`U+00E4`) when pressed by itself and yields `Ä` (`U+00C4`)
+when `Shift` is active. By contrast, `&uc 0xe4 0` always yields `ä`.
 
-Code points must be in the range of `0x00` to `0x10ffff`. Leading zeros can be omitted without loss;
-i.e., `&uc 0xe4 0` is equivalent to `&uc 0x00e4 0`.
+Code points must be in the range of `0x00` to `0x10FFFF`. Leading zeros can be omitted without loss;
+i.e., `&uc 0xE4 0` is equivalent to `&uc 0x00E4 0`.
 
-Regardless of whether leading zeros are omitted _on the keymap_, they are by default omitted when
-sending the code point to the OS. This tends to be more reliable for input systems that I have
-personally tested. Should this cause issues, one can force padding to a minimum length using the
-`minimum-length` property. E.g., 
+**Padding.** Regardless of whether leading zeros are omitted _on the keymap_, they are omitted, by
+default, when the code point is send to the OS. This tends to be more reliable for input systems
+that I have personally tested. Should this cause issues, one can force padding to a minimum length
+using the `minimum-length` property. E.g., 
 
 ```c
 &uc { 
-  minimum-length = <4>;  // Replace with desired minimum length.
+  minimum-length = <4>;
 };
 ```
 
 Please let me know if certain input systems require strictly positive padding.
 
 **Convenience macros.** This module includes a collection of convenience macros to simplify the
-inclusion of common code points. For instance, instead of using `&uc 0xe4 0xc4` to get `ä/Ä` one can
+inclusion of common code points. For instance, instead of using `&uc 0xE4 0xC4` to get `ä/Ä` one can
 equivalently use `&uc UC_DE_AE`. All currently available macros can be seen
 [here](include/zmk-unicode/keys). 
 
 ### 3. Selecting an input system on the keyboard
 
 There are six configurable input systems (see below for descriptions and further customization
-options).
+options). Each input system is associated with a `Default-mode` label used to configure the initial
+system when the keyboard starts up, and a `Set-mode` label used to switch inputs while the
+keyboard is in use.
 
-The _initial_ input system (selected when the keyboard starts up) is defined by adding the
-following outside the root node acto the keymap. For instance:
-```c
-&uc {
-  default-mode = <UC_MODE_LINUX>;  // Replace with desired default mode.
-};
-```
 
-To _switch_ the input system while the keyboard is in use, add `&uc
-MODE` bindings to your keymap. For instance, the following two bindings
-can be used to toggle the input mode between Windows and Linux
-```c
-/ {
-  keymap {
-    compatible = "zmk,keymap";
-    default_layer {
-      bindings = <
-        &uc UC_SET_WIN_COMPOSE &uc UC_SET_LINUX
-      >;
-    };
-  };
-};
-```
-
-### 4. Preparing the OS and further configuration
-
-For Unicode input to work, one must (i) select the right input system on the keyboard, and (ii)
-(in most cases) must prepare the OS.
-
-There are six configurable input systems. Use the `Identifier` label when configuring the
-`default-mode` option, and use the `Selection-Macro` label as argument to `&uc` for switching
-the input system while the keyboard is in use.
-
-|  | Identifier | Selection-Macro |
+|  | Default-mode | Set-mode |
 |---|---|---|
 | macOS | `UC_MODE_MACOS` | `UC_SET_MACOS` |
 | Linux | `UC_MODE_LINUX` | `UC_SET_LINUX` |
@@ -123,8 +94,24 @@ the input system while the keyboard is in use.
 | Emacs  | `UC_MODE_EMACS` | `UC_SET_EMACS` |
 
 
-Continue reading to learn about the differences between these systems, additional configuration
-options, and how to prepare your OS.
+**Initial system.** When the keyboard starts up, it initially selects the system defined by
+the `default-mode` property of the `uc` behavior. To set it, add the following to your keymap
+outside its root node.
+
+```c
+&uc {
+  default-mode = <UC_MODE_LINUX>;  // Replace with desired input system.
+};
+```
+
+**Switching while in use.** To switch the input system while the keyboard is in use, add `&uc
+UC_SET_MODE` bindings to your keymap. For instance, `&uc UC_SET_LINUX` will switch the input system
+to Linux.
+
+### 4. Preparing the OS and further configuration
+
+Most input systems require some preparation of the OS. Continue reading to learn about the
+differences between these systems, additional configuration options, and how to prepare your OS.
 
 <details><summary>1. macOS (<code>UC_MODE_MACOS</code>)</summary>
 
@@ -294,7 +281,7 @@ you specify a valid code point string.
 // Optional: Overwrite default behavior properties
 &uc {
   default-mode = <UC_MODE_LINUX>;  // Default to Linux input system
-  minimum-length = <4>;            // Pad input to at least 4 digits
+  minimum-length = <0>;            // Set to desired minimum input length
   linux-key = <LC(LS(U))>;         // Overwrite Linux compose key
   win-compose-key = <RALT>;        // Overwrite WinCompose compose key
 };
@@ -305,18 +292,13 @@ you specify a valid code point string.
     default_layer {
       bindings = <
         /* Add some code points */
-        &uc 0xe4 0xc4      /* ä/Ä */
-        &uc 0xf6 0xd6      /* ü/Ü */
-        &uc 0xfc 0xdc      /* ö/Ö */
-        &uc 0x1f596 0      /* 🖖 */
-        /* Add some more code points using convenience macros */
-        &uc UC_FR_AE       /* æ/Æ */
-        &uc UC_FR_A_GRAVE  /* à/À */
+        &uc UC_DE_AE               /* ä/Ä - same as &uc 0xE4 0xC4 */
+        &uc UC_DE_OE               /* ö/Ö - same as &uc 0xFC 0xDC */
+        &uc UC_DE_UE               /* ü/Ü - same as &uc 0xF6 0xD6 */
+        &uc 0x1F596 0              /* 🖖  */
         /* Add bindings to switch between input modes */
         &uc UC_SET_MACOS
         &uc UC_SET_LINUX
-        &uc UC_SET_LINUX_ALT
-        &uc UC_SET_WIN_COMPOSE
       >;
     };
   };
