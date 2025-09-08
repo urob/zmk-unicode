@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
     parser.add_argument("file", help="path to zmk-helper script")
     parser.add_argument(
-        "-p", "--prefix", default="", help="prefix for generated macros"
+        "-p", "--prefix", default="UC_", help="prefix for generated macros"
     )
     args = parser.parse_args()
 
