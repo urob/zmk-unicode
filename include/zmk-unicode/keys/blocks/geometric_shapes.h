@@ -1,0 +1,106 @@
+/*
+ * Unicode keys for U+25A0 .. U+25FF
+ *
+ * This file was generated from Unicode 16.0.0.
+ *
+ * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
+ */
+
+#pragma once
+
+#define UC_BLACK_SQUARE                                   0x25A0  0  // ■
+#define UC_WHITE_SQUARE                                   0x25A1  0  // □
+#define UC_WHITE_SQUARE_WITH_ROUNDED_CORNERS              0x25A2  0  // ▢
+#define UC_WHITE_SQUARE_CONTAINING_BLACK_SMALL_SQUARE     0x25A3  0  // ▣
+#define UC_SQUARE_WITH_HORIZONTAL_FILL                    0x25A4  0  // ▤
+#define UC_SQUARE_WITH_VERTICAL_FILL                      0x25A5  0  // ▥
+#define UC_SQUARE_WITH_ORTHOGONAL_CROSSHATCH_FILL         0x25A6  0  // ▦
+#define UC_SQUARE_WITH_UPPER_LEFT_TO_LOWER_RIGHT_FILL     0x25A7  0  // ▧
+#define UC_SQUARE_WITH_UPPER_RIGHT_TO_LOWER_LEFT_FILL     0x25A8  0  // ▨
+#define UC_SQUARE_WITH_DIAGONAL_CROSSHATCH_FILL           0x25A9  0  // ▩
+#define UC_BLACK_SMALL_SQUARE                             0x25AA  0  // ▪
+#define UC_WHITE_SMALL_SQUARE                             0x25AB  0  // ▫
+#define UC_BLACK_RECTANGLE                                0x25AC  0  // ▬
+#define UC_WHITE_RECTANGLE                                0x25AD  0  // ▭
+#define UC_BLACK_VERTICAL_RECTANGLE                       0x25AE  0  // ▮
+#define UC_WHITE_VERTICAL_RECTANGLE                       0x25AF  0  // ▯
+#define UC_BLACK_PARALLELOGRAM                            0x25B0  0  // ▰
+#define UC_WHITE_PARALLELOGRAM                            0x25B1  0  // ▱
+#define UC_BLACK_UP_POINTING_TRIANGLE                     0x25B2  0  // ▲
+#define UC_WHITE_UP_POINTING_TRIANGLE                     0x25B3  0  // △
+#define UC_BLACK_UP_POINTING_SMALL_TRIANGLE               0x25B4  0  // ▴
+#define UC_WHITE_UP_POINTING_SMALL_TRIANGLE               0x25B5  0  // ▵
+#define UC_BLACK_RIGHT_POINTING_TRIANGLE                  0x25B6  0  // ▶
+#define UC_WHITE_RIGHT_POINTING_TRIANGLE                  0x25B7  0  // ▷
+#define UC_BLACK_RIGHT_POINTING_SMALL_TRIANGLE            0x25B8  0  // ▸
+#define UC_WHITE_RIGHT_POINTING_SMALL_TRIANGLE            0x25B9  0  // ▹
+#define UC_BLACK_RIGHT_POINTING_POINTER                   0x25BA  0  // ►
+#define UC_WHITE_RIGHT_POINTING_POINTER                   0x25BB  0  // ▻
+#define UC_BLACK_DOWN_POINTING_TRIANGLE                   0x25BC  0  // ▼
+#define UC_WHITE_DOWN_POINTING_TRIANGLE                   0x25BD  0  // ▽
+#define UC_BLACK_DOWN_POINTING_SMALL_TRIANGLE             0x25BE  0  // ▾
+#define UC_WHITE_DOWN_POINTING_SMALL_TRIANGLE             0x25BF  0  // ▿
+#define UC_BLACK_LEFT_POINTING_TRIANGLE                   0x25C0  0  // ◀
+#define UC_WHITE_LEFT_POINTING_TRIANGLE                   0x25C1  0  // ◁
+#define UC_BLACK_LEFT_POINTING_SMALL_TRIANGLE             0x25C2  0  // ◂
+#define UC_WHITE_LEFT_POINTING_SMALL_TRIANGLE             0x25C3  0  // ◃
+#define UC_BLACK_LEFT_POINTING_POINTER                    0x25C4  0  // ◄
+#define UC_WHITE_LEFT_POINTING_POINTER                    0x25C5  0  // ◅
+#define UC_BLACK_DIAMOND                                  0x25C6  0  // ◆
+#define UC_WHITE_DIAMOND                                  0x25C7  0  // ◇
+#define UC_WHITE_DIAMOND_CONTAINING_BLACK_SMALL_DIAMOND   0x25C8  0  // ◈
+#define UC_FISHEYE                                        0x25C9  0  // ◉
+#define UC_LOZENGE                                        0x25CA  0  // ◊
+#define UC_WHITE_CIRCLE                                   0x25CB  0  // ○
+#define UC_DOTTED_CIRCLE                                  0x25CC  0  // ◌
+#define UC_CIRCLE_WITH_VERTICAL_FILL                      0x25CD  0  // ◍
+#define UC_BULLSEYE                                       0x25CE  0  // ◎
+#define UC_BLACK_CIRCLE                                   0x25CF  0  // ●
+#define UC_CIRCLE_WITH_LEFT_HALF_BLACK                    0x25D0  0  // ◐
+#define UC_CIRCLE_WITH_RIGHT_HALF_BLACK                   0x25D1  0  // ◑
+#define UC_CIRCLE_WITH_LOWER_HALF_BLACK                   0x25D2  0  // ◒
+#define UC_CIRCLE_WITH_UPPER_HALF_BLACK                   0x25D3  0  // ◓
+#define UC_CIRCLE_WITH_UPPER_RIGHT_QUADRANT_BLACK         0x25D4  0  // ◔
+#define UC_CIRCLE_WITH_ALL_BUT_UPPER_LEFT_QUADRANT_BLACK  0x25D5  0  // ◕
+#define UC_LEFT_HALF_BLACK_CIRCLE                         0x25D6  0  // ◖
+#define UC_RIGHT_HALF_BLACK_CIRCLE                        0x25D7  0  // ◗
+#define UC_INVERSE_BULLET                                 0x25D8  0  // ◘
+#define UC_INVERSE_WHITE_CIRCLE                           0x25D9  0  // ◙
+#define UC_UPPER_HALF_INVERSE_WHITE_CIRCLE                0x25DA  0  // ◚
+#define UC_LOWER_HALF_INVERSE_WHITE_CIRCLE                0x25DB  0  // ◛
+#define UC_UPPER_LEFT_QUADRANT_CIRCULAR_ARC               0x25DC  0  // ◜
+#define UC_UPPER_RIGHT_QUADRANT_CIRCULAR_ARC              0x25DD  0  // ◝
+#define UC_LOWER_RIGHT_QUADRANT_CIRCULAR_ARC              0x25DE  0  // ◞
+#define UC_LOWER_LEFT_QUADRANT_CIRCULAR_ARC               0x25DF  0  // ◟
+#define UC_UPPER_HALF_CIRCLE                              0x25E0  0  // ◠
+#define UC_LOWER_HALF_CIRCLE                              0x25E1  0  // ◡
+#define UC_BLACK_LOWER_RIGHT_TRIANGLE                     0x25E2  0  // ◢
+#define UC_BLACK_LOWER_LEFT_TRIANGLE                      0x25E3  0  // ◣
+#define UC_BLACK_UPPER_LEFT_TRIANGLE                      0x25E4  0  // ◤
+#define UC_BLACK_UPPER_RIGHT_TRIANGLE                     0x25E5  0  // ◥
+#define UC_WHITE_BULLET                                   0x25E6  0  // ◦
+#define UC_SQUARE_WITH_LEFT_HALF_BLACK                    0x25E7  0  // ◧
+#define UC_SQUARE_WITH_RIGHT_HALF_BLACK                   0x25E8  0  // ◨
+#define UC_SQUARE_WITH_UPPER_LEFT_DIAGONAL_HALF_BLACK     0x25E9  0  // ◩
+#define UC_SQUARE_WITH_LOWER_RIGHT_DIAGONAL_HALF_BLACK    0x25EA  0  // ◪
+#define UC_WHITE_SQUARE_WITH_VERTICAL_BISECTING_LINE      0x25EB  0  // ◫
+#define UC_WHITE_UP_POINTING_TRIANGLE_WITH_DOT            0x25EC  0  // ◬
+#define UC_UP_POINTING_TRIANGLE_WITH_LEFT_HALF_BLACK      0x25ED  0  // ◭
+#define UC_UP_POINTING_TRIANGLE_WITH_RIGHT_HALF_BLACK     0x25EE  0  // ◮
+#define UC_LARGE_CIRCLE                                   0x25EF  0  // ◯
+#define UC_WHITE_SQUARE_WITH_UPPER_LEFT_QUADRANT          0x25F0  0  // ◰
+#define UC_WHITE_SQUARE_WITH_LOWER_LEFT_QUADRANT          0x25F1  0  // ◱
+#define UC_WHITE_SQUARE_WITH_LOWER_RIGHT_QUADRANT         0x25F2  0  // ◲
+#define UC_WHITE_SQUARE_WITH_UPPER_RIGHT_QUADRANT         0x25F3  0  // ◳
+#define UC_WHITE_CIRCLE_WITH_UPPER_LEFT_QUADRANT          0x25F4  0  // ◴
+#define UC_WHITE_CIRCLE_WITH_LOWER_LEFT_QUADRANT          0x25F5  0  // ◵
+#define UC_WHITE_CIRCLE_WITH_LOWER_RIGHT_QUADRANT         0x25F6  0  // ◶
+#define UC_WHITE_CIRCLE_WITH_UPPER_RIGHT_QUADRANT         0x25F7  0  // ◷
+#define UC_UPPER_LEFT_TRIANGLE                            0x25F8  0  // ◸
+#define UC_UPPER_RIGHT_TRIANGLE                           0x25F9  0  // ◹
+#define UC_LOWER_LEFT_TRIANGLE                            0x25FA  0  // ◺
+#define UC_WHITE_MEDIUM_SQUARE                            0x25FB  0  // ◻
+#define UC_BLACK_MEDIUM_SQUARE                            0x25FC  0  // ◼
+#define UC_WHITE_MEDIUM_SMALL_SQUARE                      0x25FD  0  // ◽
+#define UC_BLACK_MEDIUM_SMALL_SQUARE                      0x25FE  0  // ◾
+#define UC_LOWER_RIGHT_TRIANGLE                           0x25FF  0  // ◿

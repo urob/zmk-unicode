@@ -1,0 +1,100 @@
+/*
+ * Unicode keys for U+109A0 .. U+109FF
+ *
+ * This file was generated from Unicode 16.0.0.
+ *
+ * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
+ */
+
+#pragma once
+
+#define UC_MEROITIC_CURSIVE_LETTER_A                       0x109A0  0  // 𐦠
+#define UC_MEROITIC_CURSIVE_LETTER_E                       0x109A1  0  // 𐦡
+#define UC_MEROITIC_CURSIVE_LETTER_I                       0x109A2  0  // 𐦢
+#define UC_MEROITIC_CURSIVE_LETTER_O                       0x109A3  0  // 𐦣
+#define UC_MEROITIC_CURSIVE_LETTER_YA                      0x109A4  0  // 𐦤
+#define UC_MEROITIC_CURSIVE_LETTER_WA                      0x109A5  0  // 𐦥
+#define UC_MEROITIC_CURSIVE_LETTER_BA                      0x109A6  0  // 𐦦
+#define UC_MEROITIC_CURSIVE_LETTER_PA                      0x109A7  0  // 𐦧
+#define UC_MEROITIC_CURSIVE_LETTER_MA                      0x109A8  0  // 𐦨
+#define UC_MEROITIC_CURSIVE_LETTER_NA                      0x109A9  0  // 𐦩
+#define UC_MEROITIC_CURSIVE_LETTER_NE                      0x109AA  0  // 𐦪
+#define UC_MEROITIC_CURSIVE_LETTER_RA                      0x109AB  0  // 𐦫
+#define UC_MEROITIC_CURSIVE_LETTER_LA                      0x109AC  0  // 𐦬
+#define UC_MEROITIC_CURSIVE_LETTER_KHA                     0x109AD  0  // 𐦭
+#define UC_MEROITIC_CURSIVE_LETTER_HHA                     0x109AE  0  // 𐦮
+#define UC_MEROITIC_CURSIVE_LETTER_SA                      0x109AF  0  // 𐦯
+#define UC_MEROITIC_CURSIVE_LETTER_ARCHAIC_SA              0x109B0  0  // 𐦰
+#define UC_MEROITIC_CURSIVE_LETTER_SE                      0x109B1  0  // 𐦱
+#define UC_MEROITIC_CURSIVE_LETTER_KA                      0x109B2  0  // 𐦲
+#define UC_MEROITIC_CURSIVE_LETTER_QA                      0x109B3  0  // 𐦳
+#define UC_MEROITIC_CURSIVE_LETTER_TA                      0x109B4  0  // 𐦴
+#define UC_MEROITIC_CURSIVE_LETTER_TE                      0x109B5  0  // 𐦵
+#define UC_MEROITIC_CURSIVE_LETTER_TO                      0x109B6  0  // 𐦶
+#define UC_MEROITIC_CURSIVE_LETTER_DA                      0x109B7  0  // 𐦷
+#define UC_MEROITIC_CURSIVE_FRACTION_ELEVEN_TWELFTHS       0x109BC  0  // 𐦼
+#define UC_MEROITIC_CURSIVE_FRACTION_ONE_HALF              0x109BD  0  // 𐦽
+#define UC_MEROITIC_CURSIVE_LOGOGRAM_RMT                   0x109BE  0  // 𐦾
+#define UC_MEROITIC_CURSIVE_LOGOGRAM_IMN                   0x109BF  0  // 𐦿
+#define UC_MEROITIC_CURSIVE_NUMBER_ONE                     0x109C0  0  // 𐧀
+#define UC_MEROITIC_CURSIVE_NUMBER_TWO                     0x109C1  0  // 𐧁
+#define UC_MEROITIC_CURSIVE_NUMBER_THREE                   0x109C2  0  // 𐧂
+#define UC_MEROITIC_CURSIVE_NUMBER_FOUR                    0x109C3  0  // 𐧃
+#define UC_MEROITIC_CURSIVE_NUMBER_FIVE                    0x109C4  0  // 𐧄
+#define UC_MEROITIC_CURSIVE_NUMBER_SIX                     0x109C5  0  // 𐧅
+#define UC_MEROITIC_CURSIVE_NUMBER_SEVEN                   0x109C6  0  // 𐧆
+#define UC_MEROITIC_CURSIVE_NUMBER_EIGHT                   0x109C7  0  // 𐧇
+#define UC_MEROITIC_CURSIVE_NUMBER_NINE                    0x109C8  0  // 𐧈
+#define UC_MEROITIC_CURSIVE_NUMBER_TEN                     0x109C9  0  // 𐧉
+#define UC_MEROITIC_CURSIVE_NUMBER_TWENTY                  0x109CA  0  // 𐧊
+#define UC_MEROITIC_CURSIVE_NUMBER_THIRTY                  0x109CB  0  // 𐧋
+#define UC_MEROITIC_CURSIVE_NUMBER_FORTY                   0x109CC  0  // 𐧌
+#define UC_MEROITIC_CURSIVE_NUMBER_FIFTY                   0x109CD  0  // 𐧍
+#define UC_MEROITIC_CURSIVE_NUMBER_SIXTY                   0x109CE  0  // 𐧎
+#define UC_MEROITIC_CURSIVE_NUMBER_SEVENTY                 0x109CF  0  // 𐧏
+#define UC_MEROITIC_CURSIVE_NUMBER_ONE_HUNDRED             0x109D2  0  // 𐧒
+#define UC_MEROITIC_CURSIVE_NUMBER_TWO_HUNDRED             0x109D3  0  // 𐧓
+#define UC_MEROITIC_CURSIVE_NUMBER_THREE_HUNDRED           0x109D4  0  // 𐧔
+#define UC_MEROITIC_CURSIVE_NUMBER_FOUR_HUNDRED            0x109D5  0  // 𐧕
+#define UC_MEROITIC_CURSIVE_NUMBER_FIVE_HUNDRED            0x109D6  0  // 𐧖
+#define UC_MEROITIC_CURSIVE_NUMBER_SIX_HUNDRED             0x109D7  0  // 𐧗
+#define UC_MEROITIC_CURSIVE_NUMBER_SEVEN_HUNDRED           0x109D8  0  // 𐧘
+#define UC_MEROITIC_CURSIVE_NUMBER_EIGHT_HUNDRED           0x109D9  0  // 𐧙
+#define UC_MEROITIC_CURSIVE_NUMBER_NINE_HUNDRED            0x109DA  0  // 𐧚
+#define UC_MEROITIC_CURSIVE_NUMBER_ONE_THOUSAND            0x109DB  0  // 𐧛
+#define UC_MEROITIC_CURSIVE_NUMBER_TWO_THOUSAND            0x109DC  0  // 𐧜
+#define UC_MEROITIC_CURSIVE_NUMBER_THREE_THOUSAND          0x109DD  0  // 𐧝
+#define UC_MEROITIC_CURSIVE_NUMBER_FOUR_THOUSAND           0x109DE  0  // 𐧞
+#define UC_MEROITIC_CURSIVE_NUMBER_FIVE_THOUSAND           0x109DF  0  // 𐧟
+#define UC_MEROITIC_CURSIVE_NUMBER_SIX_THOUSAND            0x109E0  0  // 𐧠
+#define UC_MEROITIC_CURSIVE_NUMBER_SEVEN_THOUSAND          0x109E1  0  // 𐧡
+#define UC_MEROITIC_CURSIVE_NUMBER_EIGHT_THOUSAND          0x109E2  0  // 𐧢
+#define UC_MEROITIC_CURSIVE_NUMBER_NINE_THOUSAND           0x109E3  0  // 𐧣
+#define UC_MEROITIC_CURSIVE_NUMBER_TEN_THOUSAND            0x109E4  0  // 𐧤
+#define UC_MEROITIC_CURSIVE_NUMBER_TWENTY_THOUSAND         0x109E5  0  // 𐧥
+#define UC_MEROITIC_CURSIVE_NUMBER_THIRTY_THOUSAND         0x109E6  0  // 𐧦
+#define UC_MEROITIC_CURSIVE_NUMBER_FORTY_THOUSAND          0x109E7  0  // 𐧧
+#define UC_MEROITIC_CURSIVE_NUMBER_FIFTY_THOUSAND          0x109E8  0  // 𐧨
+#define UC_MEROITIC_CURSIVE_NUMBER_SIXTY_THOUSAND          0x109E9  0  // 𐧩
+#define UC_MEROITIC_CURSIVE_NUMBER_SEVENTY_THOUSAND        0x109EA  0  // 𐧪
+#define UC_MEROITIC_CURSIVE_NUMBER_EIGHTY_THOUSAND         0x109EB  0  // 𐧫
+#define UC_MEROITIC_CURSIVE_NUMBER_NINETY_THOUSAND         0x109EC  0  // 𐧬
+#define UC_MEROITIC_CURSIVE_NUMBER_ONE_HUNDRED_THOUSAND    0x109ED  0  // 𐧭
+#define UC_MEROITIC_CURSIVE_NUMBER_TWO_HUNDRED_THOUSAND    0x109EE  0  // 𐧮
+#define UC_MEROITIC_CURSIVE_NUMBER_THREE_HUNDRED_THOUSAND  0x109EF  0  // 𐧯
+#define UC_MEROITIC_CURSIVE_NUMBER_FOUR_HUNDRED_THOUSAND   0x109F0  0  // 𐧰
+#define UC_MEROITIC_CURSIVE_NUMBER_FIVE_HUNDRED_THOUSAND   0x109F1  0  // 𐧱
+#define UC_MEROITIC_CURSIVE_NUMBER_SIX_HUNDRED_THOUSAND    0x109F2  0  // 𐧲
+#define UC_MEROITIC_CURSIVE_NUMBER_SEVEN_HUNDRED_THOUSAND  0x109F3  0  // 𐧳
+#define UC_MEROITIC_CURSIVE_NUMBER_EIGHT_HUNDRED_THOUSAND  0x109F4  0  // 𐧴
+#define UC_MEROITIC_CURSIVE_NUMBER_NINE_HUNDRED_THOUSAND   0x109F5  0  // 𐧵
+#define UC_MEROITIC_CURSIVE_FRACTION_ONE_TWELFTH           0x109F6  0  // 𐧶
+#define UC_MEROITIC_CURSIVE_FRACTION_TWO_TWELFTHS          0x109F7  0  // 𐧷
+#define UC_MEROITIC_CURSIVE_FRACTION_THREE_TWELFTHS        0x109F8  0  // 𐧸
+#define UC_MEROITIC_CURSIVE_FRACTION_FOUR_TWELFTHS         0x109F9  0  // 𐧹
+#define UC_MEROITIC_CURSIVE_FRACTION_FIVE_TWELFTHS         0x109FA  0  // 𐧺
+#define UC_MEROITIC_CURSIVE_FRACTION_SIX_TWELFTHS          0x109FB  0  // 𐧻
+#define UC_MEROITIC_CURSIVE_FRACTION_SEVEN_TWELFTHS        0x109FC  0  // 𐧼
+#define UC_MEROITIC_CURSIVE_FRACTION_EIGHT_TWELFTHS        0x109FD  0  // 𐧽
+#define UC_MEROITIC_CURSIVE_FRACTION_NINE_TWELFTHS         0x109FE  0  // 𐧾
+#define UC_MEROITIC_CURSIVE_FRACTION_TEN_TWELFTHS          0x109FF  0  // 𐧿

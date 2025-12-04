@@ -1,0 +1,109 @@
+/*
+ * Unicode keys for U+12F90 .. U+12FFF
+ *
+ * This file was generated from Unicode 16.0.0.
+ *
+ * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
+ */
+
+#pragma once
+
+#define UC_CYPRO_MINOAN_SIGN_CM001   0x12F90  0  // 𒾐
+#define UC_CYPRO_MINOAN_SIGN_CM002   0x12F91  0  // 𒾑
+#define UC_CYPRO_MINOAN_SIGN_CM004   0x12F92  0  // 𒾒
+#define UC_CYPRO_MINOAN_SIGN_CM005   0x12F93  0  // 𒾓
+#define UC_CYPRO_MINOAN_SIGN_CM006   0x12F94  0  // 𒾔
+#define UC_CYPRO_MINOAN_SIGN_CM007   0x12F95  0  // 𒾕
+#define UC_CYPRO_MINOAN_SIGN_CM008   0x12F96  0  // 𒾖
+#define UC_CYPRO_MINOAN_SIGN_CM009   0x12F97  0  // 𒾗
+#define UC_CYPRO_MINOAN_SIGN_CM010   0x12F98  0  // 𒾘
+#define UC_CYPRO_MINOAN_SIGN_CM011   0x12F99  0  // 𒾙
+#define UC_CYPRO_MINOAN_SIGN_CM012   0x12F9A  0  // 𒾚
+#define UC_CYPRO_MINOAN_SIGN_CM012B  0x12F9B  0  // 𒾛
+#define UC_CYPRO_MINOAN_SIGN_CM013   0x12F9C  0  // 𒾜
+#define UC_CYPRO_MINOAN_SIGN_CM015   0x12F9D  0  // 𒾝
+#define UC_CYPRO_MINOAN_SIGN_CM017   0x12F9E  0  // 𒾞
+#define UC_CYPRO_MINOAN_SIGN_CM019   0x12F9F  0  // 𒾟
+#define UC_CYPRO_MINOAN_SIGN_CM021   0x12FA0  0  // 𒾠
+#define UC_CYPRO_MINOAN_SIGN_CM023   0x12FA1  0  // 𒾡
+#define UC_CYPRO_MINOAN_SIGN_CM024   0x12FA2  0  // 𒾢
+#define UC_CYPRO_MINOAN_SIGN_CM025   0x12FA3  0  // 𒾣
+#define UC_CYPRO_MINOAN_SIGN_CM026   0x12FA4  0  // 𒾤
+#define UC_CYPRO_MINOAN_SIGN_CM027   0x12FA5  0  // 𒾥
+#define UC_CYPRO_MINOAN_SIGN_CM028   0x12FA6  0  // 𒾦
+#define UC_CYPRO_MINOAN_SIGN_CM029   0x12FA7  0  // 𒾧
+#define UC_CYPRO_MINOAN_SIGN_CM030   0x12FA8  0  // 𒾨
+#define UC_CYPRO_MINOAN_SIGN_CM033   0x12FA9  0  // 𒾩
+#define UC_CYPRO_MINOAN_SIGN_CM034   0x12FAA  0  // 𒾪
+#define UC_CYPRO_MINOAN_SIGN_CM035   0x12FAB  0  // 𒾫
+#define UC_CYPRO_MINOAN_SIGN_CM036   0x12FAC  0  // 𒾬
+#define UC_CYPRO_MINOAN_SIGN_CM037   0x12FAD  0  // 𒾭
+#define UC_CYPRO_MINOAN_SIGN_CM038   0x12FAE  0  // 𒾮
+#define UC_CYPRO_MINOAN_SIGN_CM039   0x12FAF  0  // 𒾯
+#define UC_CYPRO_MINOAN_SIGN_CM040   0x12FB0  0  // 𒾰
+#define UC_CYPRO_MINOAN_SIGN_CM041   0x12FB1  0  // 𒾱
+#define UC_CYPRO_MINOAN_SIGN_CM044   0x12FB2  0  // 𒾲
+#define UC_CYPRO_MINOAN_SIGN_CM046   0x12FB3  0  // 𒾳
+#define UC_CYPRO_MINOAN_SIGN_CM047   0x12FB4  0  // 𒾴
+#define UC_CYPRO_MINOAN_SIGN_CM049   0x12FB5  0  // 𒾵
+#define UC_CYPRO_MINOAN_SIGN_CM050   0x12FB6  0  // 𒾶
+#define UC_CYPRO_MINOAN_SIGN_CM051   0x12FB7  0  // 𒾷
+#define UC_CYPRO_MINOAN_SIGN_CM052   0x12FB8  0  // 𒾸
+#define UC_CYPRO_MINOAN_SIGN_CM053   0x12FB9  0  // 𒾹
+#define UC_CYPRO_MINOAN_SIGN_CM054   0x12FBA  0  // 𒾺
+#define UC_CYPRO_MINOAN_SIGN_CM055   0x12FBB  0  // 𒾻
+#define UC_CYPRO_MINOAN_SIGN_CM056   0x12FBC  0  // 𒾼
+#define UC_CYPRO_MINOAN_SIGN_CM058   0x12FBD  0  // 𒾽
+#define UC_CYPRO_MINOAN_SIGN_CM059   0x12FBE  0  // 𒾾
+#define UC_CYPRO_MINOAN_SIGN_CM060   0x12FBF  0  // 𒾿
+#define UC_CYPRO_MINOAN_SIGN_CM061   0x12FC0  0  // 𒿀
+#define UC_CYPRO_MINOAN_SIGN_CM062   0x12FC1  0  // 𒿁
+#define UC_CYPRO_MINOAN_SIGN_CM063   0x12FC2  0  // 𒿂
+#define UC_CYPRO_MINOAN_SIGN_CM064   0x12FC3  0  // 𒿃
+#define UC_CYPRO_MINOAN_SIGN_CM066   0x12FC4  0  // 𒿄
+#define UC_CYPRO_MINOAN_SIGN_CM067   0x12FC5  0  // 𒿅
+#define UC_CYPRO_MINOAN_SIGN_CM068   0x12FC6  0  // 𒿆
+#define UC_CYPRO_MINOAN_SIGN_CM069   0x12FC7  0  // 𒿇
+#define UC_CYPRO_MINOAN_SIGN_CM070   0x12FC8  0  // 𒿈
+#define UC_CYPRO_MINOAN_SIGN_CM071   0x12FC9  0  // 𒿉
+#define UC_CYPRO_MINOAN_SIGN_CM072   0x12FCA  0  // 𒿊
+#define UC_CYPRO_MINOAN_SIGN_CM073   0x12FCB  0  // 𒿋
+#define UC_CYPRO_MINOAN_SIGN_CM074   0x12FCC  0  // 𒿌
+#define UC_CYPRO_MINOAN_SIGN_CM075   0x12FCD  0  // 𒿍
+#define UC_CYPRO_MINOAN_SIGN_CM075B  0x12FCE  0  // 𒿎
+#define UC_CYPRO_MINOAN_SIGN_CM076   0x12FCF  0  // 𒿏
+#define UC_CYPRO_MINOAN_SIGN_CM078   0x12FD0  0  // 𒿐
+#define UC_CYPRO_MINOAN_SIGN_CM079   0x12FD1  0  // 𒿑
+#define UC_CYPRO_MINOAN_SIGN_CM080   0x12FD2  0  // 𒿒
+#define UC_CYPRO_MINOAN_SIGN_CM081   0x12FD3  0  // 𒿓
+#define UC_CYPRO_MINOAN_SIGN_CM082   0x12FD4  0  // 𒿔
+#define UC_CYPRO_MINOAN_SIGN_CM083   0x12FD5  0  // 𒿕
+#define UC_CYPRO_MINOAN_SIGN_CM084   0x12FD6  0  // 𒿖
+#define UC_CYPRO_MINOAN_SIGN_CM085   0x12FD7  0  // 𒿗
+#define UC_CYPRO_MINOAN_SIGN_CM086   0x12FD8  0  // 𒿘
+#define UC_CYPRO_MINOAN_SIGN_CM087   0x12FD9  0  // 𒿙
+#define UC_CYPRO_MINOAN_SIGN_CM088   0x12FDA  0  // 𒿚
+#define UC_CYPRO_MINOAN_SIGN_CM089   0x12FDB  0  // 𒿛
+#define UC_CYPRO_MINOAN_SIGN_CM090   0x12FDC  0  // 𒿜
+#define UC_CYPRO_MINOAN_SIGN_CM091   0x12FDD  0  // 𒿝
+#define UC_CYPRO_MINOAN_SIGN_CM092   0x12FDE  0  // 𒿞
+#define UC_CYPRO_MINOAN_SIGN_CM094   0x12FDF  0  // 𒿟
+#define UC_CYPRO_MINOAN_SIGN_CM095   0x12FE0  0  // 𒿠
+#define UC_CYPRO_MINOAN_SIGN_CM096   0x12FE1  0  // 𒿡
+#define UC_CYPRO_MINOAN_SIGN_CM097   0x12FE2  0  // 𒿢
+#define UC_CYPRO_MINOAN_SIGN_CM098   0x12FE3  0  // 𒿣
+#define UC_CYPRO_MINOAN_SIGN_CM099   0x12FE4  0  // 𒿤
+#define UC_CYPRO_MINOAN_SIGN_CM100   0x12FE5  0  // 𒿥
+#define UC_CYPRO_MINOAN_SIGN_CM101   0x12FE6  0  // 𒿦
+#define UC_CYPRO_MINOAN_SIGN_CM102   0x12FE7  0  // 𒿧
+#define UC_CYPRO_MINOAN_SIGN_CM103   0x12FE8  0  // 𒿨
+#define UC_CYPRO_MINOAN_SIGN_CM104   0x12FE9  0  // 𒿩
+#define UC_CYPRO_MINOAN_SIGN_CM105   0x12FEA  0  // 𒿪
+#define UC_CYPRO_MINOAN_SIGN_CM107   0x12FEB  0  // 𒿫
+#define UC_CYPRO_MINOAN_SIGN_CM108   0x12FEC  0  // 𒿬
+#define UC_CYPRO_MINOAN_SIGN_CM109   0x12FED  0  // 𒿭
+#define UC_CYPRO_MINOAN_SIGN_CM110   0x12FEE  0  // 𒿮
+#define UC_CYPRO_MINOAN_SIGN_CM112   0x12FEF  0  // 𒿯
+#define UC_CYPRO_MINOAN_SIGN_CM114   0x12FF0  0  // 𒿰
+#define UC_CYPRO_MINOAN_SIGN_CM301   0x12FF1  0  // 𒿱
+#define UC_CYPRO_MINOAN_SIGN_CM302   0x12FF2  0  // 𒿲
