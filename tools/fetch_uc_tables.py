@@ -214,5 +214,6 @@ if __name__ == "__main__":
         if m := pattern.match(block):
             start, end, name = m.groups()
             block_data = parse_block(int(start, 16), int(end, 16))
-            write_block(block_data, start, end, name, outdir)
+            if block_data:
+                write_block(block_data, start, end, name, outdir)
     print("done")
