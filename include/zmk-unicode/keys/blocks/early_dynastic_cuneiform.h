@@ -1,0 +1,246 @@
+/*
+ * Unicode keys for U+12480 .. U+1254F
+ *
+ * This file was generated from Unidata 16.0.0 with the following license:
+ *
+ * UNICODE LICENSE V3
+ *
+ * COPYRIGHT AND PERMISSION NOTICE
+ *
+ * Copyright © 1991-2025 Unicode, Inc.
+ *
+ * NOTICE TO USER: Carefully read the following legal agreement. BY
+ * DOWNLOADING, INSTALLING, COPYING OR OTHERWISE USING DATA FILES, AND/OR
+ * SOFTWARE, YOU UNEQUIVOCALLY ACCEPT, AND AGREE TO BE BOUND BY, ALL OF THE
+ * TERMS AND CONDITIONS OF THIS AGREEMENT. IF YOU DO NOT AGREE, DO NOT
+ * DOWNLOAD, INSTALL, COPY, DISTRIBUTE OR USE THE DATA FILES OR SOFTWARE.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of data files and any associated documentation (the "Data Files") or
+ * software and any associated documentation (the "Software") to deal in the
+ * Data Files or Software without restriction, including without limitation
+ * the rights to use, copy, modify, merge, publish, distribute, and/or sell
+ * copies of the Data Files or Software, and to permit persons to whom the
+ * Data Files or Software are furnished to do so, provided that either (a)
+ * this copyright and permission notice appear with all copies of the Data
+ * Files or Software, or (b) this copyright and permission notice appear in
+ * associated Documentation.
+ *
+ * THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+ * KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF
+ * THIRD PARTY RIGHTS.
+ *
+ * IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE
+ * BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES,
+ * OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+ * WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ * ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THE DATA
+ * FILES OR SOFTWARE.
+ *
+ * Except as contained in this notice, the name of a copyright holder shall
+ * not be used in advertising or otherwise to promote the sale, use or other
+ * dealings in these Data Files or Software without prior written
+ * authorization of the copyright holder.
+ *
+ * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
+ */
+
+#pragma once
+
+#define UC_CUNEIFORM_SIGN_AB_TIMES_NUN_TENU                    0x12480  0  // 𒒀
+#define UC_CUNEIFORM_SIGN_AB_TIMES_SHU2                        0x12481  0  // 𒒁
+#define UC_CUNEIFORM_SIGN_AD_TIMES_ESH2                        0x12482  0  // 𒒂
+#define UC_CUNEIFORM_SIGN_BAD_TIMES_DISH_TENU                  0x12483  0  // 𒒃
+#define UC_CUNEIFORM_SIGN_BAHAR2_TIMES_AB2                     0x12484  0  // 𒒄
+#define UC_CUNEIFORM_SIGN_BAHAR2_TIMES_NI                      0x12485  0  // 𒒅
+#define UC_CUNEIFORM_SIGN_BAHAR2_TIMES_ZA                      0x12486  0  // 𒒆
+#define UC_CUNEIFORM_SIGN_BU_OVER_BU_TIMES_NA2                 0x12487  0  // 𒒇
+#define UC_CUNEIFORM_SIGN_DA_TIMES_TAK4                        0x12488  0  // 𒒈
+#define UC_CUNEIFORM_SIGN_DAG_TIMES_KUR                        0x12489  0  // 𒒉
+#define UC_CUNEIFORM_SIGN_DIM_TIMES_IGI                        0x1248A  0  // 𒒊
+#define UC_CUNEIFORM_SIGN_DIM_TIMES_U_U_U                      0x1248B  0  // 𒒋
+#define UC_CUNEIFORM_SIGN_DIM2_TIMES_UD                        0x1248C  0  // 𒒌
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_ANSHE                      0x1248D  0  // 𒒍
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_ASH                        0x1248E  0  // 𒒎
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_ASH_AT_LEFT                0x1248F  0  // 𒒏
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_DIN                        0x12490  0  // 𒒐
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_DUN                        0x12491  0  // 𒒑
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_ERIN2                      0x12492  0  // 𒒒
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_GA                         0x12493  0  // 𒒓
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_GI                         0x12494  0  // 𒒔
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_GIR2_GUNU                  0x12495  0  // 𒒕
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_GISH                       0x12496  0  // 𒒖
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_HA                         0x12497  0  // 𒒗
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_HI                         0x12498  0  // 𒒘
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_IGI_GUNU                   0x12499  0  // 𒒙
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_KASKAL                     0x1249A  0  // 𒒚
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_KUR                        0x1249B  0  // 𒒛
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_KUSHU2                     0x1249C  0  // 𒒜
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_KUSHU2_PLUS_KASKAL         0x1249D  0  // 𒒝
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_LAK_020                    0x1249E  0  // 𒒞
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_LAM                        0x1249F  0  // 𒒟
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_LAM_TIMES_KUR              0x124A0  0  // 𒒠
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_LUH_PLUS_GISH              0x124A1  0  // 𒒡
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_MASH                       0x124A2  0  // 𒒢
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_MES                        0x124A3  0  // 𒒣
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_MI                         0x124A4  0  // 𒒤
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_NI                         0x124A5  0  // 𒒥
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_PI                         0x124A6  0  // 𒒦
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_SHE                        0x124A7  0  // 𒒧
+#define UC_CUNEIFORM_SIGN_DUG_TIMES_SI_GUNU                    0x124A8  0  // 𒒨
+#define UC_CUNEIFORM_SIGN_E2_TIMES_KUR                         0x124A9  0  // 𒒩
+#define UC_CUNEIFORM_SIGN_E2_TIMES_PAP                         0x124AA  0  // 𒒪
+#define UC_CUNEIFORM_SIGN_ERIN2_X                              0x124AB  0  // 𒒫
+#define UC_CUNEIFORM_SIGN_ESH2_CROSSING_ESH2                   0x124AC  0  // 𒒬
+#define UC_CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_ASH               0x124AD  0  // 𒒭
+#define UC_CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_HI                0x124AE  0  // 𒒮
+#define UC_CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_IGI_GUNU          0x124AF  0  // 𒒯
+#define UC_CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_LA                0x124B0  0  // 𒒰
+#define UC_CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_LAL               0x124B1  0  // 𒒱
+#define UC_CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_ME                0x124B2  0  // 𒒲
+#define UC_CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_MES               0x124B3  0  // 𒒳
+#define UC_CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_SU                0x124B4  0  // 𒒴
+#define UC_CUNEIFORM_SIGN_EZEN_TIMES_SU                        0x124B5  0  // 𒒵
+#define UC_CUNEIFORM_SIGN_GA2_TIMES_BAHAR2                     0x124B6  0  // 𒒶
+#define UC_CUNEIFORM_SIGN_GA2_TIMES_DIM_GUNU                   0x124B7  0  // 𒒷
+#define UC_CUNEIFORM_SIGN_GA2_TIMES_DUG_TIMES_IGI_GUNU         0x124B8  0  // 𒒸
+#define UC_CUNEIFORM_SIGN_GA2_TIMES_DUG_TIMES_KASKAL           0x124B9  0  // 𒒹
+#define UC_CUNEIFORM_SIGN_GA2_TIMES_EREN                       0x124BA  0  // 𒒺
+#define UC_CUNEIFORM_SIGN_GA2_TIMES_GA                         0x124BB  0  // 𒒻
+#define UC_CUNEIFORM_SIGN_GA2_TIMES_GAR_PLUS_DI                0x124BC  0  // 𒒼
+#define UC_CUNEIFORM_SIGN_GA2_TIMES_GAR_PLUS_NE                0x124BD  0  // 𒒽
+#define UC_CUNEIFORM_SIGN_GA2_TIMES_HA_PLUS_A                  0x124BE  0  // 𒒾
+#define UC_CUNEIFORM_SIGN_GA2_TIMES_KUSHU2_PLUS_KASKAL         0x124BF  0  // 𒒿
+#define UC_CUNEIFORM_SIGN_GA2_TIMES_LAM                        0x124C0  0  // 𒓀
+#define UC_CUNEIFORM_SIGN_GA2_TIMES_LAM_TIMES_KUR              0x124C1  0  // 𒓁
+#define UC_CUNEIFORM_SIGN_GA2_TIMES_LUH                        0x124C2  0  // 𒓂
+#define UC_CUNEIFORM_SIGN_GA2_TIMES_MUSH                       0x124C3  0  // 𒓃
+#define UC_CUNEIFORM_SIGN_GA2_TIMES_NE                         0x124C4  0  // 𒓄
+#define UC_CUNEIFORM_SIGN_GA2_TIMES_NE_PLUS_E2                 0x124C5  0  // 𒓅
+#define UC_CUNEIFORM_SIGN_GA2_TIMES_NE_PLUS_GI                 0x124C6  0  // 𒓆
+#define UC_CUNEIFORM_SIGN_GA2_TIMES_SHIM                       0x124C7  0  // 𒓇
+#define UC_CUNEIFORM_SIGN_GA2_TIMES_ZIZ2                       0x124C8  0  // 𒓈
+#define UC_CUNEIFORM_SIGN_GABA_ROTATED_NINETY_DEGREES          0x124C9  0  // 𒓉
+#define UC_CUNEIFORM_SIGN_GESHTIN_TIMES_U                      0x124CA  0  // 𒓊
+#define UC_CUNEIFORM_SIGN_GISH_TIMES_GISH_CROSSING_GISH        0x124CB  0  // 𒓋
+#define UC_CUNEIFORM_SIGN_GU2_TIMES_IGI_GUNU                   0x124CC  0  // 𒓌
+#define UC_CUNEIFORM_SIGN_GUD_PLUS_GISH_TIMES_TAK4             0x124CD  0  // 𒓍
+#define UC_CUNEIFORM_SIGN_HA_TENU_GUNU                         0x124CE  0  // 𒓎
+#define UC_CUNEIFORM_SIGN_HI_TIMES_ASH_OVER_HI_TIMES_ASH       0x124CF  0  // 𒓏
+#define UC_CUNEIFORM_SIGN_KA_TIMES_BU                          0x124D0  0  // 𒓐
+#define UC_CUNEIFORM_SIGN_KA_TIMES_KA                          0x124D1  0  // 𒓑
+#define UC_CUNEIFORM_SIGN_KA_TIMES_U_U_U                       0x124D2  0  // 𒓒
+#define UC_CUNEIFORM_SIGN_KA_TIMES_UR                          0x124D3  0  // 𒓓
+#define UC_CUNEIFORM_SIGN_LAGAB_TIMES_ZU_OVER_ZU               0x124D4  0  // 𒓔
+#define UC_CUNEIFORM_SIGN_LAK_003                              0x124D5  0  // 𒓕
+#define UC_CUNEIFORM_SIGN_LAK_021                              0x124D6  0  // 𒓖
+#define UC_CUNEIFORM_SIGN_LAK_025                              0x124D7  0  // 𒓗
+#define UC_CUNEIFORM_SIGN_LAK_030                              0x124D8  0  // 𒓘
+#define UC_CUNEIFORM_SIGN_LAK_050                              0x124D9  0  // 𒓙
+#define UC_CUNEIFORM_SIGN_LAK_051                              0x124DA  0  // 𒓚
+#define UC_CUNEIFORM_SIGN_LAK_062                              0x124DB  0  // 𒓛
+#define UC_CUNEIFORM_SIGN_LAK_079_OVER_LAK_079_GUNU            0x124DC  0  // 𒓜
+#define UC_CUNEIFORM_SIGN_LAK_080                              0x124DD  0  // 𒓝
+#define UC_CUNEIFORM_SIGN_LAK_081_OVER_LAK_081                 0x124DE  0  // 𒓞
+#define UC_CUNEIFORM_SIGN_LAK_092                              0x124DF  0  // 𒓟
+#define UC_CUNEIFORM_SIGN_LAK_130                              0x124E0  0  // 𒓠
+#define UC_CUNEIFORM_SIGN_LAK_142                              0x124E1  0  // 𒓡
+#define UC_CUNEIFORM_SIGN_LAK_210                              0x124E2  0  // 𒓢
+#define UC_CUNEIFORM_SIGN_LAK_219                              0x124E3  0  // 𒓣
+#define UC_CUNEIFORM_SIGN_LAK_220                              0x124E4  0  // 𒓤
+#define UC_CUNEIFORM_SIGN_LAK_225                              0x124E5  0  // 𒓥
+#define UC_CUNEIFORM_SIGN_LAK_228                              0x124E6  0  // 𒓦
+#define UC_CUNEIFORM_SIGN_LAK_238                              0x124E7  0  // 𒓧
+#define UC_CUNEIFORM_SIGN_LAK_265                              0x124E8  0  // 𒓨
+#define UC_CUNEIFORM_SIGN_LAK_266                              0x124E9  0  // 𒓩
+#define UC_CUNEIFORM_SIGN_LAK_343                              0x124EA  0  // 𒓪
+#define UC_CUNEIFORM_SIGN_LAK_347                              0x124EB  0  // 𒓫
+#define UC_CUNEIFORM_SIGN_LAK_348                              0x124EC  0  // 𒓬
+#define UC_CUNEIFORM_SIGN_LAK_383                              0x124ED  0  // 𒓭
+#define UC_CUNEIFORM_SIGN_LAK_384                              0x124EE  0  // 𒓮
+#define UC_CUNEIFORM_SIGN_LAK_390                              0x124EF  0  // 𒓯
+#define UC_CUNEIFORM_SIGN_LAK_441                              0x124F0  0  // 𒓰
+#define UC_CUNEIFORM_SIGN_LAK_449                              0x124F1  0  // 𒓱
+#define UC_CUNEIFORM_SIGN_LAK_449_TIMES_GU                     0x124F2  0  // 𒓲
+#define UC_CUNEIFORM_SIGN_LAK_449_TIMES_IGI                    0x124F3  0  // 𒓳
+#define UC_CUNEIFORM_SIGN_LAK_449_TIMES_PAP_PLUS_LU3           0x124F4  0  // 𒓴
+#define UC_CUNEIFORM_SIGN_LAK_449_TIMES_PAP_PLUS_PAP_PLUS_LU3  0x124F5  0  // 𒓵
+#define UC_CUNEIFORM_SIGN_LAK_449_TIMES_U2_PLUS_BA             0x124F6  0  // 𒓶
+#define UC_CUNEIFORM_SIGN_LAK_450                              0x124F7  0  // 𒓷
+#define UC_CUNEIFORM_SIGN_LAK_457                              0x124F8  0  // 𒓸
+#define UC_CUNEIFORM_SIGN_LAK_470                              0x124F9  0  // 𒓹
+#define UC_CUNEIFORM_SIGN_LAK_483                              0x124FA  0  // 𒓺
+#define UC_CUNEIFORM_SIGN_LAK_490                              0x124FB  0  // 𒓻
+#define UC_CUNEIFORM_SIGN_LAK_492                              0x124FC  0  // 𒓼
+#define UC_CUNEIFORM_SIGN_LAK_493                              0x124FD  0  // 𒓽
+#define UC_CUNEIFORM_SIGN_LAK_495                              0x124FE  0  // 𒓾
+#define UC_CUNEIFORM_SIGN_LAK_550                              0x124FF  0  // 𒓿
+#define UC_CUNEIFORM_SIGN_LAK_608                              0x12500  0  // 𒔀
+#define UC_CUNEIFORM_SIGN_LAK_617                              0x12501  0  // 𒔁
+#define UC_CUNEIFORM_SIGN_LAK_617_TIMES_ASH                    0x12502  0  // 𒔂
+#define UC_CUNEIFORM_SIGN_LAK_617_TIMES_BAD                    0x12503  0  // 𒔃
+#define UC_CUNEIFORM_SIGN_LAK_617_TIMES_DUN3_GUNU_GUNU         0x12504  0  // 𒔄
+#define UC_CUNEIFORM_SIGN_LAK_617_TIMES_KU3                    0x12505  0  // 𒔅
+#define UC_CUNEIFORM_SIGN_LAK_617_TIMES_LA                     0x12506  0  // 𒔆
+#define UC_CUNEIFORM_SIGN_LAK_617_TIMES_TAR                    0x12507  0  // 𒔇
+#define UC_CUNEIFORM_SIGN_LAK_617_TIMES_TE                     0x12508  0  // 𒔈
+#define UC_CUNEIFORM_SIGN_LAK_617_TIMES_U2                     0x12509  0  // 𒔉
+#define UC_CUNEIFORM_SIGN_LAK_617_TIMES_UD                     0x1250A  0  // 𒔊
+#define UC_CUNEIFORM_SIGN_LAK_617_TIMES_URUDA                  0x1250B  0  // 𒔋
+#define UC_CUNEIFORM_SIGN_LAK_636                              0x1250C  0  // 𒔌
+#define UC_CUNEIFORM_SIGN_LAK_648                              0x1250D  0  // 𒔍
+#define UC_CUNEIFORM_SIGN_LAK_648_TIMES_DUB                    0x1250E  0  // 𒔎
+#define UC_CUNEIFORM_SIGN_LAK_648_TIMES_GA                     0x1250F  0  // 𒔏
+#define UC_CUNEIFORM_SIGN_LAK_648_TIMES_IGI                    0x12510  0  // 𒔐
+#define UC_CUNEIFORM_SIGN_LAK_648_TIMES_IGI_GUNU               0x12511  0  // 𒔑
+#define UC_CUNEIFORM_SIGN_LAK_648_TIMES_NI                     0x12512  0  // 𒔒
+#define UC_CUNEIFORM_SIGN_LAK_648_TIMES_PAP_PLUS_PAP_PLUS_LU3  0x12513  0  // 𒔓
+#define UC_CUNEIFORM_SIGN_LAK_648_TIMES_SHESH_PLUS_KI          0x12514  0  // 𒔔
+#define UC_CUNEIFORM_SIGN_LAK_648_TIMES_UD                     0x12515  0  // 𒔕
+#define UC_CUNEIFORM_SIGN_LAK_648_TIMES_URUDA                  0x12516  0  // 𒔖
+#define UC_CUNEIFORM_SIGN_LAK_724                              0x12517  0  // 𒔗
+#define UC_CUNEIFORM_SIGN_LAK_749                              0x12518  0  // 𒔘
+#define UC_CUNEIFORM_SIGN_LU2_GUNU_TIMES_ASH                   0x12519  0  // 𒔙
+#define UC_CUNEIFORM_SIGN_LU2_TIMES_DISH                       0x1251A  0  // 𒔚
+#define UC_CUNEIFORM_SIGN_LU2_TIMES_HAL                        0x1251B  0  // 𒔛
+#define UC_CUNEIFORM_SIGN_LU2_TIMES_PAP                        0x1251C  0  // 𒔜
+#define UC_CUNEIFORM_SIGN_LU2_TIMES_PAP_PLUS_PAP_PLUS_LU3      0x1251D  0  // 𒔝
+#define UC_CUNEIFORM_SIGN_LU2_TIMES_TAK4                       0x1251E  0  // 𒔞
+#define UC_CUNEIFORM_SIGN_MI_PLUS_ZA7                          0x1251F  0  // 𒔟
+#define UC_CUNEIFORM_SIGN_MUSH_OVER_MUSH_TIMES_GA              0x12520  0  // 𒔠
+#define UC_CUNEIFORM_SIGN_MUSH_OVER_MUSH_TIMES_KAK             0x12521  0  // 𒔡
+#define UC_CUNEIFORM_SIGN_NINDA2_TIMES_DIM_GUNU                0x12522  0  // 𒔢
+#define UC_CUNEIFORM_SIGN_NINDA2_TIMES_GISH                    0x12523  0  // 𒔣
+#define UC_CUNEIFORM_SIGN_NINDA2_TIMES_GUL                     0x12524  0  // 𒔤
+#define UC_CUNEIFORM_SIGN_NINDA2_TIMES_HI                      0x12525  0  // 𒔥
+#define UC_CUNEIFORM_SIGN_NINDA2_TIMES_KESH2                   0x12526  0  // 𒔦
+#define UC_CUNEIFORM_SIGN_NINDA2_TIMES_LAK_050                 0x12527  0  // 𒔧
+#define UC_CUNEIFORM_SIGN_NINDA2_TIMES_MASH                    0x12528  0  // 𒔨
+#define UC_CUNEIFORM_SIGN_NINDA2_TIMES_PAP_PLUS_PAP            0x12529  0  // 𒔩
+#define UC_CUNEIFORM_SIGN_NINDA2_TIMES_U                       0x1252A  0  // 𒔪
+#define UC_CUNEIFORM_SIGN_NINDA2_TIMES_U_PLUS_U                0x1252B  0  // 𒔫
+#define UC_CUNEIFORM_SIGN_NINDA2_TIMES_URUDA                   0x1252C  0  // 𒔬
+#define UC_CUNEIFORM_SIGN_SAG_GUNU_TIMES_HA                    0x1252D  0  // 𒔭
+#define UC_CUNEIFORM_SIGN_SAG_TIMES_EN                         0x1252E  0  // 𒔮
+#define UC_CUNEIFORM_SIGN_SAG_TIMES_SHE_AT_LEFT                0x1252F  0  // 𒔯
+#define UC_CUNEIFORM_SIGN_SAG_TIMES_TAK4                       0x12530  0  // 𒔰
+#define UC_CUNEIFORM_SIGN_SHA6_TENU                            0x12531  0  // 𒔱
+#define UC_CUNEIFORM_SIGN_SHE_OVER_SHE                         0x12532  0  // 𒔲
+#define UC_CUNEIFORM_SIGN_SHE_PLUS_HUB2                        0x12533  0  // 𒔳
+#define UC_CUNEIFORM_SIGN_SHE_PLUS_NAM2                        0x12534  0  // 𒔴
+#define UC_CUNEIFORM_SIGN_SHE_PLUS_SAR                         0x12535  0  // 𒔵
+#define UC_CUNEIFORM_SIGN_SHU2_PLUS_DUG_TIMES_NI               0x12536  0  // 𒔶
+#define UC_CUNEIFORM_SIGN_SHU2_PLUS_E2_TIMES_AN                0x12537  0  // 𒔷
+#define UC_CUNEIFORM_SIGN_SI_TIMES_TAK4                        0x12538  0  // 𒔸
+#define UC_CUNEIFORM_SIGN_TAK4_PLUS_SAG                        0x12539  0  // 𒔹
+#define UC_CUNEIFORM_SIGN_TUM_TIMES_GAN2_TENU                  0x1253A  0  // 𒔺
+#define UC_CUNEIFORM_SIGN_TUM_TIMES_THREE_DISH                 0x1253B  0  // 𒔻
+#define UC_CUNEIFORM_SIGN_UR2_INVERTED                         0x1253C  0  // 𒔼
+#define UC_CUNEIFORM_SIGN_UR2_TIMES_UD                         0x1253D  0  // 𒔽
+#define UC_CUNEIFORM_SIGN_URU_TIMES_DARA3                      0x1253E  0  // 𒔾
+#define UC_CUNEIFORM_SIGN_URU_TIMES_LAK_668                    0x1253F  0  // 𒔿
+#define UC_CUNEIFORM_SIGN_URU_TIMES_LU3                        0x12540  0  // 𒕀
+#define UC_CUNEIFORM_SIGN_ZA7                                  0x12541  0  // 𒕁
+#define UC_CUNEIFORM_SIGN_ZU_OVER_ZU_PLUS_SAR                  0x12542  0  // 𒕂
+#define UC_CUNEIFORM_SIGN_ZU5_TIMES_THREE_DISH_TENU            0x12543  0  // 𒕃

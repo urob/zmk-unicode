@@ -1,0 +1,306 @@
+/*
+ * Unicode keys for U+2300 .. U+23FF
+ *
+ * This file was generated from Unidata 16.0.0 with the following license:
+ *
+ * UNICODE LICENSE V3
+ *
+ * COPYRIGHT AND PERMISSION NOTICE
+ *
+ * Copyright © 1991-2025 Unicode, Inc.
+ *
+ * NOTICE TO USER: Carefully read the following legal agreement. BY
+ * DOWNLOADING, INSTALLING, COPYING OR OTHERWISE USING DATA FILES, AND/OR
+ * SOFTWARE, YOU UNEQUIVOCALLY ACCEPT, AND AGREE TO BE BOUND BY, ALL OF THE
+ * TERMS AND CONDITIONS OF THIS AGREEMENT. IF YOU DO NOT AGREE, DO NOT
+ * DOWNLOAD, INSTALL, COPY, DISTRIBUTE OR USE THE DATA FILES OR SOFTWARE.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of data files and any associated documentation (the "Data Files") or
+ * software and any associated documentation (the "Software") to deal in the
+ * Data Files or Software without restriction, including without limitation
+ * the rights to use, copy, modify, merge, publish, distribute, and/or sell
+ * copies of the Data Files or Software, and to permit persons to whom the
+ * Data Files or Software are furnished to do so, provided that either (a)
+ * this copyright and permission notice appear with all copies of the Data
+ * Files or Software, or (b) this copyright and permission notice appear in
+ * associated Documentation.
+ *
+ * THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+ * KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF
+ * THIRD PARTY RIGHTS.
+ *
+ * IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE
+ * BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES,
+ * OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+ * WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ * ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THE DATA
+ * FILES OR SOFTWARE.
+ *
+ * Except as contained in this notice, the name of a copyright holder shall
+ * not be used in advertising or otherwise to promote the sale, use or other
+ * dealings in these Data Files or Software without prior written
+ * authorization of the copyright holder.
+ *
+ * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
+ */
+
+#pragma once
+
+#define UC_DIAMETER_SIGN                                             0x2300  0  // ⌀
+#define UC_ELECTRIC_ARROW                                            0x2301  0  // ⌁
+#define UC_HOUSE                                                     0x2302  0  // ⌂
+#define UC_UP_ARROWHEAD                                              0x2303  0  // ⌃
+#define UC_DOWN_ARROWHEAD                                            0x2304  0  // ⌄
+#define UC_PROJECTIVE                                                0x2305  0  // ⌅
+#define UC_PERSPECTIVE                                               0x2306  0  // ⌆
+#define UC_WAVY_LINE                                                 0x2307  0  // ⌇
+#define UC_LEFT_CEILING                                              0x2308  0  // ⌈
+#define UC_RIGHT_CEILING                                             0x2309  0  // ⌉
+#define UC_LEFT_FLOOR                                                0x230A  0  // ⌊
+#define UC_RIGHT_FLOOR                                               0x230B  0  // ⌋
+#define UC_BOTTOM_RIGHT_CROP                                         0x230C  0  // ⌌
+#define UC_BOTTOM_LEFT_CROP                                          0x230D  0  // ⌍
+#define UC_TOP_RIGHT_CROP                                            0x230E  0  // ⌎
+#define UC_TOP_LEFT_CROP                                             0x230F  0  // ⌏
+#define UC_REVERSED_NOT_SIGN                                         0x2310  0  // ⌐
+#define UC_SQUARE_LOZENGE                                            0x2311  0  // ⌑
+#define UC_ARC                                                       0x2312  0  // ⌒
+#define UC_SEGMENT                                                   0x2313  0  // ⌓
+#define UC_SECTOR                                                    0x2314  0  // ⌔
+#define UC_TELEPHONE_RECORDER                                        0x2315  0  // ⌕
+#define UC_POSITION_INDICATOR                                        0x2316  0  // ⌖
+#define UC_VIEWDATA_SQUARE                                           0x2317  0  // ⌗
+#define UC_PLACE_OF_INTEREST_SIGN                                    0x2318  0  // ⌘
+#define UC_TURNED_NOT_SIGN                                           0x2319  0  // ⌙
+#define UC_WATCH                                                     0x231A  0  // ⌚
+#define UC_HOURGLASS                                                 0x231B  0  // ⌛
+#define UC_TOP_LEFT_CORNER                                           0x231C  0  // ⌜
+#define UC_TOP_RIGHT_CORNER                                          0x231D  0  // ⌝
+#define UC_BOTTOM_LEFT_CORNER                                        0x231E  0  // ⌞
+#define UC_BOTTOM_RIGHT_CORNER                                       0x231F  0  // ⌟
+#define UC_TOP_HALF_INTEGRAL                                         0x2320  0  // ⌠
+#define UC_BOTTOM_HALF_INTEGRAL                                      0x2321  0  // ⌡
+#define UC_FROWN                                                     0x2322  0  // ⌢
+#define UC_SMILE                                                     0x2323  0  // ⌣
+#define UC_UP_ARROWHEAD_BETWEEN_TWO_HORIZONTAL_BARS                  0x2324  0  // ⌤
+#define UC_OPTION_KEY                                                0x2325  0  // ⌥
+#define UC_ERASE_TO_THE_RIGHT                                        0x2326  0  // ⌦
+#define UC_X_IN_A_RECTANGLE_BOX                                      0x2327  0  // ⌧
+#define UC_KEYBOARD                                                  0x2328  0  // ⌨
+#define UC_LEFT_POINTING_ANGLE_BRACKET                               0x2329  0  // 〈
+#define UC_RIGHT_POINTING_ANGLE_BRACKET                              0x232A  0  // 〉
+#define UC_ERASE_TO_THE_LEFT                                         0x232B  0  // ⌫
+#define UC_BENZENE_RING                                              0x232C  0  // ⌬
+#define UC_CYLINDRICITY                                              0x232D  0  // ⌭
+#define UC_ALL_AROUND_PROFILE                                        0x232E  0  // ⌮
+#define UC_SYMMETRY                                                  0x232F  0  // ⌯
+#define UC_TOTAL_RUNOUT                                              0x2330  0  // ⌰
+#define UC_DIMENSION_ORIGIN                                          0x2331  0  // ⌱
+#define UC_CONICAL_TAPER                                             0x2332  0  // ⌲
+#define UC_SLOPE                                                     0x2333  0  // ⌳
+#define UC_COUNTERBORE                                               0x2334  0  // ⌴
+#define UC_COUNTERSINK                                               0x2335  0  // ⌵
+#define UC_APL_FUNCTIONAL_SYMBOL_I_BEAM                              0x2336  0  // ⌶
+#define UC_APL_FUNCTIONAL_SYMBOL_SQUISH_QUAD                         0x2337  0  // ⌷
+#define UC_APL_FUNCTIONAL_SYMBOL_QUAD_EQUAL                          0x2338  0  // ⌸
+#define UC_APL_FUNCTIONAL_SYMBOL_QUAD_DIVIDE                         0x2339  0  // ⌹
+#define UC_APL_FUNCTIONAL_SYMBOL_QUAD_DIAMOND                        0x233A  0  // ⌺
+#define UC_APL_FUNCTIONAL_SYMBOL_QUAD_JOT                            0x233B  0  // ⌻
+#define UC_APL_FUNCTIONAL_SYMBOL_QUAD_CIRCLE                         0x233C  0  // ⌼
+#define UC_APL_FUNCTIONAL_SYMBOL_CIRCLE_STILE                        0x233D  0  // ⌽
+#define UC_APL_FUNCTIONAL_SYMBOL_CIRCLE_JOT                          0x233E  0  // ⌾
+#define UC_APL_FUNCTIONAL_SYMBOL_SLASH_BAR                           0x233F  0  // ⌿
+#define UC_APL_FUNCTIONAL_SYMBOL_BACKSLASH_BAR                       0x2340  0  // ⍀
+#define UC_APL_FUNCTIONAL_SYMBOL_QUAD_SLASH                          0x2341  0  // ⍁
+#define UC_APL_FUNCTIONAL_SYMBOL_QUAD_BACKSLASH                      0x2342  0  // ⍂
+#define UC_APL_FUNCTIONAL_SYMBOL_QUAD_LESS_THAN                      0x2343  0  // ⍃
+#define UC_APL_FUNCTIONAL_SYMBOL_QUAD_GREATER_THAN                   0x2344  0  // ⍄
+#define UC_APL_FUNCTIONAL_SYMBOL_LEFTWARDS_VANE                      0x2345  0  // ⍅
+#define UC_APL_FUNCTIONAL_SYMBOL_RIGHTWARDS_VANE                     0x2346  0  // ⍆
+#define UC_APL_FUNCTIONAL_SYMBOL_QUAD_LEFTWARDS_ARROW                0x2347  0  // ⍇
+#define UC_APL_FUNCTIONAL_SYMBOL_QUAD_RIGHTWARDS_ARROW               0x2348  0  // ⍈
+#define UC_APL_FUNCTIONAL_SYMBOL_CIRCLE_BACKSLASH                    0x2349  0  // ⍉
+#define UC_APL_FUNCTIONAL_SYMBOL_DOWN_TACK_UNDERBAR                  0x234A  0  // ⍊
+#define UC_APL_FUNCTIONAL_SYMBOL_DELTA_STILE                         0x234B  0  // ⍋
+#define UC_APL_FUNCTIONAL_SYMBOL_QUAD_DOWN_CARET                     0x234C  0  // ⍌
+#define UC_APL_FUNCTIONAL_SYMBOL_QUAD_DELTA                          0x234D  0  // ⍍
+#define UC_APL_FUNCTIONAL_SYMBOL_DOWN_TACK_JOT                       0x234E  0  // ⍎
+#define UC_APL_FUNCTIONAL_SYMBOL_UPWARDS_VANE                        0x234F  0  // ⍏
+#define UC_APL_FUNCTIONAL_SYMBOL_QUAD_UPWARDS_ARROW                  0x2350  0  // ⍐
+#define UC_APL_FUNCTIONAL_SYMBOL_UP_TACK_OVERBAR                     0x2351  0  // ⍑
+#define UC_APL_FUNCTIONAL_SYMBOL_DEL_STILE                           0x2352  0  // ⍒
+#define UC_APL_FUNCTIONAL_SYMBOL_QUAD_UP_CARET                       0x2353  0  // ⍓
+#define UC_APL_FUNCTIONAL_SYMBOL_QUAD_DEL                            0x2354  0  // ⍔
+#define UC_APL_FUNCTIONAL_SYMBOL_UP_TACK_JOT                         0x2355  0  // ⍕
+#define UC_APL_FUNCTIONAL_SYMBOL_DOWNWARDS_VANE                      0x2356  0  // ⍖
+#define UC_APL_FUNCTIONAL_SYMBOL_QUAD_DOWNWARDS_ARROW                0x2357  0  // ⍗
+#define UC_APL_FUNCTIONAL_SYMBOL_QUOTE_UNDERBAR                      0x2358  0  // ⍘
+#define UC_APL_FUNCTIONAL_SYMBOL_DELTA_UNDERBAR                      0x2359  0  // ⍙
+#define UC_APL_FUNCTIONAL_SYMBOL_DIAMOND_UNDERBAR                    0x235A  0  // ⍚
+#define UC_APL_FUNCTIONAL_SYMBOL_JOT_UNDERBAR                        0x235B  0  // ⍛
+#define UC_APL_FUNCTIONAL_SYMBOL_CIRCLE_UNDERBAR                     0x235C  0  // ⍜
+#define UC_APL_FUNCTIONAL_SYMBOL_UP_SHOE_JOT                         0x235D  0  // ⍝
+#define UC_APL_FUNCTIONAL_SYMBOL_QUOTE_QUAD                          0x235E  0  // ⍞
+#define UC_APL_FUNCTIONAL_SYMBOL_CIRCLE_STAR                         0x235F  0  // ⍟
+#define UC_APL_FUNCTIONAL_SYMBOL_QUAD_COLON                          0x2360  0  // ⍠
+#define UC_APL_FUNCTIONAL_SYMBOL_UP_TACK_DIAERESIS                   0x2361  0  // ⍡
+#define UC_APL_FUNCTIONAL_SYMBOL_DEL_DIAERESIS                       0x2362  0  // ⍢
+#define UC_APL_FUNCTIONAL_SYMBOL_STAR_DIAERESIS                      0x2363  0  // ⍣
+#define UC_APL_FUNCTIONAL_SYMBOL_JOT_DIAERESIS                       0x2364  0  // ⍤
+#define UC_APL_FUNCTIONAL_SYMBOL_CIRCLE_DIAERESIS                    0x2365  0  // ⍥
+#define UC_APL_FUNCTIONAL_SYMBOL_DOWN_SHOE_STILE                     0x2366  0  // ⍦
+#define UC_APL_FUNCTIONAL_SYMBOL_LEFT_SHOE_STILE                     0x2367  0  // ⍧
+#define UC_APL_FUNCTIONAL_SYMBOL_TILDE_DIAERESIS                     0x2368  0  // ⍨
+#define UC_APL_FUNCTIONAL_SYMBOL_GREATER_THAN_DIAERESIS              0x2369  0  // ⍩
+#define UC_APL_FUNCTIONAL_SYMBOL_COMMA_BAR                           0x236A  0  // ⍪
+#define UC_APL_FUNCTIONAL_SYMBOL_DEL_TILDE                           0x236B  0  // ⍫
+#define UC_APL_FUNCTIONAL_SYMBOL_ZILDE                               0x236C  0  // ⍬
+#define UC_APL_FUNCTIONAL_SYMBOL_STILE_TILDE                         0x236D  0  // ⍭
+#define UC_APL_FUNCTIONAL_SYMBOL_SEMICOLON_UNDERBAR                  0x236E  0  // ⍮
+#define UC_APL_FUNCTIONAL_SYMBOL_QUAD_NOT_EQUAL                      0x236F  0  // ⍯
+#define UC_APL_FUNCTIONAL_SYMBOL_QUAD_QUESTION                       0x2370  0  // ⍰
+#define UC_APL_FUNCTIONAL_SYMBOL_DOWN_CARET_TILDE                    0x2371  0  // ⍱
+#define UC_APL_FUNCTIONAL_SYMBOL_UP_CARET_TILDE                      0x2372  0  // ⍲
+#define UC_APL_FUNCTIONAL_SYMBOL_IOTA                                0x2373  0  // ⍳
+#define UC_APL_FUNCTIONAL_SYMBOL_RHO                                 0x2374  0  // ⍴
+#define UC_APL_FUNCTIONAL_SYMBOL_OMEGA                               0x2375  0  // ⍵
+#define UC_APL_FUNCTIONAL_SYMBOL_ALPHA_UNDERBAR                      0x2376  0  // ⍶
+#define UC_APL_FUNCTIONAL_SYMBOL_EPSILON_UNDERBAR                    0x2377  0  // ⍷
+#define UC_APL_FUNCTIONAL_SYMBOL_IOTA_UNDERBAR                       0x2378  0  // ⍸
+#define UC_APL_FUNCTIONAL_SYMBOL_OMEGA_UNDERBAR                      0x2379  0  // ⍹
+#define UC_APL_FUNCTIONAL_SYMBOL_ALPHA                               0x237A  0  // ⍺
+#define UC_NOT_CHECK_MARK                                            0x237B  0  // ⍻
+#define UC_RIGHT_ANGLE_WITH_DOWNWARDS_ZIGZAG_ARROW                   0x237C  0  // ⍼
+#define UC_SHOULDERED_OPEN_BOX                                       0x237D  0  // ⍽
+#define UC_BELL_SYMBOL                                               0x237E  0  // ⍾
+#define UC_VERTICAL_LINE_WITH_MIDDLE_DOT                             0x237F  0  // ⍿
+#define UC_INSERTION_SYMBOL                                          0x2380  0  // ⎀
+#define UC_CONTINUOUS_UNDERLINE_SYMBOL                               0x2381  0  // ⎁
+#define UC_DISCONTINUOUS_UNDERLINE_SYMBOL                            0x2382  0  // ⎂
+#define UC_EMPHASIS_SYMBOL                                           0x2383  0  // ⎃
+#define UC_COMPOSITION_SYMBOL                                        0x2384  0  // ⎄
+#define UC_WHITE_SQUARE_WITH_CENTRE_VERTICAL_LINE                    0x2385  0  // ⎅
+#define UC_ENTER_SYMBOL                                              0x2386  0  // ⎆
+#define UC_ALTERNATIVE_KEY_SYMBOL                                    0x2387  0  // ⎇
+#define UC_HELM_SYMBOL                                               0x2388  0  // ⎈
+#define UC_CIRCLED_HORIZONTAL_BAR_WITH_NOTCH                         0x2389  0  // ⎉
+#define UC_CIRCLED_TRIANGLE_DOWN                                     0x238A  0  // ⎊
+#define UC_BROKEN_CIRCLE_WITH_NORTHWEST_ARROW                        0x238B  0  // ⎋
+#define UC_UNDO_SYMBOL                                               0x238C  0  // ⎌
+#define UC_MONOSTABLE_SYMBOL                                         0x238D  0  // ⎍
+#define UC_HYSTERESIS_SYMBOL                                         0x238E  0  // ⎎
+#define UC_OPEN_CIRCUIT_OUTPUT_H_TYPE_SYMBOL                         0x238F  0  // ⎏
+#define UC_OPEN_CIRCUIT_OUTPUT_L_TYPE_SYMBOL                         0x2390  0  // ⎐
+#define UC_PASSIVE_PULL_DOWN_OUTPUT_SYMBOL                           0x2391  0  // ⎑
+#define UC_PASSIVE_PULL_UP_OUTPUT_SYMBOL                             0x2392  0  // ⎒
+#define UC_DIRECT_CURRENT_SYMBOL_FORM_TWO                            0x2393  0  // ⎓
+#define UC_SOFTWARE_FUNCTION_SYMBOL                                  0x2394  0  // ⎔
+#define UC_APL_FUNCTIONAL_SYMBOL_QUAD                                0x2395  0  // ⎕
+#define UC_DECIMAL_SEPARATOR_KEY_SYMBOL                              0x2396  0  // ⎖
+#define UC_PREVIOUS_PAGE                                             0x2397  0  // ⎗
+#define UC_NEXT_PAGE                                                 0x2398  0  // ⎘
+#define UC_PRINT_SCREEN_SYMBOL                                       0x2399  0  // ⎙
+#define UC_CLEAR_SCREEN_SYMBOL                                       0x239A  0  // ⎚
+#define UC_LEFT_PARENTHESIS_UPPER_HOOK                               0x239B  0  // ⎛
+#define UC_LEFT_PARENTHESIS_EXTENSION                                0x239C  0  // ⎜
+#define UC_LEFT_PARENTHESIS_LOWER_HOOK                               0x239D  0  // ⎝
+#define UC_RIGHT_PARENTHESIS_UPPER_HOOK                              0x239E  0  // ⎞
+#define UC_RIGHT_PARENTHESIS_EXTENSION                               0x239F  0  // ⎟
+#define UC_RIGHT_PARENTHESIS_LOWER_HOOK                              0x23A0  0  // ⎠
+#define UC_LEFT_SQUARE_BRACKET_UPPER_CORNER                          0x23A1  0  // ⎡
+#define UC_LEFT_SQUARE_BRACKET_EXTENSION                             0x23A2  0  // ⎢
+#define UC_LEFT_SQUARE_BRACKET_LOWER_CORNER                          0x23A3  0  // ⎣
+#define UC_RIGHT_SQUARE_BRACKET_UPPER_CORNER                         0x23A4  0  // ⎤
+#define UC_RIGHT_SQUARE_BRACKET_EXTENSION                            0x23A5  0  // ⎥
+#define UC_RIGHT_SQUARE_BRACKET_LOWER_CORNER                         0x23A6  0  // ⎦
+#define UC_LEFT_CURLY_BRACKET_UPPER_HOOK                             0x23A7  0  // ⎧
+#define UC_LEFT_CURLY_BRACKET_MIDDLE_PIECE                           0x23A8  0  // ⎨
+#define UC_LEFT_CURLY_BRACKET_LOWER_HOOK                             0x23A9  0  // ⎩
+#define UC_CURLY_BRACKET_EXTENSION                                   0x23AA  0  // ⎪
+#define UC_RIGHT_CURLY_BRACKET_UPPER_HOOK                            0x23AB  0  // ⎫
+#define UC_RIGHT_CURLY_BRACKET_MIDDLE_PIECE                          0x23AC  0  // ⎬
+#define UC_RIGHT_CURLY_BRACKET_LOWER_HOOK                            0x23AD  0  // ⎭
+#define UC_INTEGRAL_EXTENSION                                        0x23AE  0  // ⎮
+#define UC_HORIZONTAL_LINE_EXTENSION                                 0x23AF  0  // ⎯
+#define UC_UPPER_LEFT_OR_LOWER_RIGHT_CURLY_BRACKET_SECTION           0x23B0  0  // ⎰
+#define UC_UPPER_RIGHT_OR_LOWER_LEFT_CURLY_BRACKET_SECTION           0x23B1  0  // ⎱
+#define UC_SUMMATION_TOP                                             0x23B2  0  // ⎲
+#define UC_SUMMATION_BOTTOM                                          0x23B3  0  // ⎳
+#define UC_TOP_SQUARE_BRACKET                                        0x23B4  0  // ⎴
+#define UC_BOTTOM_SQUARE_BRACKET                                     0x23B5  0  // ⎵
+#define UC_BOTTOM_SQUARE_BRACKET_OVER_TOP_SQUARE_BRACKET             0x23B6  0  // ⎶
+#define UC_RADICAL_SYMBOL_BOTTOM                                     0x23B7  0  // ⎷
+#define UC_LEFT_VERTICAL_BOX_LINE                                    0x23B8  0  // ⎸
+#define UC_RIGHT_VERTICAL_BOX_LINE                                   0x23B9  0  // ⎹
+#define UC_HORIZONTAL_SCAN_LINE_1                                    0x23BA  0  // ⎺
+#define UC_HORIZONTAL_SCAN_LINE_3                                    0x23BB  0  // ⎻
+#define UC_HORIZONTAL_SCAN_LINE_7                                    0x23BC  0  // ⎼
+#define UC_HORIZONTAL_SCAN_LINE_9                                    0x23BD  0  // ⎽
+#define UC_DENTISTRY_SYMBOL_LIGHT_VERTICAL_AND_TOP_RIGHT             0x23BE  0  // ⎾
+#define UC_DENTISTRY_SYMBOL_LIGHT_VERTICAL_AND_BOTTOM_RIGHT          0x23BF  0  // ⎿
+#define UC_DENTISTRY_SYMBOL_LIGHT_VERTICAL_WITH_CIRCLE               0x23C0  0  // ⏀
+#define UC_DENTISTRY_SYMBOL_LIGHT_DOWN_AND_HORIZONTAL_WITH_CIRCLE    0x23C1  0  // ⏁
+#define UC_DENTISTRY_SYMBOL_LIGHT_UP_AND_HORIZONTAL_WITH_CIRCLE      0x23C2  0  // ⏂
+#define UC_DENTISTRY_SYMBOL_LIGHT_VERTICAL_WITH_TRIANGLE             0x23C3  0  // ⏃
+#define UC_DENTISTRY_SYMBOL_LIGHT_DOWN_AND_HORIZONTAL_WITH_TRIANGLE  0x23C4  0  // ⏄
+#define UC_DENTISTRY_SYMBOL_LIGHT_UP_AND_HORIZONTAL_WITH_TRIANGLE    0x23C5  0  // ⏅
+#define UC_DENTISTRY_SYMBOL_LIGHT_VERTICAL_AND_WAVE                  0x23C6  0  // ⏆
+#define UC_DENTISTRY_SYMBOL_LIGHT_DOWN_AND_HORIZONTAL_WITH_WAVE      0x23C7  0  // ⏇
+#define UC_DENTISTRY_SYMBOL_LIGHT_UP_AND_HORIZONTAL_WITH_WAVE        0x23C8  0  // ⏈
+#define UC_DENTISTRY_SYMBOL_LIGHT_DOWN_AND_HORIZONTAL                0x23C9  0  // ⏉
+#define UC_DENTISTRY_SYMBOL_LIGHT_UP_AND_HORIZONTAL                  0x23CA  0  // ⏊
+#define UC_DENTISTRY_SYMBOL_LIGHT_VERTICAL_AND_TOP_LEFT              0x23CB  0  // ⏋
+#define UC_DENTISTRY_SYMBOL_LIGHT_VERTICAL_AND_BOTTOM_LEFT           0x23CC  0  // ⏌
+#define UC_SQUARE_FOOT                                               0x23CD  0  // ⏍
+#define UC_RETURN_SYMBOL                                             0x23CE  0  // ⏎
+#define UC_EJECT_SYMBOL                                              0x23CF  0  // ⏏
+#define UC_VERTICAL_LINE_EXTENSION                                   0x23D0  0  // ⏐
+#define UC_METRICAL_BREVE                                            0x23D1  0  // ⏑
+#define UC_METRICAL_LONG_OVER_SHORT                                  0x23D2  0  // ⏒
+#define UC_METRICAL_SHORT_OVER_LONG                                  0x23D3  0  // ⏓
+#define UC_METRICAL_LONG_OVER_TWO_SHORTS                             0x23D4  0  // ⏔
+#define UC_METRICAL_TWO_SHORTS_OVER_LONG                             0x23D5  0  // ⏕
+#define UC_METRICAL_TWO_SHORTS_JOINED                                0x23D6  0  // ⏖
+#define UC_METRICAL_TRISEME                                          0x23D7  0  // ⏗
+#define UC_METRICAL_TETRASEME                                        0x23D8  0  // ⏘
+#define UC_METRICAL_PENTASEME                                        0x23D9  0  // ⏙
+#define UC_EARTH_GROUND                                              0x23DA  0  // ⏚
+#define UC_FUSE                                                      0x23DB  0  // ⏛
+#define UC_TOP_PARENTHESIS                                           0x23DC  0  // ⏜
+#define UC_BOTTOM_PARENTHESIS                                        0x23DD  0  // ⏝
+#define UC_TOP_CURLY_BRACKET                                         0x23DE  0  // ⏞
+#define UC_BOTTOM_CURLY_BRACKET                                      0x23DF  0  // ⏟
+#define UC_TOP_TORTOISE_SHELL_BRACKET                                0x23E0  0  // ⏠
+#define UC_BOTTOM_TORTOISE_SHELL_BRACKET                             0x23E1  0  // ⏡
+#define UC_WHITE_TRAPEZIUM                                           0x23E2  0  // ⏢
+#define UC_BENZENE_RING_WITH_CIRCLE                                  0x23E3  0  // ⏣
+#define UC_STRAIGHTNESS                                              0x23E4  0  // ⏤
+#define UC_FLATNESS                                                  0x23E5  0  // ⏥
+#define UC_AC_CURRENT                                                0x23E6  0  // ⏦
+#define UC_ELECTRICAL_INTERSECTION                                   0x23E7  0  // ⏧
+#define UC_DECIMAL_EXPONENT_SYMBOL                                   0x23E8  0  // ⏨
+#define UC_BLACK_RIGHT_POINTING_DOUBLE_TRIANGLE                      0x23E9  0  // ⏩
+#define UC_BLACK_LEFT_POINTING_DOUBLE_TRIANGLE                       0x23EA  0  // ⏪
+#define UC_BLACK_UP_POINTING_DOUBLE_TRIANGLE                         0x23EB  0  // ⏫
+#define UC_BLACK_DOWN_POINTING_DOUBLE_TRIANGLE                       0x23EC  0  // ⏬
+#define UC_BLACK_RIGHT_POINTING_DOUBLE_TRIANGLE_WITH_VERTICAL_BAR    0x23ED  0  // ⏭
+#define UC_BLACK_LEFT_POINTING_DOUBLE_TRIANGLE_WITH_VERTICAL_BAR     0x23EE  0  // ⏮
+#define UC_BLACK_RIGHT_POINTING_TRIANGLE_WITH_DOUBLE_VERTICAL_BAR    0x23EF  0  // ⏯
+#define UC_ALARM_CLOCK                                               0x23F0  0  // ⏰
+#define UC_STOPWATCH                                                 0x23F1  0  // ⏱
+#define UC_TIMER_CLOCK                                               0x23F2  0  // ⏲
+#define UC_HOURGLASS_WITH_FLOWING_SAND                               0x23F3  0  // ⏳
+#define UC_BLACK_MEDIUM_LEFT_POINTING_TRIANGLE                       0x23F4  0  // ⏴
+#define UC_BLACK_MEDIUM_RIGHT_POINTING_TRIANGLE                      0x23F5  0  // ⏵
+#define UC_BLACK_MEDIUM_UP_POINTING_TRIANGLE                         0x23F6  0  // ⏶
+#define UC_BLACK_MEDIUM_DOWN_POINTING_TRIANGLE                       0x23F7  0  // ⏷
+#define UC_DOUBLE_VERTICAL_BAR                                       0x23F8  0  // ⏸
+#define UC_BLACK_SQUARE_FOR_STOP                                     0x23F9  0  // ⏹
+#define UC_BLACK_CIRCLE_FOR_RECORD                                   0x23FA  0  // ⏺
+#define UC_POWER_SYMBOL                                              0x23FB  0  // ⏻
+#define UC_POWER_ON_OFF_SYMBOL                                       0x23FC  0  // ⏼
+#define UC_POWER_ON_SYMBOL                                           0x23FD  0  // ⏽
+#define UC_POWER_SLEEP_SYMBOL                                        0x23FE  0  // ⏾
+#define UC_OBSERVER_EYE_SYMBOL                                       0x23FF  0  // ⏿

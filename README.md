@@ -71,10 +71,27 @@ using the `minimum-length` property. E.g.,
 
 Please let me know if certain input systems require strictly positive padding.
 
-**Convenience macros.** This module includes a collection of convenience macros to simplify the
-inclusion of common code points. For instance, instead of using `&uc 0xE4 0xC4` to get `ä/Ä` one can
-equivalently use `&uc UC_DE_AE`. All currently available macros can be seen
-[here](include/zmk-unicode/keys). 
+**Convenience macros.** This module includes predefined keys for all Unicode 16.0.0 glyphs. It also
+includes a curated collection of language-specific aliases, which expose a subset of keys under
+shorter labels.
+
+For instance, instead of using `&uc 0xE4 0xC4` to get `ä/Ä` one can
+equivalently use `&uc UC_DE_AE`. Language-specific aliases work without additional setup. A full
+list of available aliases can be seen
+[here](include/zmk-unicode/keys).
+
+To access the full set of Unicode glyphs by label, one must source one of the following headers.
+```c
+#include <zmk-unicode/keys-extra.h>  // All glyphs except CJK
+#include <zmk-unicode/keys-full.h>   // All glyphs including CJK
+```
+These glyphs are accessible by their official names, prefixed by `UC_`. The exception are keys which
+come in lower/uppercase pairs, which are exposed omitting `SMALL` and `CAPITAL`. For instance:
+```c
+&uc UC_LATIN_LETTER_A_WITH_GRAVE  // à/À
+&uc UC_WINKING_FACE               // 😉
+```
+
 
 ### 3. Selecting an input system on the keyboard
 

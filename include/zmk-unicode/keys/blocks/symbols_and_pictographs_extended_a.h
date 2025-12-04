@@ -1,0 +1,164 @@
+/*
+ * Unicode keys for U+1FA70 .. U+1FAFF
+ *
+ * This file was generated from Unidata 16.0.0 with the following license:
+ *
+ * UNICODE LICENSE V3
+ *
+ * COPYRIGHT AND PERMISSION NOTICE
+ *
+ * Copyright © 1991-2025 Unicode, Inc.
+ *
+ * NOTICE TO USER: Carefully read the following legal agreement. BY
+ * DOWNLOADING, INSTALLING, COPYING OR OTHERWISE USING DATA FILES, AND/OR
+ * SOFTWARE, YOU UNEQUIVOCALLY ACCEPT, AND AGREE TO BE BOUND BY, ALL OF THE
+ * TERMS AND CONDITIONS OF THIS AGREEMENT. IF YOU DO NOT AGREE, DO NOT
+ * DOWNLOAD, INSTALL, COPY, DISTRIBUTE OR USE THE DATA FILES OR SOFTWARE.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of data files and any associated documentation (the "Data Files") or
+ * software and any associated documentation (the "Software") to deal in the
+ * Data Files or Software without restriction, including without limitation
+ * the rights to use, copy, modify, merge, publish, distribute, and/or sell
+ * copies of the Data Files or Software, and to permit persons to whom the
+ * Data Files or Software are furnished to do so, provided that either (a)
+ * this copyright and permission notice appear with all copies of the Data
+ * Files or Software, or (b) this copyright and permission notice appear in
+ * associated Documentation.
+ *
+ * THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+ * KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF
+ * THIRD PARTY RIGHTS.
+ *
+ * IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE
+ * BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES,
+ * OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+ * WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ * ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THE DATA
+ * FILES OR SOFTWARE.
+ *
+ * Except as contained in this notice, the name of a copyright holder shall
+ * not be used in advertising or otherwise to promote the sale, use or other
+ * dealings in these Data Files or Software without prior written
+ * authorization of the copyright holder.
+ *
+ * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
+ */
+
+#pragma once
+
+#define UC_BALLET_SHOES                              0x1FA70  0  // 🩰
+#define UC_ONE_PIECE_SWIMSUIT                        0x1FA71  0  // 🩱
+#define UC_BRIEFS                                    0x1FA72  0  // 🩲
+#define UC_SHORTS                                    0x1FA73  0  // 🩳
+#define UC_THONG_SANDAL                              0x1FA74  0  // 🩴
+#define UC_LIGHT_BLUE_HEART                          0x1FA75  0  // 🩵
+#define UC_GREY_HEART                                0x1FA76  0  // 🩶
+#define UC_PINK_HEART                                0x1FA77  0  // 🩷
+#define UC_DROP_OF_BLOOD                             0x1FA78  0  // 🩸
+#define UC_ADHESIVE_BANDAGE                          0x1FA79  0  // 🩹
+#define UC_STETHOSCOPE                               0x1FA7A  0  // 🩺
+#define UC_X_RAY                                     0x1FA7B  0  // 🩻
+#define UC_CRUTCH                                    0x1FA7C  0  // 🩼
+#define UC_YO_YO                                     0x1FA80  0  // 🪀
+#define UC_KITE                                      0x1FA81  0  // 🪁
+#define UC_PARACHUTE                                 0x1FA82  0  // 🪂
+#define UC_BOOMERANG                                 0x1FA83  0  // 🪃
+#define UC_MAGIC_WAND                                0x1FA84  0  // 🪄
+#define UC_PINATA                                    0x1FA85  0  // 🪅
+#define UC_NESTING_DOLLS                             0x1FA86  0  // 🪆
+#define UC_MARACAS                                   0x1FA87  0  // 🪇
+#define UC_FLUTE                                     0x1FA88  0  // 🪈
+#define UC_HARP                                      0x1FA89  0  // 🪉
+#define UC_SHOVEL                                    0x1FA8F  0  // 🪏
+#define UC_RINGED_PLANET                             0x1FA90  0  // 🪐
+#define UC_CHAIR                                     0x1FA91  0  // 🪑
+#define UC_RAZOR                                     0x1FA92  0  // 🪒
+#define UC_AXE                                       0x1FA93  0  // 🪓
+#define UC_DIYA_LAMP                                 0x1FA94  0  // 🪔
+#define UC_BANJO                                     0x1FA95  0  // 🪕
+#define UC_MILITARY_HELMET                           0x1FA96  0  // 🪖
+#define UC_ACCORDION                                 0x1FA97  0  // 🪗
+#define UC_LONG_DRUM                                 0x1FA98  0  // 🪘
+#define UC_COIN                                      0x1FA99  0  // 🪙
+#define UC_CARPENTRY_SAW                             0x1FA9A  0  // 🪚
+#define UC_SCREWDRIVER                               0x1FA9B  0  // 🪛
+#define UC_LADDER                                    0x1FA9C  0  // 🪜
+#define UC_HOOK                                      0x1FA9D  0  // 🪝
+#define UC_MIRROR                                    0x1FA9E  0  // 🪞
+#define UC_WINDOW                                    0x1FA9F  0  // 🪟
+#define UC_PLUNGER                                   0x1FAA0  0  // 🪠
+#define UC_SEWING_NEEDLE                             0x1FAA1  0  // 🪡
+#define UC_KNOT                                      0x1FAA2  0  // 🪢
+#define UC_BUCKET                                    0x1FAA3  0  // 🪣
+#define UC_MOUSE_TRAP                                0x1FAA4  0  // 🪤
+#define UC_TOOTHBRUSH                                0x1FAA5  0  // 🪥
+#define UC_HEADSTONE                                 0x1FAA6  0  // 🪦
+#define UC_PLACARD                                   0x1FAA7  0  // 🪧
+#define UC_ROCK                                      0x1FAA8  0  // 🪨
+#define UC_MIRROR_BALL                               0x1FAA9  0  // 🪩
+#define UC_IDENTIFICATION_CARD                       0x1FAAA  0  // 🪪
+#define UC_LOW_BATTERY                               0x1FAAB  0  // 🪫
+#define UC_HAMSA                                     0x1FAAC  0  // 🪬
+#define UC_FOLDING_HAND_FAN                          0x1FAAD  0  // 🪭
+#define UC_HAIR_PICK                                 0x1FAAE  0  // 🪮
+#define UC_KHANDA                                    0x1FAAF  0  // 🪯
+#define UC_FLY                                       0x1FAB0  0  // 🪰
+#define UC_WORM                                      0x1FAB1  0  // 🪱
+#define UC_BEETLE                                    0x1FAB2  0  // 🪲
+#define UC_COCKROACH                                 0x1FAB3  0  // 🪳
+#define UC_POTTED_PLANT                              0x1FAB4  0  // 🪴
+#define UC_WOOD                                      0x1FAB5  0  // 🪵
+#define UC_FEATHER                                   0x1FAB6  0  // 🪶
+#define UC_LOTUS                                     0x1FAB7  0  // 🪷
+#define UC_CORAL                                     0x1FAB8  0  // 🪸
+#define UC_EMPTY_NEST                                0x1FAB9  0  // 🪹
+#define UC_NEST_WITH_EGGS                            0x1FABA  0  // 🪺
+#define UC_HYACINTH                                  0x1FABB  0  // 🪻
+#define UC_JELLYFISH                                 0x1FABC  0  // 🪼
+#define UC_WING                                      0x1FABD  0  // 🪽
+#define UC_LEAFLESS_TREE                             0x1FABE  0  // 🪾
+#define UC_GOOSE                                     0x1FABF  0  // 🪿
+#define UC_ANATOMICAL_HEART                          0x1FAC0  0  // 🫀
+#define UC_LUNGS                                     0x1FAC1  0  // 🫁
+#define UC_PEOPLE_HUGGING                            0x1FAC2  0  // 🫂
+#define UC_PREGNANT_MAN                              0x1FAC3  0  // 🫃
+#define UC_PREGNANT_PERSON                           0x1FAC4  0  // 🫄
+#define UC_PERSON_WITH_CROWN                         0x1FAC5  0  // 🫅
+#define UC_FINGERPRINT                               0x1FAC6  0  // 🫆
+#define UC_MOOSE                                     0x1FACE  0  // 🫎
+#define UC_DONKEY                                    0x1FACF  0  // 🫏
+#define UC_BLUEBERRIES                               0x1FAD0  0  // 🫐
+#define UC_BELL_PEPPER                               0x1FAD1  0  // 🫑
+#define UC_OLIVE                                     0x1FAD2  0  // 🫒
+#define UC_FLATBREAD                                 0x1FAD3  0  // 🫓
+#define UC_TAMALE                                    0x1FAD4  0  // 🫔
+#define UC_FONDUE                                    0x1FAD5  0  // 🫕
+#define UC_TEAPOT                                    0x1FAD6  0  // 🫖
+#define UC_POURING_LIQUID                            0x1FAD7  0  // 🫗
+#define UC_BEANS                                     0x1FAD8  0  // 🫘
+#define UC_JAR                                       0x1FAD9  0  // 🫙
+#define UC_GINGER_ROOT                               0x1FADA  0  // 🫚
+#define UC_PEA_POD                                   0x1FADB  0  // 🫛
+#define UC_ROOT_VEGETABLE                            0x1FADC  0  // 🫜
+#define UC_SPLATTER                                  0x1FADF  0  // 🫟
+#define UC_MELTING_FACE                              0x1FAE0  0  // 🫠
+#define UC_SALUTING_FACE                             0x1FAE1  0  // 🫡
+#define UC_FACE_WITH_OPEN_EYES_AND_HAND_OVER_MOUTH   0x1FAE2  0  // 🫢
+#define UC_FACE_WITH_PEEKING_EYE                     0x1FAE3  0  // 🫣
+#define UC_FACE_WITH_DIAGONAL_MOUTH                  0x1FAE4  0  // 🫤
+#define UC_DOTTED_LINE_FACE                          0x1FAE5  0  // 🫥
+#define UC_BITING_LIP                                0x1FAE6  0  // 🫦
+#define UC_BUBBLES                                   0x1FAE7  0  // 🫧
+#define UC_SHAKING_FACE                              0x1FAE8  0  // 🫨
+#define UC_FACE_WITH_BAGS_UNDER_EYES                 0x1FAE9  0  // 🫩
+#define UC_HAND_WITH_INDEX_FINGER_AND_THUMB_CROSSED  0x1FAF0  0  // 🫰
+#define UC_RIGHTWARDS_HAND                           0x1FAF1  0  // 🫱
+#define UC_LEFTWARDS_HAND                            0x1FAF2  0  // 🫲
+#define UC_PALM_DOWN_HAND                            0x1FAF3  0  // 🫳
+#define UC_PALM_UP_HAND                              0x1FAF4  0  // 🫴
+#define UC_INDEX_POINTING_AT_THE_VIEWER              0x1FAF5  0  // 🫵
+#define UC_HEART_HANDS                               0x1FAF6  0  // 🫶
+#define UC_LEFTWARDS_PUSHING_HAND                    0x1FAF7  0  // 🫷
+#define UC_RIGHTWARDS_PUSHING_HAND                   0x1FAF8  0  // 🫸

@@ -1,0 +1,78 @@
+/*
+ * Unicode keys for U+1E7E0 .. U+1E7FF
+ *
+ * This file was generated from Unidata 16.0.0 with the following license:
+ *
+ * UNICODE LICENSE V3
+ *
+ * COPYRIGHT AND PERMISSION NOTICE
+ *
+ * Copyright © 1991-2025 Unicode, Inc.
+ *
+ * NOTICE TO USER: Carefully read the following legal agreement. BY
+ * DOWNLOADING, INSTALLING, COPYING OR OTHERWISE USING DATA FILES, AND/OR
+ * SOFTWARE, YOU UNEQUIVOCALLY ACCEPT, AND AGREE TO BE BOUND BY, ALL OF THE
+ * TERMS AND CONDITIONS OF THIS AGREEMENT. IF YOU DO NOT AGREE, DO NOT
+ * DOWNLOAD, INSTALL, COPY, DISTRIBUTE OR USE THE DATA FILES OR SOFTWARE.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of data files and any associated documentation (the "Data Files") or
+ * software and any associated documentation (the "Software") to deal in the
+ * Data Files or Software without restriction, including without limitation
+ * the rights to use, copy, modify, merge, publish, distribute, and/or sell
+ * copies of the Data Files or Software, and to permit persons to whom the
+ * Data Files or Software are furnished to do so, provided that either (a)
+ * this copyright and permission notice appear with all copies of the Data
+ * Files or Software, or (b) this copyright and permission notice appear in
+ * associated Documentation.
+ *
+ * THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+ * KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF
+ * THIRD PARTY RIGHTS.
+ *
+ * IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE
+ * BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES,
+ * OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+ * WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ * ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THE DATA
+ * FILES OR SOFTWARE.
+ *
+ * Except as contained in this notice, the name of a copyright holder shall
+ * not be used in advertising or otherwise to promote the sale, use or other
+ * dealings in these Data Files or Software without prior written
+ * authorization of the copyright holder.
+ *
+ * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
+ */
+
+#pragma once
+
+#define UC_ETHIOPIC_SYLLABLE_HHYA         0x1E7E0  0  // 𞟠
+#define UC_ETHIOPIC_SYLLABLE_HHYU         0x1E7E1  0  // 𞟡
+#define UC_ETHIOPIC_SYLLABLE_HHYI         0x1E7E2  0  // 𞟢
+#define UC_ETHIOPIC_SYLLABLE_HHYAA        0x1E7E3  0  // 𞟣
+#define UC_ETHIOPIC_SYLLABLE_HHYEE        0x1E7E4  0  // 𞟤
+#define UC_ETHIOPIC_SYLLABLE_HHYE         0x1E7E5  0  // 𞟥
+#define UC_ETHIOPIC_SYLLABLE_HHYO         0x1E7E6  0  // 𞟦
+#define UC_ETHIOPIC_SYLLABLE_GURAGE_HHWA  0x1E7E8  0  // 𞟨
+#define UC_ETHIOPIC_SYLLABLE_HHWI         0x1E7E9  0  // 𞟩
+#define UC_ETHIOPIC_SYLLABLE_HHWEE        0x1E7EA  0  // 𞟪
+#define UC_ETHIOPIC_SYLLABLE_HHWE         0x1E7EB  0  // 𞟫
+#define UC_ETHIOPIC_SYLLABLE_GURAGE_MWI   0x1E7ED  0  // 𞟭
+#define UC_ETHIOPIC_SYLLABLE_GURAGE_MWEE  0x1E7EE  0  // 𞟮
+#define UC_ETHIOPIC_SYLLABLE_GURAGE_QWI   0x1E7F0  0  // 𞟰
+#define UC_ETHIOPIC_SYLLABLE_GURAGE_QWEE  0x1E7F1  0  // 𞟱
+#define UC_ETHIOPIC_SYLLABLE_GURAGE_QWE   0x1E7F2  0  // 𞟲
+#define UC_ETHIOPIC_SYLLABLE_GURAGE_BWI   0x1E7F3  0  // 𞟳
+#define UC_ETHIOPIC_SYLLABLE_GURAGE_BWEE  0x1E7F4  0  // 𞟴
+#define UC_ETHIOPIC_SYLLABLE_GURAGE_KWI   0x1E7F5  0  // 𞟵
+#define UC_ETHIOPIC_SYLLABLE_GURAGE_KWEE  0x1E7F6  0  // 𞟶
+#define UC_ETHIOPIC_SYLLABLE_GURAGE_KWE   0x1E7F7  0  // 𞟷
+#define UC_ETHIOPIC_SYLLABLE_GURAGE_GWI   0x1E7F8  0  // 𞟸
+#define UC_ETHIOPIC_SYLLABLE_GURAGE_GWEE  0x1E7F9  0  // 𞟹
+#define UC_ETHIOPIC_SYLLABLE_GURAGE_GWE   0x1E7FA  0  // 𞟺
+#define UC_ETHIOPIC_SYLLABLE_GURAGE_FWI   0x1E7FB  0  // 𞟻
+#define UC_ETHIOPIC_SYLLABLE_GURAGE_FWEE  0x1E7FC  0  // 𞟼
+#define UC_ETHIOPIC_SYLLABLE_GURAGE_PWI   0x1E7FD  0  // 𞟽
+#define UC_ETHIOPIC_SYLLABLE_GURAGE_PWEE  0x1E7FE  0  // 𞟾

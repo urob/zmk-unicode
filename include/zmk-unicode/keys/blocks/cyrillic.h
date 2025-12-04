@@ -1,0 +1,175 @@
+/*
+ * Unicode keys for U+0400 .. U+04FF
+ *
+ * This file was generated from Unidata 16.0.0 with the following license:
+ *
+ * UNICODE LICENSE V3
+ *
+ * COPYRIGHT AND PERMISSION NOTICE
+ *
+ * Copyright © 1991-2025 Unicode, Inc.
+ *
+ * NOTICE TO USER: Carefully read the following legal agreement. BY
+ * DOWNLOADING, INSTALLING, COPYING OR OTHERWISE USING DATA FILES, AND/OR
+ * SOFTWARE, YOU UNEQUIVOCALLY ACCEPT, AND AGREE TO BE BOUND BY, ALL OF THE
+ * TERMS AND CONDITIONS OF THIS AGREEMENT. IF YOU DO NOT AGREE, DO NOT
+ * DOWNLOAD, INSTALL, COPY, DISTRIBUTE OR USE THE DATA FILES OR SOFTWARE.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of data files and any associated documentation (the "Data Files") or
+ * software and any associated documentation (the "Software") to deal in the
+ * Data Files or Software without restriction, including without limitation
+ * the rights to use, copy, modify, merge, publish, distribute, and/or sell
+ * copies of the Data Files or Software, and to permit persons to whom the
+ * Data Files or Software are furnished to do so, provided that either (a)
+ * this copyright and permission notice appear with all copies of the Data
+ * Files or Software, or (b) this copyright and permission notice appear in
+ * associated Documentation.
+ *
+ * THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+ * KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF
+ * THIRD PARTY RIGHTS.
+ *
+ * IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE
+ * BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES,
+ * OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+ * WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ * ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THE DATA
+ * FILES OR SOFTWARE.
+ *
+ * Except as contained in this notice, the name of a copyright holder shall
+ * not be used in advertising or otherwise to promote the sale, use or other
+ * dealings in these Data Files or Software without prior written
+ * authorization of the copyright holder.
+ *
+ * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
+ */
+
+#pragma once
+
+#define UC_CYRILLIC_LETTER_IE_WITH_GRAVE                     0x450  0x400  // ѐ/Ѐ
+#define UC_CYRILLIC_LETTER_IO                                0x451  0x401  // ё/Ё
+#define UC_CYRILLIC_LETTER_DJE                               0x452  0x402  // ђ/Ђ
+#define UC_CYRILLIC_LETTER_GJE                               0x453  0x403  // ѓ/Ѓ
+#define UC_CYRILLIC_LETTER_UKRAINIAN_IE                      0x454  0x404  // є/Є
+#define UC_CYRILLIC_LETTER_DZE                               0x455  0x405  // ѕ/Ѕ
+#define UC_CYRILLIC_LETTER_BYELORUSSIAN_UKRAINIAN_I          0x456  0x406  // і/І
+#define UC_CYRILLIC_LETTER_YI                                0x457  0x407  // ї/Ї
+#define UC_CYRILLIC_LETTER_JE                                0x458  0x408  // ј/Ј
+#define UC_CYRILLIC_LETTER_LJE                               0x459  0x409  // љ/Љ
+#define UC_CYRILLIC_LETTER_NJE                               0x45A  0x40A  // њ/Њ
+#define UC_CYRILLIC_LETTER_TSHE                              0x45B  0x40B  // ћ/Ћ
+#define UC_CYRILLIC_LETTER_KJE                               0x45C  0x40C  // ќ/Ќ
+#define UC_CYRILLIC_LETTER_I_WITH_GRAVE                      0x45D  0x40D  // ѝ/Ѝ
+#define UC_CYRILLIC_LETTER_SHORT_U                           0x45E  0x40E  // ў/Ў
+#define UC_CYRILLIC_LETTER_DZHE                              0x45F  0x40F  // џ/Џ
+#define UC_CYRILLIC_LETTER_A                                 0x430  0x410  // а/А
+#define UC_CYRILLIC_LETTER_BE                                0x431  0x411  // б/Б
+#define UC_CYRILLIC_LETTER_VE                                0x432  0x412  // в/В
+#define UC_CYRILLIC_LETTER_GHE                               0x433  0x413  // г/Г
+#define UC_CYRILLIC_LETTER_DE                                0x434  0x414  // д/Д
+#define UC_CYRILLIC_LETTER_IE                                0x435  0x415  // е/Е
+#define UC_CYRILLIC_LETTER_ZHE                               0x436  0x416  // ж/Ж
+#define UC_CYRILLIC_LETTER_ZE                                0x437  0x417  // з/З
+#define UC_CYRILLIC_LETTER_I                                 0x438  0x418  // и/И
+#define UC_CYRILLIC_LETTER_SHORT_I                           0x439  0x419  // й/Й
+#define UC_CYRILLIC_LETTER_KA                                0x43A  0x41A  // к/К
+#define UC_CYRILLIC_LETTER_EL                                0x43B  0x41B  // л/Л
+#define UC_CYRILLIC_LETTER_EM                                0x43C  0x41C  // м/М
+#define UC_CYRILLIC_LETTER_EN                                0x43D  0x41D  // н/Н
+#define UC_CYRILLIC_LETTER_O                                 0x43E  0x41E  // о/О
+#define UC_CYRILLIC_LETTER_PE                                0x43F  0x41F  // п/П
+#define UC_CYRILLIC_LETTER_ER                                0x440  0x420  // р/Р
+#define UC_CYRILLIC_LETTER_ES                                0x441  0x421  // с/С
+#define UC_CYRILLIC_LETTER_TE                                0x442  0x422  // т/Т
+#define UC_CYRILLIC_LETTER_U                                 0x443  0x423  // у/У
+#define UC_CYRILLIC_LETTER_EF                                0x444  0x424  // ф/Ф
+#define UC_CYRILLIC_LETTER_HA                                0x445  0x425  // х/Х
+#define UC_CYRILLIC_LETTER_TSE                               0x446  0x426  // ц/Ц
+#define UC_CYRILLIC_LETTER_CHE                               0x447  0x427  // ч/Ч
+#define UC_CYRILLIC_LETTER_SHA                               0x448  0x428  // ш/Ш
+#define UC_CYRILLIC_LETTER_SHCHA                             0x449  0x429  // щ/Щ
+#define UC_CYRILLIC_LETTER_HARD_SIGN                         0x44A  0x42A  // ъ/Ъ
+#define UC_CYRILLIC_LETTER_YERU                              0x44B  0x42B  // ы/Ы
+#define UC_CYRILLIC_LETTER_SOFT_SIGN                         0x44C  0x42C  // ь/Ь
+#define UC_CYRILLIC_LETTER_E                                 0x44D  0x42D  // э/Э
+#define UC_CYRILLIC_LETTER_YU                                0x44E  0x42E  // ю/Ю
+#define UC_CYRILLIC_LETTER_YA                                0x44F  0x42F  // я/Я
+#define UC_CYRILLIC_LETTER_OMEGA                             0x461  0x460  // ѡ/Ѡ
+#define UC_CYRILLIC_LETTER_YAT                               0x463  0x462  // ѣ/Ѣ
+#define UC_CYRILLIC_LETTER_IOTIFIED_E                        0x465  0x464  // ѥ/Ѥ
+#define UC_CYRILLIC_LETTER_LITTLE_YUS                        0x467  0x466  // ѧ/Ѧ
+#define UC_CYRILLIC_LETTER_IOTIFIED_LITTLE_YUS               0x469  0x468  // ѩ/Ѩ
+#define UC_CYRILLIC_LETTER_BIG_YUS                           0x46B  0x46A  // ѫ/Ѫ
+#define UC_CYRILLIC_LETTER_IOTIFIED_BIG_YUS                  0x46D  0x46C  // ѭ/Ѭ
+#define UC_CYRILLIC_LETTER_KSI                               0x46F  0x46E  // ѯ/Ѯ
+#define UC_CYRILLIC_LETTER_PSI                               0x471  0x470  // ѱ/Ѱ
+#define UC_CYRILLIC_LETTER_FITA                              0x473  0x472  // ѳ/Ѳ
+#define UC_CYRILLIC_LETTER_IZHITSA                           0x475  0x474  // ѵ/Ѵ
+#define UC_CYRILLIC_LETTER_IZHITSA_WITH_DOUBLE_GRAVE_ACCENT  0x477  0x476  // ѷ/Ѷ
+#define UC_CYRILLIC_LETTER_UK                                0x479  0x478  // ѹ/Ѹ
+#define UC_CYRILLIC_LETTER_ROUND_OMEGA                       0x47B  0x47A  // ѻ/Ѻ
+#define UC_CYRILLIC_LETTER_OMEGA_WITH_TITLO                  0x47D  0x47C  // ѽ/Ѽ
+#define UC_CYRILLIC_LETTER_OT                                0x47F  0x47E  // ѿ/Ѿ
+#define UC_CYRILLIC_LETTER_KOPPA                             0x481  0x480  // ҁ/Ҁ
+#define UC_CYRILLIC_THOUSANDS_SIGN                           0x482  0      // ҂
+#define UC_CYRILLIC_LETTER_SHORT_I_WITH_TAIL                 0x48B  0x48A  // ҋ/Ҋ
+#define UC_CYRILLIC_LETTER_SEMISOFT_SIGN                     0x48D  0x48C  // ҍ/Ҍ
+#define UC_CYRILLIC_LETTER_ER_WITH_TICK                      0x48F  0x48E  // ҏ/Ҏ
+#define UC_CYRILLIC_LETTER_GHE_WITH_UPTURN                   0x491  0x490  // ґ/Ґ
+#define UC_CYRILLIC_LETTER_GHE_WITH_STROKE                   0x493  0x492  // ғ/Ғ
+#define UC_CYRILLIC_LETTER_GHE_WITH_MIDDLE_HOOK              0x495  0x494  // ҕ/Ҕ
+#define UC_CYRILLIC_LETTER_ZHE_WITH_DESCENDER                0x497  0x496  // җ/Җ
+#define UC_CYRILLIC_LETTER_ZE_WITH_DESCENDER                 0x499  0x498  // ҙ/Ҙ
+#define UC_CYRILLIC_LETTER_KA_WITH_DESCENDER                 0x49B  0x49A  // қ/Қ
+#define UC_CYRILLIC_LETTER_KA_WITH_VERTICAL_STROKE           0x49D  0x49C  // ҝ/Ҝ
+#define UC_CYRILLIC_LETTER_KA_WITH_STROKE                    0x49F  0x49E  // ҟ/Ҟ
+#define UC_CYRILLIC_LETTER_BASHKIR_KA                        0x4A1  0x4A0  // ҡ/Ҡ
+#define UC_CYRILLIC_LETTER_EN_WITH_DESCENDER                 0x4A3  0x4A2  // ң/Ң
+#define UC_CYRILLIC_LIGATURE_EN_GHE                          0x4A5  0x4A4  // ҥ/Ҥ
+#define UC_CYRILLIC_LETTER_PE_WITH_MIDDLE_HOOK               0x4A7  0x4A6  // ҧ/Ҧ
+#define UC_CYRILLIC_LETTER_ABKHASIAN_HA                      0x4A9  0x4A8  // ҩ/Ҩ
+#define UC_CYRILLIC_LETTER_ES_WITH_DESCENDER                 0x4AB  0x4AA  // ҫ/Ҫ
+#define UC_CYRILLIC_LETTER_TE_WITH_DESCENDER                 0x4AD  0x4AC  // ҭ/Ҭ
+#define UC_CYRILLIC_LETTER_STRAIGHT_U                        0x4AF  0x4AE  // ү/Ү
+#define UC_CYRILLIC_LETTER_STRAIGHT_U_WITH_STROKE            0x4B1  0x4B0  // ұ/Ұ
+#define UC_CYRILLIC_LETTER_HA_WITH_DESCENDER                 0x4B3  0x4B2  // ҳ/Ҳ
+#define UC_CYRILLIC_LIGATURE_TE_TSE                          0x4B5  0x4B4  // ҵ/Ҵ
+#define UC_CYRILLIC_LETTER_CHE_WITH_DESCENDER                0x4B7  0x4B6  // ҷ/Ҷ
+#define UC_CYRILLIC_LETTER_CHE_WITH_VERTICAL_STROKE          0x4B9  0x4B8  // ҹ/Ҹ
+#define UC_CYRILLIC_LETTER_SHHA                              0x4BB  0x4BA  // һ/Һ
+#define UC_CYRILLIC_LETTER_ABKHASIAN_CHE                     0x4BD  0x4BC  // ҽ/Ҽ
+#define UC_CYRILLIC_LETTER_ABKHASIAN_CHE_WITH_DESCENDER      0x4BF  0x4BE  // ҿ/Ҿ
+#define UC_CYRILLIC_LETTER_PALOCHKA                          0x4CF  0x4C0  // ӏ/Ӏ
+#define UC_CYRILLIC_LETTER_ZHE_WITH_BREVE                    0x4C2  0x4C1  // ӂ/Ӂ
+#define UC_CYRILLIC_LETTER_KA_WITH_HOOK                      0x4C4  0x4C3  // ӄ/Ӄ
+#define UC_CYRILLIC_LETTER_EL_WITH_TAIL                      0x4C6  0x4C5  // ӆ/Ӆ
+#define UC_CYRILLIC_LETTER_EN_WITH_HOOK                      0x4C8  0x4C7  // ӈ/Ӈ
+#define UC_CYRILLIC_LETTER_EN_WITH_TAIL                      0x4CA  0x4C9  // ӊ/Ӊ
+#define UC_CYRILLIC_LETTER_KHAKASSIAN_CHE                    0x4CC  0x4CB  // ӌ/Ӌ
+#define UC_CYRILLIC_LETTER_EM_WITH_TAIL                      0x4CE  0x4CD  // ӎ/Ӎ
+#define UC_CYRILLIC_LETTER_A_WITH_BREVE                      0x4D1  0x4D0  // ӑ/Ӑ
+#define UC_CYRILLIC_LETTER_A_WITH_DIAERESIS                  0x4D3  0x4D2  // ӓ/Ӓ
+#define UC_CYRILLIC_LIGATURE_A_IE                            0x4D5  0x4D4  // ӕ/Ӕ
+#define UC_CYRILLIC_LETTER_IE_WITH_BREVE                     0x4D7  0x4D6  // ӗ/Ӗ
+#define UC_CYRILLIC_LETTER_SCHWA                             0x4D9  0x4D8  // ә/Ә
+#define UC_CYRILLIC_LETTER_SCHWA_WITH_DIAERESIS              0x4DB  0x4DA  // ӛ/Ӛ
+#define UC_CYRILLIC_LETTER_ZHE_WITH_DIAERESIS                0x4DD  0x4DC  // ӝ/Ӝ
+#define UC_CYRILLIC_LETTER_ZE_WITH_DIAERESIS                 0x4DF  0x4DE  // ӟ/Ӟ
+#define UC_CYRILLIC_LETTER_ABKHASIAN_DZE                     0x4E1  0x4E0  // ӡ/Ӡ
+#define UC_CYRILLIC_LETTER_I_WITH_MACRON                     0x4E3  0x4E2  // ӣ/Ӣ
+#define UC_CYRILLIC_LETTER_I_WITH_DIAERESIS                  0x4E5  0x4E4  // ӥ/Ӥ
+#define UC_CYRILLIC_LETTER_O_WITH_DIAERESIS                  0x4E7  0x4E6  // ӧ/Ӧ
+#define UC_CYRILLIC_LETTER_BARRED_O                          0x4E9  0x4E8  // ө/Ө
+#define UC_CYRILLIC_LETTER_BARRED_O_WITH_DIAERESIS           0x4EB  0x4EA  // ӫ/Ӫ
+#define UC_CYRILLIC_LETTER_E_WITH_DIAERESIS                  0x4ED  0x4EC  // ӭ/Ӭ
+#define UC_CYRILLIC_LETTER_U_WITH_MACRON                     0x4EF  0x4EE  // ӯ/Ӯ
+#define UC_CYRILLIC_LETTER_U_WITH_DIAERESIS                  0x4F1  0x4F0  // ӱ/Ӱ
+#define UC_CYRILLIC_LETTER_U_WITH_DOUBLE_ACUTE               0x4F3  0x4F2  // ӳ/Ӳ
+#define UC_CYRILLIC_LETTER_CHE_WITH_DIAERESIS                0x4F5  0x4F4  // ӵ/Ӵ
+#define UC_CYRILLIC_LETTER_GHE_WITH_DESCENDER                0x4F7  0x4F6  // ӷ/Ӷ
+#define UC_CYRILLIC_LETTER_YERU_WITH_DIAERESIS               0x4F9  0x4F8  // ӹ/Ӹ
+#define UC_CYRILLIC_LETTER_GHE_WITH_STROKE_AND_HOOK          0x4FB  0x4FA  // ӻ/Ӻ
+#define UC_CYRILLIC_LETTER_HA_WITH_HOOK                      0x4FD  0x4FC  // ӽ/Ӽ
+#define UC_CYRILLIC_LETTER_HA_WITH_STROKE                    0x4FF  0x4FE  // ӿ/Ӿ

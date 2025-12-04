@@ -1,0 +1,3 @@
+s/.*hid_listener_keycode/kp/p
+s/.*hid_implicit_modifiers/mods/p
+s/.*hid_masked_modifiers/mods_mask/p

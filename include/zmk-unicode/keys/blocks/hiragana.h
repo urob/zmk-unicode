@@ -1,0 +1,141 @@
+/*
+ * Unicode keys for U+3040 .. U+309F
+ *
+ * This file was generated from Unidata 16.0.0 with the following license:
+ *
+ * UNICODE LICENSE V3
+ *
+ * COPYRIGHT AND PERMISSION NOTICE
+ *
+ * Copyright © 1991-2025 Unicode, Inc.
+ *
+ * NOTICE TO USER: Carefully read the following legal agreement. BY
+ * DOWNLOADING, INSTALLING, COPYING OR OTHERWISE USING DATA FILES, AND/OR
+ * SOFTWARE, YOU UNEQUIVOCALLY ACCEPT, AND AGREE TO BE BOUND BY, ALL OF THE
+ * TERMS AND CONDITIONS OF THIS AGREEMENT. IF YOU DO NOT AGREE, DO NOT
+ * DOWNLOAD, INSTALL, COPY, DISTRIBUTE OR USE THE DATA FILES OR SOFTWARE.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of data files and any associated documentation (the "Data Files") or
+ * software and any associated documentation (the "Software") to deal in the
+ * Data Files or Software without restriction, including without limitation
+ * the rights to use, copy, modify, merge, publish, distribute, and/or sell
+ * copies of the Data Files or Software, and to permit persons to whom the
+ * Data Files or Software are furnished to do so, provided that either (a)
+ * this copyright and permission notice appear with all copies of the Data
+ * Files or Software, or (b) this copyright and permission notice appear in
+ * associated Documentation.
+ *
+ * THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+ * KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF
+ * THIRD PARTY RIGHTS.
+ *
+ * IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE
+ * BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES,
+ * OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+ * WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ * ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THE DATA
+ * FILES OR SOFTWARE.
+ *
+ * Except as contained in this notice, the name of a copyright holder shall
+ * not be used in advertising or otherwise to promote the sale, use or other
+ * dealings in these Data Files or Software without prior written
+ * authorization of the copyright holder.
+ *
+ * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
+ */
+
+#pragma once
+
+#define UC_HIRAGANA_LETTER_SMALL_A                   0x3041  0  // ぁ
+#define UC_HIRAGANA_LETTER_A                         0x3042  0  // あ
+#define UC_HIRAGANA_LETTER_SMALL_I                   0x3043  0  // ぃ
+#define UC_HIRAGANA_LETTER_I                         0x3044  0  // い
+#define UC_HIRAGANA_LETTER_SMALL_U                   0x3045  0  // ぅ
+#define UC_HIRAGANA_LETTER_U                         0x3046  0  // う
+#define UC_HIRAGANA_LETTER_SMALL_E                   0x3047  0  // ぇ
+#define UC_HIRAGANA_LETTER_E                         0x3048  0  // え
+#define UC_HIRAGANA_LETTER_SMALL_O                   0x3049  0  // ぉ
+#define UC_HIRAGANA_LETTER_O                         0x304A  0  // お
+#define UC_HIRAGANA_LETTER_KA                        0x304B  0  // か
+#define UC_HIRAGANA_LETTER_GA                        0x304C  0  // が
+#define UC_HIRAGANA_LETTER_KI                        0x304D  0  // き
+#define UC_HIRAGANA_LETTER_GI                        0x304E  0  // ぎ
+#define UC_HIRAGANA_LETTER_KU                        0x304F  0  // く
+#define UC_HIRAGANA_LETTER_GU                        0x3050  0  // ぐ
+#define UC_HIRAGANA_LETTER_KE                        0x3051  0  // け
+#define UC_HIRAGANA_LETTER_GE                        0x3052  0  // げ
+#define UC_HIRAGANA_LETTER_KO                        0x3053  0  // こ
+#define UC_HIRAGANA_LETTER_GO                        0x3054  0  // ご
+#define UC_HIRAGANA_LETTER_SA                        0x3055  0  // さ
+#define UC_HIRAGANA_LETTER_ZA                        0x3056  0  // ざ
+#define UC_HIRAGANA_LETTER_SI                        0x3057  0  // し
+#define UC_HIRAGANA_LETTER_ZI                        0x3058  0  // じ
+#define UC_HIRAGANA_LETTER_SU                        0x3059  0  // す
+#define UC_HIRAGANA_LETTER_ZU                        0x305A  0  // ず
+#define UC_HIRAGANA_LETTER_SE                        0x305B  0  // せ
+#define UC_HIRAGANA_LETTER_ZE                        0x305C  0  // ぜ
+#define UC_HIRAGANA_LETTER_SO                        0x305D  0  // そ
+#define UC_HIRAGANA_LETTER_ZO                        0x305E  0  // ぞ
+#define UC_HIRAGANA_LETTER_TA                        0x305F  0  // た
+#define UC_HIRAGANA_LETTER_DA                        0x3060  0  // だ
+#define UC_HIRAGANA_LETTER_TI                        0x3061  0  // ち
+#define UC_HIRAGANA_LETTER_DI                        0x3062  0  // ぢ
+#define UC_HIRAGANA_LETTER_SMALL_TU                  0x3063  0  // っ
+#define UC_HIRAGANA_LETTER_TU                        0x3064  0  // つ
+#define UC_HIRAGANA_LETTER_DU                        0x3065  0  // づ
+#define UC_HIRAGANA_LETTER_TE                        0x3066  0  // て
+#define UC_HIRAGANA_LETTER_DE                        0x3067  0  // で
+#define UC_HIRAGANA_LETTER_TO                        0x3068  0  // と
+#define UC_HIRAGANA_LETTER_DO                        0x3069  0  // ど
+#define UC_HIRAGANA_LETTER_NA                        0x306A  0  // な
+#define UC_HIRAGANA_LETTER_NI                        0x306B  0  // に
+#define UC_HIRAGANA_LETTER_NU                        0x306C  0  // ぬ
+#define UC_HIRAGANA_LETTER_NE                        0x306D  0  // ね
+#define UC_HIRAGANA_LETTER_NO                        0x306E  0  // の
+#define UC_HIRAGANA_LETTER_HA                        0x306F  0  // は
+#define UC_HIRAGANA_LETTER_BA                        0x3070  0  // ば
+#define UC_HIRAGANA_LETTER_PA                        0x3071  0  // ぱ
+#define UC_HIRAGANA_LETTER_HI                        0x3072  0  // ひ
+#define UC_HIRAGANA_LETTER_BI                        0x3073  0  // び
+#define UC_HIRAGANA_LETTER_PI                        0x3074  0  // ぴ
+#define UC_HIRAGANA_LETTER_HU                        0x3075  0  // ふ
+#define UC_HIRAGANA_LETTER_BU                        0x3076  0  // ぶ
+#define UC_HIRAGANA_LETTER_PU                        0x3077  0  // ぷ
+#define UC_HIRAGANA_LETTER_HE                        0x3078  0  // へ
+#define UC_HIRAGANA_LETTER_BE                        0x3079  0  // べ
+#define UC_HIRAGANA_LETTER_PE                        0x307A  0  // ぺ
+#define UC_HIRAGANA_LETTER_HO                        0x307B  0  // ほ
+#define UC_HIRAGANA_LETTER_BO                        0x307C  0  // ぼ
+#define UC_HIRAGANA_LETTER_PO                        0x307D  0  // ぽ
+#define UC_HIRAGANA_LETTER_MA                        0x307E  0  // ま
+#define UC_HIRAGANA_LETTER_MI                        0x307F  0  // み
+#define UC_HIRAGANA_LETTER_MU                        0x3080  0  // む
+#define UC_HIRAGANA_LETTER_ME                        0x3081  0  // め
+#define UC_HIRAGANA_LETTER_MO                        0x3082  0  // も
+#define UC_HIRAGANA_LETTER_SMALL_YA                  0x3083  0  // ゃ
+#define UC_HIRAGANA_LETTER_YA                        0x3084  0  // や
+#define UC_HIRAGANA_LETTER_SMALL_YU                  0x3085  0  // ゅ
+#define UC_HIRAGANA_LETTER_YU                        0x3086  0  // ゆ
+#define UC_HIRAGANA_LETTER_SMALL_YO                  0x3087  0  // ょ
+#define UC_HIRAGANA_LETTER_YO                        0x3088  0  // よ
+#define UC_HIRAGANA_LETTER_RA                        0x3089  0  // ら
+#define UC_HIRAGANA_LETTER_RI                        0x308A  0  // り
+#define UC_HIRAGANA_LETTER_RU                        0x308B  0  // る
+#define UC_HIRAGANA_LETTER_RE                        0x308C  0  // れ
+#define UC_HIRAGANA_LETTER_RO                        0x308D  0  // ろ
+#define UC_HIRAGANA_LETTER_SMALL_WA                  0x308E  0  // ゎ
+#define UC_HIRAGANA_LETTER_WA                        0x308F  0  // わ
+#define UC_HIRAGANA_LETTER_WI                        0x3090  0  // ゐ
+#define UC_HIRAGANA_LETTER_WE                        0x3091  0  // ゑ
+#define UC_HIRAGANA_LETTER_WO                        0x3092  0  // を
+#define UC_HIRAGANA_LETTER_N                         0x3093  0  // ん
+#define UC_HIRAGANA_LETTER_VU                        0x3094  0  // ゔ
+#define UC_HIRAGANA_LETTER_SMALL_KA                  0x3095  0  // ゕ
+#define UC_HIRAGANA_LETTER_SMALL_KE                  0x3096  0  // ゖ
+#define UC_KATAKANA_HIRAGANA_VOICED_SOUND_MARK       0x309B  0  // ゛
+#define UC_KATAKANA_HIRAGANA_SEMI_VOICED_SOUND_MARK  0x309C  0  // ゜
+#define UC_HIRAGANA_ITERATION_MARK                   0x309D  0  // ゝ
+#define UC_HIRAGANA_VOICED_ITERATION_MARK            0x309E  0  // ゞ
+#define UC_HIRAGANA_DIGRAPH_YORI                     0x309F  0  // ゟ
