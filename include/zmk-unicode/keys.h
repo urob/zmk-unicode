@@ -1,5 +1,6 @@
 #pragma once
 
+#include <zmk-unicode/keys/catalan.h>
 #include <zmk-unicode/keys/currency.h>
 #include <zmk-unicode/keys/czech.h>
 #include <zmk-unicode/keys/danish.h>
@@ -11,6 +12,7 @@
 #include <zmk-unicode/keys/portuguese.h>
 #include <zmk-unicode/keys/romanian.h>
 #include <zmk-unicode/keys/russian.h>
+#include <zmk-unicode/keys/serbian.h>
 #include <zmk-unicode/keys/slovak.h>
 #include <zmk-unicode/keys/spanish.h>
 #include <zmk-unicode/keys/swedish.h>
