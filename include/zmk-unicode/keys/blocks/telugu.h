@@ -1,7 +1,7 @@
 /*
  * Unicode keys for U+0C00 .. U+0C7F
  *
- * This file was generated from Unidata 16.0.0 with the following license:
+ * This file was generated from Unidata 17.0.0 with the following license:
  *
  * UNICODE LICENSE V3
  *
@@ -43,7 +43,7 @@
  * dealings in these Data Files or Software without prior written
  * authorization of the copyright holder.
  *
- * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
+ * See http://www.unicode.org/versions/Unicode17.0.0 for source data.
  */
 
 #pragma once
@@ -102,6 +102,7 @@
 #define UC_TELUGU_LETTER_TSA                                    0xC58  0  // ౘ
 #define UC_TELUGU_LETTER_DZA                                    0xC59  0  // ౙ
 #define UC_TELUGU_LETTER_RRRA                                   0xC5A  0  // ౚ
+#define UC_TELUGU_ARCHAIC_SHRII                                 0xC5C  0  // ౜
 #define UC_TELUGU_LETTER_NAKAARA_POLLU                          0xC5D  0  // ౝ
 #define UC_TELUGU_LETTER_VOCALIC_RR                             0xC60  0  // ౠ
 #define UC_TELUGU_LETTER_VOCALIC_LL                             0xC61  0  // ౡ

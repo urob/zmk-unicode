@@ -1,7 +1,7 @@
 /*
  * Unicode keys for U+20A0 .. U+20CF
  *
- * This file was generated from Unidata 16.0.0 with the following license:
+ * This file was generated from Unidata 17.0.0 with the following license:
  *
  * UNICODE LICENSE V3
  *
@@ -43,7 +43,7 @@
  * dealings in these Data Files or Software without prior written
  * authorization of the copyright holder.
  *
- * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
+ * See http://www.unicode.org/versions/Unicode17.0.0 for source data.
  */
 
 #pragma once
@@ -81,3 +81,4 @@
 #define UC_LARI_SIGN            0x20BE  0  // ₾
 #define UC_BITCOIN_SIGN         0x20BF  0  // ₿
 #define UC_SOM_SIGN             0x20C0  0  // ⃀
+#define UC_SAUDI_RIYAL_SIGN     0x20C1  0  // ⃁

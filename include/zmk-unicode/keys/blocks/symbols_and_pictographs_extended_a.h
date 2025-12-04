@@ -1,7 +1,7 @@
 /*
  * Unicode keys for U+1FA70 .. U+1FAFF
  *
- * This file was generated from Unidata 16.0.0 with the following license:
+ * This file was generated from Unidata 17.0.0 with the following license:
  *
  * UNICODE LICENSE V3
  *
@@ -43,7 +43,7 @@
  * dealings in these Data Files or Software without prior written
  * authorization of the copyright holder.
  *
- * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
+ * See http://www.unicode.org/versions/Unicode17.0.0 for source data.
  */
 
 #pragma once
@@ -71,6 +71,8 @@
 #define UC_MARACAS                                   0x1FA87  0  // 🪇
 #define UC_FLUTE                                     0x1FA88  0  // 🪈
 #define UC_HARP                                      0x1FA89  0  // 🪉
+#define UC_TROMBONE                                  0x1FA8A  0  // 🪊
+#define UC_TREASURE_CHEST                            0x1FA8E  0  // 🪎
 #define UC_SHOVEL                                    0x1FA8F  0  // 🪏
 #define UC_RINGED_PLANET                             0x1FA90  0  // 🪐
 #define UC_CHAIR                                     0x1FA91  0  // 🪑
@@ -127,6 +129,8 @@
 #define UC_PREGNANT_PERSON                           0x1FAC4  0  // 🫄
 #define UC_PERSON_WITH_CROWN                         0x1FAC5  0  // 🫅
 #define UC_FINGERPRINT                               0x1FAC6  0  // 🫆
+#define UC_HAIRY_CREATURE                            0x1FAC8  0  // 🫈
+#define UC_ORCA                                      0x1FACD  0  // 🫍
 #define UC_MOOSE                                     0x1FACE  0  // 🫎
 #define UC_DONKEY                                    0x1FACF  0  // 🫏
 #define UC_BLUEBERRIES                               0x1FAD0  0  // 🫐
@@ -153,6 +157,8 @@
 #define UC_BUBBLES                                   0x1FAE7  0  // 🫧
 #define UC_SHAKING_FACE                              0x1FAE8  0  // 🫨
 #define UC_FACE_WITH_BAGS_UNDER_EYES                 0x1FAE9  0  // 🫩
+#define UC_DISTORTED_FACE                            0x1FAEA  0  // 🫪
+#define UC_FIGHT_CLOUD                               0x1FAEF  0  // 🫯
 #define UC_HAND_WITH_INDEX_FINGER_AND_THUMB_CROSSED  0x1FAF0  0  // 🫰
 #define UC_RIGHTWARDS_HAND                           0x1FAF1  0  // 🫱
 #define UC_LEFTWARDS_HAND                            0x1FAF2  0  // 🫲

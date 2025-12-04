@@ -1,7 +1,7 @@
 /*
  * Unicode keys for U+A720 .. U+A7FF
  *
- * This file was generated from Unidata 16.0.0 with the following license:
+ * This file was generated from Unidata 17.0.0 with the following license:
  *
  * UNICODE LICENSE V3
  *
@@ -43,7 +43,7 @@
  * dealings in these Data Files or Software without prior written
  * authorization of the copyright holder.
  *
- * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
+ * See http://www.unicode.org/versions/Unicode17.0.0 for source data.
  */
 
 #pragma once
@@ -152,13 +152,18 @@
 #define UC_LATIN_LETTER_S_WITH_SHORT_STROKE_OVERLAY           0xA7CA  0xA7C9  // ꟊ/Ꟊ
 #define UC_LATIN_LETTER_RAMS_HORN                             0x264   0xA7CB  // ɤ/Ɤ
 #define UC_LATIN_LETTER_S_WITH_DIAGONAL_STROKE                0xA7CD  0xA7CC  // ꟍ/Ꟍ
+#define UC_LATIN_CAPITAL_LETTER_PHARYNGEAL_VOICED_FRICATIVE   0xA7CE  0       // ꟎
+#define UC_LATIN_SMALL_LETTER_PHARYNGEAL_VOICED_FRICATIVE     0xA7CF  0       // ꟏
 #define UC_LATIN_LETTER_CLOSED_INSULAR_G                      0xA7D1  0xA7D0  // ꟑ/Ꟑ
+#define UC_LATIN_CAPITAL_LETTER_DOUBLE_THORN                  0xA7D2  0       // ꟒
 #define UC_LATIN_SMALL_LETTER_DOUBLE_THORN                    0xA7D3  0       // ꟓ
+#define UC_LATIN_CAPITAL_LETTER_DOUBLE_WYNN                   0xA7D4  0       // ꟔
 #define UC_LATIN_SMALL_LETTER_DOUBLE_WYNN                     0xA7D5  0       // ꟕ
 #define UC_LATIN_LETTER_MIDDLE_SCOTS_S                        0xA7D7  0xA7D6  // ꟗ/Ꟗ
 #define UC_LATIN_LETTER_SIGMOID_S                             0xA7D9  0xA7D8  // ꟙ/Ꟙ
 #define UC_LATIN_LETTER_LAMBDA                                0xA7DB  0xA7DA  // ꟛ/Ꟛ
 #define UC_LATIN_LETTER_LAMBDA_WITH_STROKE                    0x19B   0xA7DC  // ƛ/Ƛ
+#define UC_MODIFIER_LETTER_CAPITAL_S                          0xA7F1  0       // ꟱
 #define UC_MODIFIER_LETTER_CAPITAL_C                          0xA7F2  0       // ꟲ
 #define UC_MODIFIER_LETTER_CAPITAL_F                          0xA7F3  0       // ꟳ
 #define UC_MODIFIER_LETTER_CAPITAL_Q                          0xA7F4  0       // ꟴ

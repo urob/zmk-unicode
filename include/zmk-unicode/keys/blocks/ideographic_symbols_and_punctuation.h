@@ -1,7 +1,7 @@
 /*
  * Unicode keys for U+16FE0 .. U+16FFF
  *
- * This file was generated from Unidata 16.0.0 with the following license:
+ * This file was generated from Unidata 17.0.0 with the following license:
  *
  * UNICODE LICENSE V3
  *
@@ -43,12 +43,17 @@
  * dealings in these Data Files or Software without prior written
  * authorization of the copyright holder.
  *
- * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
+ * See http://www.unicode.org/versions/Unicode17.0.0 for source data.
  */
 
 #pragma once
 
-#define UC_TANGUT_ITERATION_MARK       0x16FE0  0  // 𖿠
-#define UC_NUSHU_ITERATION_MARK        0x16FE1  0  // 𖿡
-#define UC_OLD_CHINESE_HOOK_MARK       0x16FE2  0  // 𖿢
-#define UC_OLD_CHINESE_ITERATION_MARK  0x16FE3  0  // 𖿣
+#define UC_TANGUT_ITERATION_MARK               0x16FE0  0  // 𖿠
+#define UC_NUSHU_ITERATION_MARK                0x16FE1  0  // 𖿡
+#define UC_OLD_CHINESE_HOOK_MARK               0x16FE2  0  // 𖿢
+#define UC_OLD_CHINESE_ITERATION_MARK          0x16FE3  0  // 𖿣
+#define UC_CHINESE_SMALL_SIMPLIFIED_ER         0x16FF2  0  // 𖿲
+#define UC_CHINESE_SMALL_TRADITIONAL_ER        0x16FF3  0  // 𖿳
+#define UC_YANGQIN_SIGN_SLOW_ONE_BEAT          0x16FF4  0  // 𖿴
+#define UC_YANGQIN_SIGN_SLOW_THREE_HALF_BEATS  0x16FF5  0  // 𖿵
+#define UC_YANGQIN_SIGN_SLOW_TWO_BEATS         0x16FF6  0  // 𖿶

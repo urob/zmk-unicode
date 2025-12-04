@@ -2,17 +2,17 @@
 #
 # /// script
 # requires-python = ">=3.14"
-# dependencies = ["requests", "tabulate"]
+# dependencies = ["requests", "tabulate", "unicodedata2"]
 # ///
 
 """Generate zmk-unicode headers for all Unicode blocks."""
 
 import argparse
 import re
-import unicodedata as ud
 from pathlib import Path
 
 import requests
+import unicodedata2 as ud
 from tabulate import tabulate
 
 PREFIX = "UC_"
