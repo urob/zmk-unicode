@@ -196,7 +196,7 @@ def write_block(block_data, start, end, name, outdir):
     preamble = PREAMBLE.format(start=start, end=end)
     table = tabulate(macros, tablefmt="plain")
     file = outdir / (sanitize(name).lower() + ".h")
-    file.write_text(preamble + table)
+    file.write_text(preamble + table + "\n")
 
 
 if __name__ == "__main__":
