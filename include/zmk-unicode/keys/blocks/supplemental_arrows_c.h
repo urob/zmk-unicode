@@ -1,7 +1,7 @@
 /*
  * Unicode keys for U+1F800 .. U+1F8FF
  *
- * This file was generated from Unidata 17.0.0 with the following license:
+ * This file was generated from Unidata 16.0.0 with the following license:
  *
  * UNICODE LICENSE V3
  *
@@ -43,7 +43,7 @@
  * dealings in these Data Files or Software without prior written
  * authorization of the copyright holder.
  *
- * See http://www.unicode.org/versions/Unicode17.0.0 for source data.
+ * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
  */
 
 #pragma once
@@ -210,12 +210,3 @@
 #define UC_SOUTH_WEST_ARROW_FROM_BAR                                0x1F8BB  0  // 🢻
 #define UC_LEFTWARDS_ARROW_FROM_DOWNWARDS_ARROW                     0x1F8C0  0  // 🣀
 #define UC_RIGHTWARDS_ARROW_FROM_DOWNWARDS_ARROW                    0x1F8C1  0  // 🣁
-#define UC_LONG_RIGHTWARDS_ARROW_OVER_LONG_LEFTWARDS_ARROW          0x1F8D0  0  // 🣐
-#define UC_LONG_RIGHTWARDS_HARPOON_OVER_LONG_LEFTWARDS_HARPOON      0x1F8D1  0  // 🣑
-#define UC_LONG_RIGHTWARDS_HARPOON_ABOVE_SHORT_LEFTWARDS_HARPOON    0x1F8D2  0  // 🣒
-#define UC_SHORT_RIGHTWARDS_HARPOON_ABOVE_LONG_LEFTWARDS_HARPOON    0x1F8D3  0  // 🣓
-#define UC_LONG_LEFTWARDS_HARPOON_ABOVE_SHORT_RIGHTWARDS_HARPOON    0x1F8D4  0  // 🣔
-#define UC_SHORT_LEFTWARDS_HARPOON_ABOVE_LONG_RIGHTWARDS_HARPOON    0x1F8D5  0  // 🣕
-#define UC_LONG_RIGHTWARDS_ARROW_THROUGH_X                          0x1F8D6  0  // 🣖
-#define UC_LONG_RIGHTWARDS_ARROW_WITH_DOUBLE_SLASH                  0x1F8D7  0  // 🣗
-#define UC_LONG_LEFT_RIGHT_ARROW_WITH_DEPENDENT_LOBE                0x1F8D8  0  // 🣘

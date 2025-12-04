@@ -1,7 +1,7 @@
 /*
  * Unicode keys for U+1FA00 .. U+1FA6F
  *
- * This file was generated from Unidata 17.0.0 with the following license:
+ * This file was generated from Unidata 16.0.0 with the following license:
  *
  * UNICODE LICENSE V3
  *
@@ -43,7 +43,7 @@
  * dealings in these Data Files or Software without prior written
  * authorization of the copyright holder.
  *
- * See http://www.unicode.org/versions/Unicode17.0.0 for source data.
+ * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
  */
 
 #pragma once
@@ -132,10 +132,6 @@
 #define UC_BLACK_CHESS_KNIGHT_QUEEN                                      0x1FA51  0  // 🩑
 #define UC_BLACK_CHESS_KNIGHT_ROOK                                       0x1FA52  0  // 🩒
 #define UC_BLACK_CHESS_KNIGHT_BISHOP                                     0x1FA53  0  // 🩓
-#define UC_WHITE_CHESS_FERZ                                              0x1FA54  0  // 🩔
-#define UC_WHITE_CHESS_ALFIL                                             0x1FA55  0  // 🩕
-#define UC_BLACK_CHESS_FERZ                                              0x1FA56  0  // 🩖
-#define UC_BLACK_CHESS_ALFIL                                             0x1FA57  0  // 🩗
 #define UC_XIANGQI_RED_GENERAL                                           0x1FA60  0  // 🩠
 #define UC_XIANGQI_RED_MANDARIN                                          0x1FA61  0  // 🩡
 #define UC_XIANGQI_RED_ELEPHANT                                          0x1FA62  0  // 🩢

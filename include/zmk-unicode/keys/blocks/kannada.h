@@ -1,7 +1,7 @@
 /*
  * Unicode keys for U+0C80 .. U+0CFF
  *
- * This file was generated from Unidata 17.0.0 with the following license:
+ * This file was generated from Unidata 16.0.0 with the following license:
  *
  * UNICODE LICENSE V3
  *
@@ -43,7 +43,7 @@
  * dealings in these Data Files or Software without prior written
  * authorization of the copyright holder.
  *
- * See http://www.unicode.org/versions/Unicode17.0.0 for source data.
+ * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
  */
 
 #pragma once
@@ -100,7 +100,6 @@
 #define UC_KANNADA_LETTER_SA                 0xCB8  0  // ಸ
 #define UC_KANNADA_LETTER_HA                 0xCB9  0  // ಹ
 #define UC_KANNADA_SIGN_AVAGRAHA             0xCBD  0  // ಽ
-#define UC_KANNADA_ARCHAIC_SHRII             0xCDC  0  // ೜
 #define UC_KANNADA_LETTER_NAKAARA_POLLU      0xCDD  0  // ೝ
 #define UC_KANNADA_LETTER_FA                 0xCDE  0  // ೞ
 #define UC_KANNADA_LETTER_VOCALIC_RR         0xCE0  0  // ೠ

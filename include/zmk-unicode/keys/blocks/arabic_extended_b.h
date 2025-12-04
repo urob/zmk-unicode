@@ -1,7 +1,7 @@
 /*
  * Unicode keys for U+0870 .. U+089F
  *
- * This file was generated from Unidata 17.0.0 with the following license:
+ * This file was generated from Unidata 16.0.0 with the following license:
  *
  * UNICODE LICENSE V3
  *
@@ -43,7 +43,7 @@
  * dealings in these Data Files or Software without prior written
  * authorization of the copyright holder.
  *
- * See http://www.unicode.org/versions/Unicode17.0.0 for source data.
+ * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
  */
 
 #pragma once
@@ -79,4 +79,3 @@
 #define UC_ARABIC_LETTER_TAH_WITH_THREE_DOTS_BELOW                            0x88C  0  // ࢌ
 #define UC_ARABIC_LETTER_KEHEH_WITH_TWO_DOTS_VERTICALLY_BELOW                 0x88D  0  // ࢍ
 #define UC_ARABIC_VERTICAL_TAIL                                               0x88E  0  // ࢎ
-#define UC_ARABIC_LETTER_NOON_WITH_RING_ABOVE                                 0x88F  0  // ࢏

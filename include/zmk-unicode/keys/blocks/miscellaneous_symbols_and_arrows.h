@@ -1,7 +1,7 @@
 /*
  * Unicode keys for U+2B00 .. U+2BFF
  *
- * This file was generated from Unidata 17.0.0 with the following license:
+ * This file was generated from Unidata 16.0.0 with the following license:
  *
  * UNICODE LICENSE V3
  *
@@ -43,7 +43,7 @@
  * dealings in these Data Files or Software without prior written
  * authorization of the copyright holder.
  *
- * See http://www.unicode.org/versions/Unicode17.0.0 for source data.
+ * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
  */
 
 #pragma once
@@ -196,7 +196,6 @@
 #define UC_NEWLINE_RIGHT                                                               0x2B93  0  // ⮓
 #define UC_FOUR_CORNER_ARROWS_CIRCLING_ANTICLOCKWISE                                   0x2B94  0  // ⮔
 #define UC_RIGHTWARDS_BLACK_ARROW                                                      0x2B95  0  // ⮕
-#define UC_EQUALS_SIGN_WITH_INFINITY_ABOVE                                             0x2B96  0  // ⮖
 #define UC_SYMBOL_FOR_TYPE_A_ELECTRONICS                                               0x2B97  0  // ⮗
 #define UC_THREE_D_TOP_LIGHTED_LEFTWARDS_EQUILATERAL_ARROWHEAD                         0x2B98  0  // ⮘
 #define UC_THREE_D_RIGHT_LIGHTED_UPWARDS_EQUILATERAL_ARROWHEAD                         0x2B99  0  // ⮙

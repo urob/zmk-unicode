@@ -1,7 +1,7 @@
 /*
  * Unicode keys for U+1F700 .. U+1F77F
  *
- * This file was generated from Unidata 17.0.0 with the following license:
+ * This file was generated from Unidata 16.0.0 with the following license:
  *
  * UNICODE LICENSE V3
  *
@@ -43,7 +43,7 @@
  * dealings in these Data Files or Software without prior written
  * authorization of the copyright holder.
  *
- * See http://www.unicode.org/versions/Unicode17.0.0 for source data.
+ * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
  */
 
 #pragma once
@@ -167,10 +167,6 @@
 #define UC_LOT_OF_FORTUNE                                       0x1F774  0  // 🝴
 #define UC_OCCULTATION                                          0x1F775  0  // 🝵
 #define UC_LUNAR_ECLIPSE                                        0x1F776  0  // 🝶
-#define UC_VESTA_FORM_TWO                                       0x1F777  0  // 🝷
-#define UC_ASTRAEA_FORM_TWO                                     0x1F778  0  // 🝸
-#define UC_HYGIEA_FORM_TWO                                      0x1F779  0  // 🝹
-#define UC_PARTHENOPE_FORM_TWO                                  0x1F77A  0  // 🝺
 #define UC_HAUMEA                                               0x1F77B  0  // 🝻
 #define UC_MAKEMAKE                                             0x1F77C  0  // 🝼
 #define UC_GONGGONG                                             0x1F77D  0  // 🝽

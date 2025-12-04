@@ -1,7 +1,7 @@
 /*
  * Unicode keys for U+1CC00 .. U+1CEBF
  *
- * This file was generated from Unidata 17.0.0 with the following license:
+ * This file was generated from Unidata 16.0.0 with the following license:
  *
  * UNICODE LICENSE V3
  *
@@ -43,7 +43,7 @@
  * dealings in these Data Files or Software without prior written
  * authorization of the copyright holder.
  *
- * See http://www.unicode.org/versions/Unicode17.0.0 for source data.
+ * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
  */
 
 #pragma once
@@ -298,9 +298,6 @@
 #define UC_OUTLINED_DIGIT_SEVEN                                                     0x1CCF7  0  // 𜳷
 #define UC_OUTLINED_DIGIT_EIGHT                                                     0x1CCF8  0  // 𜳸
 #define UC_OUTLINED_DIGIT_NINE                                                      0x1CCF9  0  // 𜳹
-#define UC_SNAKE_SYMBOL                                                             0x1CCFA  0  // 𜳺
-#define UC_FLYING_SAUCER_SYMBOL                                                     0x1CCFB  0  // 𜳻
-#define UC_NOSE_SYMBOL                                                              0x1CCFC  0  // 𜳼
 #define UC_BLOCK_OCTANT_3                                                           0x1CD00  0  // 𜴀
 #define UC_BLOCK_OCTANT_23                                                          0x1CD01  0  // 𜴁
 #define UC_BLOCK_OCTANT_123                                                         0x1CD02  0  // 𜴂
@@ -737,9 +734,3 @@
 #define UC_KEYHOLE                                                                  0x1CEB1  0  // 𜺱
 #define UC_OLD_PERSONAL_COMPUTER_WITH_MONITOR_IN_PORTRAIT_ORIENTATION               0x1CEB2  0  // 𜺲
 #define UC_BLACK_RIGHT_TRIANGLE_CARET                                               0x1CEB3  0  // 𜺳
-#define UC_FRAGILE_SYMBOL                                                           0x1CEBA  0  // 𜺺
-#define UC_OFFICE_BUILDING_SYMBOL                                                   0x1CEBB  0  // 𜺻
-#define UC_TREE_SYMBOL                                                              0x1CEBC  0  // 𜺼
-#define UC_APPLE_SYMBOL                                                             0x1CEBD  0  // 𜺽
-#define UC_CHERRY_SYMBOL                                                            0x1CEBE  0  // 𜺾
-#define UC_STRAWBERRY_SYMBOL                                                        0x1CEBF  0  // 𜺿

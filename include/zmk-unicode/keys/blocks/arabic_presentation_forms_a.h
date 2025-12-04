@@ -1,7 +1,7 @@
 /*
  * Unicode keys for U+FB50 .. U+FDFF
  *
- * This file was generated from Unidata 17.0.0 with the following license:
+ * This file was generated from Unidata 16.0.0 with the following license:
  *
  * UNICODE LICENSE V3
  *
@@ -43,7 +43,7 @@
  * dealings in these Data Files or Software without prior written
  * authorization of the copyright holder.
  *
- * See http://www.unicode.org/versions/Unicode17.0.0 for source data.
+ * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
  */
 
 #pragma once
@@ -163,22 +163,6 @@
 #define UC_ARABIC_SYMBOL_SMALL_TAH_ABOVE                                                        0xFBC0  0  // ﯀
 #define UC_ARABIC_SYMBOL_SMALL_TAH_BELOW                                                        0xFBC1  0  // ﯁
 #define UC_ARABIC_SYMBOL_WASLA_ABOVE                                                            0xFBC2  0  // ﯂
-#define UC_ARABIC_LIGATURE_JALLA_WA_ALAA                                                        0xFBC3  0  // ﯃
-#define UC_ARABIC_LIGATURE_DAAMAT_BARAKAATUHUM                                                  0xFBC4  0  // ﯄
-#define UC_ARABIC_LIGATURE_RAHMATU_ALLAAHI_TAAALAA_ALAYH                                        0xFBC5  0  // ﯅
-#define UC_ARABIC_LIGATURE_RAHMATU_ALLAAHI_ALAYHIM                                              0xFBC6  0  // ﯆
-#define UC_ARABIC_LIGATURE_RAHMATU_ALLAAHI_ALAYHIMAA                                            0xFBC7  0  // ﯇
-#define UC_ARABIC_LIGATURE_RAHIMAHUM_ALLAAHU_TAAALAA                                            0xFBC8  0  // ﯈
-#define UC_ARABIC_LIGATURE_RAHIMAHUMAA_ALLAAH                                                   0xFBC9  0  // ﯉
-#define UC_ARABIC_LIGATURE_RAHIMAHUMAA_ALLAAHU_TAAALAA                                          0xFBCA  0  // ﯊
-#define UC_ARABIC_LIGATURE_RADI_ALLAAHU_TAAALAA_ANHUM                                           0xFBCB  0  // ﯋
-#define UC_ARABIC_LIGATURE_HAFIZAHU_ALLAAH                                                      0xFBCC  0  // ﯌
-#define UC_ARABIC_LIGATURE_HAFIZAHU_ALLAAHU_TAAALAA                                             0xFBCD  0  // ﯍
-#define UC_ARABIC_LIGATURE_HAFIZAHUM_ALLAAHU_TAAALAA                                            0xFBCE  0  // ﯎
-#define UC_ARABIC_LIGATURE_HAFIZAHUMAA_ALLAAHU_TAAALAA                                          0xFBCF  0  // ﯏
-#define UC_ARABIC_LIGATURE_SALLALLAAHU_TAAALAA_ALAYHI_WA_SALLAM                                 0xFBD0  0  // ﯐
-#define UC_ARABIC_LIGATURE_AJJAL_ALLAAHU_FARAJAHU_ASH_SHAREEF                                   0xFBD1  0  // ﯑
-#define UC_ARABIC_LIGATURE_ALAYHI_AR_RAHMAH                                                     0xFBD2  0  // ﯒
 #define UC_ARABIC_LETTER_NG_ISOLATED_FORM                                                       0xFBD3  0  // ﯓ
 #define UC_ARABIC_LETTER_NG_FINAL_FORM                                                          0xFBD4  0  // ﯔ
 #define UC_ARABIC_LETTER_NG_INITIAL_FORM                                                        0xFBD5  0  // ﯕ
@@ -624,8 +608,6 @@
 #define UC_ARABIC_LIGATURE_MEEM_WITH_JEEM_WITH_MEEM_INITIAL_FORM                                0xFD8D  0  // ﶍ
 #define UC_ARABIC_LIGATURE_MEEM_WITH_KHAH_WITH_JEEM_INITIAL_FORM                                0xFD8E  0  // ﶎ
 #define UC_ARABIC_LIGATURE_MEEM_WITH_KHAH_WITH_MEEM_INITIAL_FORM                                0xFD8F  0  // ﶏ
-#define UC_ARABIC_LIGATURE_RAHMATU_ALLAAHI_ALAYH                                                0xFD90  0  // ﶐
-#define UC_ARABIC_LIGATURE_RAHMATU_ALLAAHI_ALAYHAA                                              0xFD91  0  // ﶑
 #define UC_ARABIC_LIGATURE_MEEM_WITH_JEEM_WITH_KHAH_INITIAL_FORM                                0xFD92  0  // ﶒ
 #define UC_ARABIC_LIGATURE_HEH_WITH_MEEM_WITH_JEEM_INITIAL_FORM                                 0xFD93  0  // ﶓ
 #define UC_ARABIC_LIGATURE_HEH_WITH_MEEM_WITH_MEEM_INITIAL_FORM                                 0xFD94  0  // ﶔ
@@ -680,13 +662,6 @@
 #define UC_ARABIC_LIGATURE_SAD_WITH_MEEM_WITH_MEEM_INITIAL_FORM                                 0xFDC5  0  // ﷅ
 #define UC_ARABIC_LIGATURE_SEEN_WITH_KHAH_WITH_YEH_FINAL_FORM                                   0xFDC6  0  // ﷆ
 #define UC_ARABIC_LIGATURE_NOON_WITH_JEEM_WITH_YEH_FINAL_FORM                                   0xFDC7  0  // ﷇ
-#define UC_ARABIC_LIGATURE_RAHIMAHU_ALLAAH_TAAALAA                                              0xFDC8  0  // ﷈
-#define UC_ARABIC_LIGATURE_RADI_ALLAAHU_TAAALAA_ANH                                             0xFDC9  0  // ﷉
-#define UC_ARABIC_LIGATURE_RADI_ALLAAHU_TAAALAA_ANHAA                                           0xFDCA  0  // ﷊
-#define UC_ARABIC_LIGATURE_RADI_ALLAAHU_TAAALAA_ANHUMAA                                         0xFDCB  0  // ﷋
-#define UC_ARABIC_LIGATURE_SALLALLAHU_ALAYHI_WA_ALAA_AALIHEE_WA_SALLAM                          0xFDCC  0  // ﷌
-#define UC_ARABIC_LIGATURE_AJJAL_ALLAAHU_TAAALAA_FARAJAHU_ASH_SHAREEF                           0xFDCD  0  // ﷍
-#define UC_ARABIC_LIGATURE_KARRAMA_ALLAAHU_WAJHAH                                               0xFDCE  0  // ﷎
 #define UC_ARABIC_LIGATURE_SALAAMUHU_ALAYNAA                                                    0xFDCF  0  // ﷏
 #define UC_ARABIC_LIGATURE_SALLA_USED_AS_KORANIC_STOP_SIGN_ISOLATED_FORM                        0xFDF0  0  // ﷰ
 #define UC_ARABIC_LIGATURE_QALA_USED_AS_KORANIC_STOP_SIGN_ISOLATED_FORM                         0xFDF1  0  // ﷱ
