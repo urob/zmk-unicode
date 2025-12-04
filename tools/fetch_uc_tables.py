@@ -15,16 +15,57 @@ from pathlib import Path
 import requests
 from tabulate import tabulate
 
-REQUESTS_TIMEOUT = 5
-
 PREFIX = "UC_"
-UD_VERSION = ud.unidata_version
-BLOCKS = f"https://unicode.org/Public/{UD_VERSION}/ucd/Blocks.txt"
 
+REQUESTS_TIMEOUT = 5
+REQUESTS_ATTEMPTS = 3
+
+UD_VERSION = ud.unidata_version
+BLOCKS_URL = f"https://unicode.org/Public/{UD_VERSION}/ucd/Blocks.txt"
 PREAMBLE = f"""/*
  * Unicode keys for U+{{start}} .. U+{{end}}
  *
- * This file was generated from Unicode {UD_VERSION}.
+ * This file was generated from Unidata {UD_VERSION} with the following license:
+ *
+ * UNICODE LICENSE V3
+ *
+ * COPYRIGHT AND PERMISSION NOTICE
+ *
+ * Copyright © 1991-2025 Unicode, Inc.
+ *
+ * NOTICE TO USER: Carefully read the following legal agreement. BY
+ * DOWNLOADING, INSTALLING, COPYING OR OTHERWISE USING DATA FILES, AND/OR
+ * SOFTWARE, YOU UNEQUIVOCALLY ACCEPT, AND AGREE TO BE BOUND BY, ALL OF THE
+ * TERMS AND CONDITIONS OF THIS AGREEMENT. IF YOU DO NOT AGREE, DO NOT
+ * DOWNLOAD, INSTALL, COPY, DISTRIBUTE OR USE THE DATA FILES OR SOFTWARE.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of data files and any associated documentation (the "Data Files") or
+ * software and any associated documentation (the "Software") to deal in the
+ * Data Files or Software without restriction, including without limitation
+ * the rights to use, copy, modify, merge, publish, distribute, and/or sell
+ * copies of the Data Files or Software, and to permit persons to whom the
+ * Data Files or Software are furnished to do so, provided that either (a)
+ * this copyright and permission notice appear with all copies of the Data
+ * Files or Software, or (b) this copyright and permission notice appear in
+ * associated Documentation.
+ *
+ * THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+ * KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF
+ * THIRD PARTY RIGHTS.
+ *
+ * IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE
+ * BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES,
+ * OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+ * WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ * ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THE DATA
+ * FILES OR SOFTWARE.
+ *
+ * Except as contained in this notice, the name of a copyright holder shall
+ * not be used in advertising or otherwise to promote the sale, use or other
+ * dealings in these Data Files or Software without prior written
+ * authorization of the copyright holder.
  *
  * See http://www.unicode.org/versions/Unicode{UD_VERSION} for source data.
  */
@@ -36,6 +77,23 @@ PREAMBLE = f"""/*
 
 def sanitize(name):
     return re.sub(r"[^\w]+", "_", name)
+
+
+def fetch_blocks(retry=0):
+    if retry == 0:
+        print("Fetching blocks... ", end="")
+    try:
+        response = requests.get(BLOCKS_URL, timeout=REQUESTS_TIMEOUT)
+        if response.status_code == 200:
+            print("done")
+            return response.text
+    except requests.exceptions.ConnectionError:
+        pass
+    if retry < REQUESTS_ATTEMPTS:
+        print("failed. Retrying... ", end="")
+        return fetch_blocks(retry=retry + 1)
+    print("failed")
+    raise ConnectionError("Failed to fetch blocks")
 
 
 class Char:
@@ -113,23 +171,6 @@ class Macro:
         return self.lower.ch
 
 
-def fetch_blocks(retry=0):
-    if retry==0:
-        print('Fetching block data... ', end='')
-    try:
-        response = requests.get(BLOCKS, timeout=REQUESTS_TIMEOUT)
-        if response.status_code == 200:
-            print('done')
-            return response.text
-    except requests.exceptions.ConnectionError:
-        pass
-    if retry < 5:
-        print('failed. Retrying... ', end='')
-        return fetch_blocks(retry=retry + 1)
-    print('failed')
-    raise ValueError('Could not download blocks')
-
-
 def parse_block(start, end):
     block_data = {}
     for cp in range(start, end + 1):
@@ -168,10 +209,10 @@ if __name__ == "__main__":
 
     blocks = fetch_blocks()
     pattern = re.compile(r"([0-9A-F]+)\.\.([0-9A-F]+);\ (\S.*\S)")
-    print('Parsing blocks... ', end='')
+    print("Parsing blocks... ", end="")
     for block in blocks.splitlines():
         if m := pattern.match(block):
             start, end, name = m.groups()
             block_data = parse_block(int(start, 16), int(end, 16))
             write_block(block_data, start, end, name, outdir)
-    print('done')
+    print("done")
