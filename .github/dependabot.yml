@@ -5,9 +5,9 @@ updates:
     directories:
       - "/.github/workflows"
     schedule:
-      interval: "monthly"
-    cooldown:
-      default-days: 14
+      interval: "weekly"
+    # cooldown:
+    #   default-days: 14
     groups:
       actions:
         patterns:
