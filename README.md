@@ -209,12 +209,12 @@ keymap:
 <details><summary>4. WinCompose (<code>UC_MODE_WIN_COMPOSE</code>)</summary>
 
 This input system requires a third-party tool called
-[WinCompose](https://github.com/samhocevar/wincompose). 
+[WinCompose](https://github.com/ell1010/wincompose). 
 It supports all possible code points, and is the **recommended
 input mode for Windows**.
 
 To enable, install the [latest release from
-GitHub](https://github.com/samhocevar/wincompose/releases/latest). Once
+GitHub](https://github.com/ell1010/wincompose/releases/latest). Once
 installed, it will automatically run on startup. This works reliably under all
 versions of Windows supported by WinCompose.
 
