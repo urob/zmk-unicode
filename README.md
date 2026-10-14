@@ -169,7 +169,7 @@ The `UC_MODE_LINUX` input system has one configurable property `linux-key`,
 which defaults to `LC(LS(U))`. The system will:
   1. tap and release `linux-key` (`LC(LS(U))` by default)
   2. input the code point sequence
-  3. tap and release `SPACE`
+  3. tap and release `RETURN`
 
 To overwrite `linux-key`, add the following outside of the root node of your
 keymap:

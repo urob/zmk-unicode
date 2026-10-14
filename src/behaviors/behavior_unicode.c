@@ -151,7 +151,7 @@ void unicode_input_stop(const struct zmk_behavior_binding_event *event) {
         queue_key_release(event, &binding, cfg->macos_key);
         break;
     case UC_MODE_LINUX:
-        queue_key_tap(event, &binding, SPACE);
+        queue_key_tap(event, &binding, RET);
         break;
     case UC_MODE_LINUX_ALT:
         queue_key_tap(event, &binding, SPACE);
