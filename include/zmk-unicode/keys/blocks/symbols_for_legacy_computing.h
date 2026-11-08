@@ -1,7 +1,7 @@
 /*
  * Unicode keys for U+1FB00 .. U+1FBFF
  *
- * This file was generated from Unidata 16.0.0 with the following license:
+ * This file was generated from Unidata 17.0.0 with the following license:
  *
  * UNICODE LICENSE V3
  *
@@ -43,7 +43,7 @@
  * dealings in these Data Files or Software without prior written
  * authorization of the copyright holder.
  *
- * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
+ * See http://www.unicode.org/versions/Unicode17.0.0 for source data.
  */
 
 #pragma once
@@ -297,3 +297,4 @@
 #define UC_SEGMENTED_DIGIT_SEVEN                                                                     0x1FBF7  0  // 🯷
 #define UC_SEGMENTED_DIGIT_EIGHT                                                                     0x1FBF8  0  // 🯸
 #define UC_SEGMENTED_DIGIT_NINE                                                                      0x1FBF9  0  // 🯹
+#define UC_ALARM_BELL_SYMBOL                                                                         0x1FBFA  0  // 🯺

@@ -27,6 +27,7 @@
 #include <zmk-unicode/keys/blocks/bassa_vah.h>
 #include <zmk-unicode/keys/blocks/batak.h>
 #include <zmk-unicode/keys/blocks/bengali.h>
+#include <zmk-unicode/keys/blocks/beria_erfe.h>
 #include <zmk-unicode/keys/blocks/bhaiksuki.h>
 #include <zmk-unicode/keys/blocks/block_elements.h>
 #include <zmk-unicode/keys/blocks/bopomofo_extended.h>
@@ -182,6 +183,7 @@
 #include <zmk-unicode/keys/blocks/miscellaneous_symbols_and_arrows.h>
 #include <zmk-unicode/keys/blocks/miscellaneous_symbols_and_pictographs.h>
 #include <zmk-unicode/keys/blocks/miscellaneous_symbols.h>
+#include <zmk-unicode/keys/blocks/miscellaneous_symbols_supplement.h>
 #include <zmk-unicode/keys/blocks/miscellaneous_technical.h>
 #include <zmk-unicode/keys/blocks/modifier_tone_letters.h>
 #include <zmk-unicode/keys/blocks/modi.h>
@@ -239,6 +241,7 @@
 #include <zmk-unicode/keys/blocks/sharada.h>
 #include <zmk-unicode/keys/blocks/shavian.h>
 #include <zmk-unicode/keys/blocks/siddham.h>
+#include <zmk-unicode/keys/blocks/sidetic.h>
 #include <zmk-unicode/keys/blocks/sinhala_archaic_numbers.h>
 #include <zmk-unicode/keys/blocks/sinhala.h>
 #include <zmk-unicode/keys/blocks/small_form_variants.h>
@@ -271,11 +274,15 @@
 #include <zmk-unicode/keys/blocks/tai_tham.h>
 #include <zmk-unicode/keys/blocks/tai_viet.h>
 #include <zmk-unicode/keys/blocks/tai_xuan_jing_symbols.h>
+#include <zmk-unicode/keys/blocks/tai_yo.h>
 #include <zmk-unicode/keys/blocks/takri.h>
 #include <zmk-unicode/keys/blocks/tamil.h>
 #include <zmk-unicode/keys/blocks/tamil_supplement.h>
 #include <zmk-unicode/keys/blocks/tangsa.h>
 #include <zmk-unicode/keys/blocks/tangut_components.h>
+#include <zmk-unicode/keys/blocks/tangut_components_supplement.h>
+#include <zmk-unicode/keys/blocks/tangut.h>
+#include <zmk-unicode/keys/blocks/tangut_supplement.h>
 #include <zmk-unicode/keys/blocks/telugu.h>
 #include <zmk-unicode/keys/blocks/thaana.h>
 #include <zmk-unicode/keys/blocks/thai.h>
@@ -283,6 +290,7 @@
 #include <zmk-unicode/keys/blocks/tifinagh.h>
 #include <zmk-unicode/keys/blocks/tirhuta.h>
 #include <zmk-unicode/keys/blocks/todhri.h>
+#include <zmk-unicode/keys/blocks/tolong_siki.h>
 #include <zmk-unicode/keys/blocks/toto.h>
 #include <zmk-unicode/keys/blocks/transport_and_map_symbols.h>
 #include <zmk-unicode/keys/blocks/tulu_tigalari.h>

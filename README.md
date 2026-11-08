@@ -71,7 +71,7 @@ using the `minimum-length` property. E.g.,
 
 Please let me know if certain input systems require strictly positive padding.
 
-**Convenience macros.** This module includes predefined keys for all Unicode 16.0.0 glyphs. It also
+**Convenience macros.** This module includes predefined keys for all Unicode 17.0.0 glyphs. It also
 includes a curated collection of language-specific aliases, which expose a subset of keys under
 shorter labels.
 

@@ -1,7 +1,7 @@
 /*
  * Unicode keys for U+2A700 .. U+2B73F
  *
- * This file was generated from Unidata 16.0.0 with the following license:
+ * This file was generated from Unidata 17.0.0 with the following license:
  *
  * UNICODE LICENSE V3
  *
@@ -43,7 +43,7 @@
  * dealings in these Data Files or Software without prior written
  * authorization of the copyright holder.
  *
- * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
+ * See http://www.unicode.org/versions/Unicode17.0.0 for source data.
  */
 
 #pragma once
@@ -4202,3 +4202,9 @@
 #define UC_CJK_UNIFIED_IDEOGRAPH_2B737  0x2B737  0  // 𫜷
 #define UC_CJK_UNIFIED_IDEOGRAPH_2B738  0x2B738  0  // 𫜸
 #define UC_CJK_UNIFIED_IDEOGRAPH_2B739  0x2B739  0  // 𫜹
+#define UC_CJK_UNIFIED_IDEOGRAPH_2B73A  0x2B73A  0  // 𫜺
+#define UC_CJK_UNIFIED_IDEOGRAPH_2B73B  0x2B73B  0  // 𫜻
+#define UC_CJK_UNIFIED_IDEOGRAPH_2B73C  0x2B73C  0  // 𫜼
+#define UC_CJK_UNIFIED_IDEOGRAPH_2B73D  0x2B73D  0  // 𫜽
+#define UC_CJK_UNIFIED_IDEOGRAPH_2B73E  0x2B73E  0  // 𫜾
+#define UC_CJK_UNIFIED_IDEOGRAPH_2B73F  0x2B73F  0  // 𫜿

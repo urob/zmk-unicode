@@ -1,7 +1,7 @@
 /*
  * Unicode keys for U+2B820 .. U+2CEAF
  *
- * This file was generated from Unidata 16.0.0 with the following license:
+ * This file was generated from Unidata 17.0.0 with the following license:
  *
  * UNICODE LICENSE V3
  *
@@ -43,7 +43,7 @@
  * dealings in these Data Files or Software without prior written
  * authorization of the copyright holder.
  *
- * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
+ * See http://www.unicode.org/versions/Unicode17.0.0 for source data.
  */
 
 #pragma once
@@ -5810,3 +5810,15 @@
 #define UC_CJK_UNIFIED_IDEOGRAPH_2CE9F  0x2CE9F  0  // 𬺟
 #define UC_CJK_UNIFIED_IDEOGRAPH_2CEA0  0x2CEA0  0  // 𬺠
 #define UC_CJK_UNIFIED_IDEOGRAPH_2CEA1  0x2CEA1  0  // 𬺡
+#define UC_CJK_UNIFIED_IDEOGRAPH_2CEA2  0x2CEA2  0  // 𬺢
+#define UC_CJK_UNIFIED_IDEOGRAPH_2CEA3  0x2CEA3  0  // 𬺣
+#define UC_CJK_UNIFIED_IDEOGRAPH_2CEA4  0x2CEA4  0  // 𬺤
+#define UC_CJK_UNIFIED_IDEOGRAPH_2CEA5  0x2CEA5  0  // 𬺥
+#define UC_CJK_UNIFIED_IDEOGRAPH_2CEA6  0x2CEA6  0  // 𬺦
+#define UC_CJK_UNIFIED_IDEOGRAPH_2CEA7  0x2CEA7  0  // 𬺧
+#define UC_CJK_UNIFIED_IDEOGRAPH_2CEA8  0x2CEA8  0  // 𬺨
+#define UC_CJK_UNIFIED_IDEOGRAPH_2CEA9  0x2CEA9  0  // 𬺩
+#define UC_CJK_UNIFIED_IDEOGRAPH_2CEAA  0x2CEAA  0  // 𬺪
+#define UC_CJK_UNIFIED_IDEOGRAPH_2CEAB  0x2CEAB  0  // 𬺫
+#define UC_CJK_UNIFIED_IDEOGRAPH_2CEAC  0x2CEAC  0  // 𬺬
+#define UC_CJK_UNIFIED_IDEOGRAPH_2CEAD  0x2CEAD  0  // 𬺭

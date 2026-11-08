@@ -1,7 +1,7 @@
 /*
  * Unicode keys for U+1F680 .. U+1F6FF
  *
- * This file was generated from Unidata 16.0.0 with the following license:
+ * This file was generated from Unidata 17.0.0 with the following license:
  *
  * UNICODE LICENSE V3
  *
@@ -43,7 +43,7 @@
  * dealings in these Data Files or Software without prior written
  * authorization of the copyright holder.
  *
- * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
+ * See http://www.unicode.org/versions/Unicode17.0.0 for source data.
  */
 
 #pragma once
@@ -136,6 +136,7 @@
 #define UC_HINDU_TEMPLE                       0x1F6D5  0  // 🛕
 #define UC_HUT                                0x1F6D6  0  // 🛖
 #define UC_ELEVATOR                           0x1F6D7  0  // 🛗
+#define UC_LANDSLIDE                          0x1F6D8  0  // 🛘
 #define UC_WIRELESS                           0x1F6DC  0  // 🛜
 #define UC_PLAYGROUND_SLIDE                   0x1F6DD  0  // 🛝
 #define UC_WHEEL                              0x1F6DE  0  // 🛞

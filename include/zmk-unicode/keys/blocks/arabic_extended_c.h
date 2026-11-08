@@ -1,7 +1,7 @@
 /*
  * Unicode keys for U+10EC0 .. U+10EFF
  *
- * This file was generated from Unidata 16.0.0 with the following license:
+ * This file was generated from Unidata 17.0.0 with the following license:
  *
  * UNICODE LICENSE V3
  *
@@ -43,7 +43,7 @@
  * dealings in these Data Files or Software without prior written
  * authorization of the copyright holder.
  *
- * See http://www.unicode.org/versions/Unicode16.0.0 for source data.
+ * See http://www.unicode.org/versions/Unicode17.0.0 for source data.
  */
 
 #pragma once
@@ -51,3 +51,15 @@
 #define UC_ARABIC_LETTER_DAL_WITH_TWO_DOTS_VERTICALLY_BELOW  0x10EC2  0  // 𐻂
 #define UC_ARABIC_LETTER_TAH_WITH_TWO_DOTS_VERTICALLY_BELOW  0x10EC3  0  // 𐻃
 #define UC_ARABIC_LETTER_KAF_WITH_TWO_DOTS_VERTICALLY_BELOW  0x10EC4  0  // 𐻄
+#define UC_ARABIC_SMALL_YEH_BARREE_WITH_TWO_DOTS_BELOW       0x10EC5  0  // 𐻅
+#define UC_ARABIC_LETTER_THIN_NOON                           0x10EC6  0  // 𐻆
+#define UC_ARABIC_LETTER_YEH_WITH_FOUR_DOTS_BELOW            0x10EC7  0  // 𐻇
+#define UC_ARABIC_BIBLICAL_END_OF_VERSE                      0x10ED0  0  // 𐻐
+#define UC_ARABIC_LIGATURE_ALAYHAA_AS_SALAATU_WAS_SALAAM     0x10ED1  0  // 𐻑
+#define UC_ARABIC_LIGATURE_ALAYHIM_AS_SALAATU_WAS_SALAAM     0x10ED2  0  // 𐻒
+#define UC_ARABIC_LIGATURE_ALAYHIMAA_AS_SALAATU_WAS_SALAAM   0x10ED3  0  // 𐻓
+#define UC_ARABIC_LIGATURE_QADDASA_ALLAAHU_SIRRAH            0x10ED4  0  // 𐻔
+#define UC_ARABIC_LIGATURE_QUDDISA_SIRRUHUM                  0x10ED5  0  // 𐻕
+#define UC_ARABIC_LIGATURE_QUDDISA_SIRRUHUMAA                0x10ED6  0  // 𐻖
+#define UC_ARABIC_LIGATURE_QUDDISAT_ASRAARUHUM               0x10ED7  0  // 𐻗
+#define UC_ARABIC_LIGATURE_NAWWARA_ALLAAHU_MARQADAH          0x10ED8  0  // 𐻘
