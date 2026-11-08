@@ -1,0 +1,27 @@
+#include <behaviors/unicode.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/kscan_mock.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+        default_layer {
+            bindings = <
+                &uc 0x1F596 0 &kp LSHFT
+                &uc UC_SET_LINUX &none
+            >;
+        };
+    };
+};
+
+&uc {
+    default-mode = <UC_MODE_MACOS>;
+};
+
+&kscan {
+    events = <
+        ZMK_MOCK_PRESS(0,0,100)
+        ZMK_MOCK_RELEASE(0,0,10)
+    >;
+};

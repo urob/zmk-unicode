@@ -29,7 +29,7 @@
 #define UC_EL_SIGMA        0x3c3  0x3a3  // σ/Σ
 #define UC_EL_TAU          0x3c4  0x3a4  // τ/Τ
 #define UC_EL_UPSILON      0x3c5  0x3a5  // υ/Υ
-#define UC_EL_PHI          0x3d5  0x3a6  // φ/Φ
+#define UC_EL_PHI          0x3c6  0x3a6  // φ/Φ
 #define UC_EL_CHI          0x3c7  0x3a7  // χ/Χ
 #define UC_EL_PSI          0x3c8  0x3a8  // ψ/Ψ
 #define UC_EL_OMEGA        0x3c9  0x3a9  // ω/Ω
@@ -38,6 +38,6 @@
 #define UC_EL_EPSILON_SYM  0x3f5  0x395  // ϵ/Ε
 #define UC_EL_THETA_SYM    0x3d1  0x398  // ϑ/Θ
 #define UC_EL_KAPPA_SYM    0x3f0  0x39a  // ϰ/Κ
-#define UC_EL_PI_SYM       0x3d6  0x3a9  // ϖ/Ω
+#define UC_EL_PI_SYM       0x3d6  0x3a0  // ϖ/Π
 #define UC_EL_RHO_SYM      0x3f1  0x3a1  // ϱ/Ρ
-#define UC_EL_PHI_SYM      0x3c6  0x3a6  // φ/Φ
+#define UC_EL_PHI_SYM      0x3d5  0x3a6  // ϕ/Φ

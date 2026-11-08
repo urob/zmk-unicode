@@ -235,7 +235,13 @@ void unicode_process_input(const struct zmk_behavior_binding_event *event,
             data->mod_mask);
     queue_mask_mods(event, &binding, data->mod_mask);
     unicode_input_start(event);
-    unicode_input_sequence(event, codepoint);
+    if (data->mode == UC_MODE_MACOS && codepoint > 0xFFFF) {
+        // macOS only takes code points beyond the BMP as UTF-16 surrogate pairs.
+        unicode_input_sequence(event, 0xD800 + ((codepoint - 0x10000) >> 10));
+        unicode_input_sequence(event, 0xDC00 + ((codepoint - 0x10000) & 0x3FF));
+    } else {
+        unicode_input_sequence(event, codepoint);
+    }
     unicode_input_stop(event);
     queue_mask_mods(event, &binding, 0x00);
 }
